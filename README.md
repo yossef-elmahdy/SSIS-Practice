@@ -25,4 +25,7 @@ A repository for the practice exercises for Microsoft SQL Server Integration Ser
 
 
 ## Snapshots 
+![Snapshot1](https://github.com/yossef-elmahdy/SSIS-Practice-/blob/main/Snapshots/Snapshot-1.png)
+
+
 
