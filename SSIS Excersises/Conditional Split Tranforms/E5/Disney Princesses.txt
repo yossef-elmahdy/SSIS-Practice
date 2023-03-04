@@ -1,0 +1,14 @@
+﻿Name,Feminist rating,First appeared,Vehicle
+Snow White,Drippy,1937,Snow White and the Seven Dwarves
+Cinderella,Drippy,1950,Cinderella
+Aurora,Drippy,1959,Sleeping Beauty
+Ariel,Drippy,1989,The Little Mermaid
+Belle,Feisty,1991,Beauty and the Beast
+Jasmine,Feisty,1992,Aladdin
+Pocahontas,Role model,1995,Pocahontas
+Mulan,No idea,1998,Mulan
+Tiana,No idea,2009,The Princess and the Frog
+Rapunzel,Role model,2011,Tangled
+Merida,No idea,2012,Brave
+Anna,Role model,2013,Frozen
+Moana,No idea,2016,Moana

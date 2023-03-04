@@ -1,0 +1,383 @@
+Region,Area,Remain,Leave,Status,Absolute Difference
+South West,"Bristol,228445,14102787418,Leave,14102558973
+West Midlands,"Herefordshire,108270,4414864122,Leave,4414755852
+Yorkshire and The Humber,"Kingston upon Hull,113355,3670976646,Leave,3670863291
+Scotland,City of Edinburgh,187796,64498,Remain,123298
+Northern Ireland,Northern Ireland,440707,349442,Remain,91265
+Scotland,Glasgow City,168335,84474,Remain,83861
+London,Lambeth,111584,30340,Remain,81244
+London,Wandsworth,118463,39421,Remain,79042
+West Midlands,Dudley,56780,118446,Leave,61666
+London,Hackney,83398,22868,Remain,60530
+London,Southwark,94293,35209,Remain,59084
+Yorkshire and The Humber,Doncaster,46922,104260,Leave,57338
+Yorkshire and The Humber,Wakefield,58877,116165,Leave,57288
+London,Havering,42201,96885,Leave,54684
+South East,Brighton and Hove,100648,46027,Remain,54621
+London,Haringey,79991,25855,Remain,54136
+London,Islington,76420,25180,Remain,51240
+London,Lewisham,86955,37518,Remain,49437
+West Midlands,Sandwell,49004,98250,Leave,49246
+Yorkshire and The Humber,Rotherham,44115,93272,Leave,49157
+West Midlands,Walsall,43572,92007,Leave,48435
+London,Camden,71295,23838,Remain,47457
+West Midlands,Stoke-on-Trent,36027,81563,Leave,45536
+North West,Wigan,58942,104331,Leave,45389
+Yorkshire and The Humber,Barnsley,38951,83958,Leave,45007
+Scotland,South Lanarkshire,102568,60024,Remain,42544
+South West,Cornwall,140540,182665,Leave,42125
+London,Richmond upon Thames,75396,33410,Remain,41986
+North West,Manchester,121823,79991,Remain,41832
+Yorkshire and The Humber,East Riding of Yorkshire,78779,120136,Leave,41357
+North East,County Durham,113521,153877,Leave,40356
+London,Barnet,100210,60823,Remain,39387
+South East,Medway,49889,88997,Leave,39108
+London,Tower Hamlets,73011,35224,Remain,37787
+East,Basildon,30748,67251,Leave,36503
+Scotland,North Lanarkshire,95549,59400,Remain,36149
+East,Thurrock,22151,57765,Leave,35614
+Wales,Cardiff,101788,67816,Remain,33972
+North West,Liverpool,118453,85101,Remain,33352
+London,Bexley,47603,80886,Leave,33283
+East Midlands,East Lindsey,23515,56613,Leave,33098
+East,Tendring,25210,57447,Leave,32237
+London,Hammersmith and Fulham,56188,24054,Remain,32134
+Yorkshire and The Humber,North East Lincolnshire,23797,55185,Leave,31388
+Scotland,Fife,106754,75466,Remain,31288
+London,Ealing,90024,59017,Remain,31007
+North East,Sunderland,51930,82394,Leave,30464
+London,Westminster,53928,24268,Remain,29660
+West Midlands,Wolverhampton,44138,73798,Leave,29660
+Yorkshire and The Humber,North Lincolnshire,29947,58915,Leave,28968
+South East,Oxford,49424,20913,Remain,28511
+East,King's Lynn and West Norfolk,28587,56493,Leave,27906
+East,Cambridge,42682,15117,Remain,27565
+Scotland,East Dunbartonshire,44534,17840,Remain,26694
+East Midlands,Ashfield,20179,46720,Leave,26541
+South West,Plymouth,53458,79997,Leave,26539
+Scotland,Renfrewshire,57119,31010,Remain,26109
+London,Merton,63003,37097,Remain,25906
+Scotland,East Renfrewshire,39345,13596,Remain,25749
+West Midlands,Shropshire,78987,104166,Leave,25179
+North West,Tameside,43118,67829,Leave,24711
+West Midlands,Telford and Wrekin,32954,56649,Leave,23695
+London,Brent,72523,48881,Remain,23642
+North East,Stockton-on-Tees,38433,61982,Leave,23549
+North East,Redcar and Cleveland,24586,48128,Leave,23542
+East,Castle Point,14154,37691,Leave,23537
+East Midlands,Mansfield,16417,39927,Leave,23510
+North West,Blackpool,21781,45146,Leave,23365
+East Midlands,South Holland,13074,36423,Leave,23349
+North West,Oldham,42034,65369,Leave,23335
+Scotland,Aberdeen City,63985,40729,Remain,23256
+North West,Bolton,57589,80491,Leave,22902
+East Midlands,Bassetlaw,20575,43392,Leave,22817
+South East,Arun,34193,56936,Leave,22743
+East,Fenland,15055,37571,Leave,22516
+West Midlands,Nuneaton and Bedworth,23736,46095,Leave,22359
+East,St Albans,54208,32237,Remain,21971
+East,Great Yarmouth,14284,35844,Leave,21560
+East,Breckland,26313,47235,Leave,20922
+North West,Rochdale,41217,62014,Leave,20797
+London,Kensington and Chelsea,37601,17138,Remain,20463
+Yorkshire and The Humber,Kirklees,98485,118755,Leave,20270
+West Midlands,Cannock Chase,16684,36894,Leave,20210
+South East,Thanet,26065,46037,Leave,19972
+South West,Torbay,27935,47889,Leave,19954
+West Midlands,South Staffordshire,23444,43248,Leave,19804
+London,Kingston upon Thames,52533,32737,Remain,19796
+London,Waltham Forest,64156,44395,Remain,19761
+East,Epping Forest,28676,48176,Leave,19500
+East,Central Bedfordshire,69670,89134,Leave,19464
+Yorkshire and The Humber,Bradford,104575,123913,Leave,19338
+North West,Trafford,72293,53018,Remain,19275
+East,Braintree,33523,52713,Leave,19190
+East,South Cambridgeshire,56128,37061,Remain,19067
+North East,South Tyneside,30014,49065,Leave,19051
+East,Peterborough,34176,53216,Leave,19040
+North East,Middlesbrough,21181,40177,Leave,18996
+South East,Isle of Wight,30207,49173,Leave,18966
+South East,Swale,28481,47388,Leave,18907
+South West,Gibraltar,19322,823,Remain,18499
+London,Barking and Dagenham,27750,46130,Leave,18380
+North East,Hartlepool,14029,32071,Leave,18042
+Scotland,Perth and Kinross,49641,31614,Remain,18027
+West Midlands,Newcastle-under-Lyme,25477,43457,Leave,17980
+East Midlands,Northampton,43805,61454,Leave,17649
+Yorkshire and The Humber,York,63617,45983,Remain,17634
+West Midlands,Staffordshire Moorlands,21076,38684,Leave,17608
+East Midlands,Bolsover,12242,29730,Leave,17488
+South East,Havant,26582,44047,Leave,17465
+East Midlands,Derby,51612,69043,Leave,17431
+East,Rochford,17510,34937,Leave,17427
+North West,Wyre,22816,40163,Leave,17347
+South East,New Forest,47199,64541,Leave,17342
+Scotland,Stirling,33112,15787,Remain,17325
+West Midlands,Coventry,67967,85097,Leave,17130
+London,Hillingdon,58040,74982,Leave,16942
+East,Waveney,24356,41290,Leave,16934
+South East,Gravesham,18876,35643,Leave,16767
+East Midlands,North Kesteven,25570,42183,Leave,16613
+East,Broxbourne,17166,33706,Leave,16540
+South West,Bath and North East Somerset,60878,44352,Remain,16526
+West Midlands,East Staffordshire,22850,39266,Leave,16416
+East Midlands,South Kesteven,33047,49424,Leave,16377
+Scotland,East Lothian,36026,19738,Remain,16288
+South East,Portsmouth,41384,57336,Leave,15952
+London,Enfield,76425,60481,Remain,15944
+South East,Dartford,19985,35870,Leave,15885
+South East,Dover,24606,40410,Leave,15804
+East,Harlow,13867,29602,Leave,15735
+South East,Maidstone,36762,52365,Leave,15603
+East Midlands,Boston,7430,22974,Leave,15544
+South West,Sedgemoor,26545,41869,Leave,15324
+East Midlands,Amber Valley,29319,44501,Leave,15182
+East,Southend-on-Sea,39348,54522,Leave,15174
+East Midlands,North East Derbyshire,22075,37235,Leave,15160
+West Midlands,Wyre Forest,21240,36392,Leave,15152
+North West,St. Helens,39322,54357,Leave,15035
+West Midlands,Solihull,53466,68484,Leave,15018
+Scotland,Highland,70308,55349,Remain,14959
+North West,Salford,47430,62385,Leave,14955
+East Midlands,Erewash,25791,40739,Leave,14948
+South East,Shepway,22884,37729,Leave,14845
+West Midlands,Tamworth,13705,28424,Leave,14719
+London,Croydon,92913,78221,Remain,14692
+South East,Elmbridge,45841,31162,Remain,14679
+North East,Northumberland,82022,96699,Leave,14677
+Scotland,West Lothian,51560,36948,Remain,14612
+Yorkshire and The Humber,Scarborough,22999,37512,Leave,14513
+South West,South Somerset,42527,56940,Leave,14413
+North West,Burnley,14462,28854,Leave,14392
+South West,Wiltshire,137258,151637,Leave,14379
+West Midlands,Warwick,47976,33642,Remain,14334
+Wales,Caerphilly,39178,53295,Leave,14117
+North East,Gateshead,44429,58529,Leave,14100
+South West,Poole,35741,49707,Leave,13966
+East Midlands,Newark and Sherwood,26571,40516,Leave,13945
+Scotland,Aberdeenshire,76445,62516,Remain,13929
+East Midlands,Hinckley and Bosworth,25969,39501,Leave,13532
+South East,Ashford,28314,41472,Leave,13158
+London,Greenwich,65248,52117,Remain,13131
+South East,Wokingham,55272,42229,Remain,13043
+North West,Hyndburn,13569,26568,Leave,12999
+South East,Winchester,42878,29886,Remain,12992
+Scotland,Dundee City,39688,26697,Remain,12991
+East Midlands,West Lindsey,20906,33847,Leave,12941
+West Midlands,North Warwickshire,12569,25385,Leave,12816
+South East,Gosport,16671,29456,Leave,12785
+South East,Waverley,44341,31601,Remain,12740
+Wales,Wrexham,28822,41544,Leave,12722
+East Midlands,North West Leicestershire,22642,34969,Leave,12327
+North West,Carlisle,23788,35895,Leave,12107
+Yorkshire and The Humber,Calderdale,46950,58975,Leave,12025
+West Midlands,Wychavon,32188,44201,Leave,12013
+South East,Reading,43385,31382,Remain,12003
+North West,Pendle,16704,28631,Leave,11927
+East Midlands,Kettering,21030,32877,Leave,11847
+East Midlands,South Derbyshire,22479,34216,Leave,11737
+South East,Spelthorne,22474,34135,Leave,11661
+East Midlands,Chesterfield,22946,34478,Leave,11532
+East,North Norfolk,26214,37576,Leave,11362
+West Midlands,Redditch,17303,28579,Leave,11276
+West Midlands,Lichfield,26064,37214,Leave,11150
+East,Luton,36708,47773,Leave,11065
+Wales,Flintshire,37867,48930,Leave,11063
+Scotland,South Ayrshire,36265,25241,Remain,11024
+Scotland,Scottish Borders,37952,26962,Remain,10990
+South West,Gloucester,26801,37776,Leave,10975
+Scotland,Midlothian,28217,17251,Remain,10966
+East,Ipswich,27698,38655,Leave,10957
+North West,South Ribble,26406,37318,Leave,10912
+London,Harrow,64042,53183,Remain,10859
+Scotland,Falkirk,44987,34271,Remain,10716
+East Midlands,Blaby,22888,33583,Leave,10695
+Scotland,Inverclyde,24688,14010,Remain,10678
+East Midlands,Rushcliffe,40522,29888,Remain,10634
+South West,Swindon,51220,61745,Leave,10525
+Scotland,West Dunbartonshire,26794,16426,Remain,10368
+Wales,Neath Port Talbot,32651,43001,Leave,10350
+Scotland,Argyll and Bute,29494,19202,Remain,10292
+South East,Vale of White Horse,43462,33192,Remain,10270
+East Midlands,Wellingborough,15462,25679,Leave,10217
+London,Redbridge,69213,59020,Remain,10193
+Scotland,East Ayrshire,33891,23942,Remain,9949
+Wales,Gwynedd,35517,25665,Remain,9852
+South East,Rother,23916,33753,Leave,9837
+North West,Warrington,52657,62487,Leave,9830
+Wales,Pembrokeshire,29367,39155,Leave,9788
+East,Maldon,14529,24302,Leave,9773
+South East,Guildford,44155,34458,Remain,9697
+North West,Halton,27678,37327,Leave,9649
+Yorkshire and The Humber,Selby,21071,30532,Leave,9461
+Wales,Torfaen,19363,28781,Leave,9418
+North West,Allerdale,22429,31809,Leave,9380
+West Midlands,Stafford,34098,43386,Leave,9288
+Scotland,North Ayrshire,38394,29110,Remain,9284
+East Midlands,East Northamptonshire,21680,30894,Leave,9214
+East Midlands,Corby,11470,20611,Leave,9141
+North West,Copeland,14419,23528,Leave,9109
+South East,Crawley,22388,31447,Leave,9059
+South West,Bournemouth,41473,50453,Leave,8980
+South West,Torridge,16229,25200,Leave,8971
+South West,East Dorset,24786,33702,Leave,8916
+South West,Forest of Dean,21392,30251,Leave,8859
+Wales,Newport,32413,41236,Leave,8823
+South East,Wealden,44084,52808,Leave,8724
+North West,Chorley,27417,36098,Leave,8681
+Wales,Rhondda Cynon Taf,53973,62590,Leave,8617
+East,Brentwood,19077,27627,Leave,8550
+East Midlands,Daventry,20443,28938,Leave,8495
+South West,South Gloucestershire,74928,83405,Leave,8477
+East,Huntingdonshire,45729,54198,Leave,8469
+East,Stevenage,18659,27126,Leave,8467
+South West,Weymouth and Portland,14903,23352,Leave,8449
+South East,Tonbridge and Malling,32792,41229,Leave,8437
+South East,South Oxfordshire,46245,37865,Remain,8380
+Wales,Blaenau Gwent,13215,21587,Leave,8372
+East,Forest Heath,9791,18160,Leave,8369
+North West,Bury,46354,54674,Leave,8320
+East,Norwich,37326,29040,Remain,8286
+North West,Blackburn with Darwen,28522,36799,Leave,8277
+East,St Edmundsbury,26986,35224,Leave,8238
+South East,Southampton,49738,57927,Leave,8189
+South West,North Devon,24931,33100,Leave,8169
+North West,Rossendale,15012,23169,Leave,8157
+South West,Cheltenham,37081,28932,Remain,8149
+South East,Rushmoor,20384,28396,Leave,8012
+London,Sutton,49319,57241,Leave,7922
+South East,Eastbourne,22845,30700,Leave,7855
+West Midlands,Rugby,25350,33199,Leave,7849
+Wales,Carmarthenshire,47654,55381,Leave,7727
+North East,North Tyneside,52873,60589,Leave,7716
+North West,Barrow-in-Furness,14207,21867,Leave,7660
+North West,Stockport,85559,77930,Remain,7629
+East Midlands,Gedling,30035,37542,Leave,7507
+South East,Fareham,32210,39525,Leave,7315
+South West,East Devon,40743,48040,Leave,7297
+East Midlands,Charnwood,43500,50672,Leave,7172
+Wales,Bridgend,33723,40622,Leave,6899
+East,Colchester,44414,51305,Leave,6891
+South West,Stroud,40446,33618,Remain,6828
+North East,Darlington,24172,30994,Leave,6822
+East,Broadland,35469,42268,Leave,6799
+East,North Hertfordshire,42234,35438,Remain,6796
+South East,Woking,31007,24214,Remain,6793
+North West,West Lancashire,28546,35323,Leave,6777
+South West,Exeter,35270,28533,Remain,6737
+North West,Fylde,19889,26317,Leave,6428
+South West,Teignbridge,37949,44363,Leave,6414
+East,Mid Suffolk,27391,33794,Leave,6403
+South East,Windsor and Maidenhead,44086,37706,Remain,6380
+South East,Tunbridge Wells,35676,29320,Remain,6356
+West Midlands,Bromsgrove,26252,32563,Leave,6311
+Scotland,Angus,32747,26511,Remain,6236
+South East,Sevenoaks,32091,38258,Leave,6167
+East Midlands,Lincoln,18902,24992,Leave,6090
+East Midlands,Broxtowe,29672,35754,Leave,6082
+London,Newham,55328,49371,Remain,5957
+Wales,Powys,36762,42707,Leave,5945
+South East,Chiltern,32241,26363,Remain,5878
+North West,Wirral,88931,83069,Remain,5862
+East,Chelmsford,47545,53249,Leave,5704
+North West,Sefton,76702,71176,Remain,5526
+South West,Christchurch,12782,18268,Leave,5486
+South East,Mid Sussex,46471,41057,Remain,5414
+South West,North Somerset,59572,64976,Leave,5404
+South West,North Dorset,18399,23802,Leave,5403
+Yorkshire and The Humber,Sheffield,130735,136018,Leave,5283
+South West,Purbeck,11754,16966,Leave,5212
+Wales,Conwy,30147,35357,Leave,5210
+North West,Cheshire East,107962,113163,Leave,5201
+South East,Bracknell Forest,29888,35002,Leave,5114
+Scotland,Dumfries and Galloway,43864,38803,Remain,5061
+East Midlands,South Northamptonshire,25853,30771,Leave,4918
+East Midlands,Melton,12695,17610,Leave,4915
+South East,West Oxfordshire,35236,30435,Remain,4801
+East,Suffolk Coastal,37218,41966,Leave,4748
+South East,Slough,24911,29631,Leave,4720
+North West,Ribble Valley,15892,20550,Leave,4658
+East,Babergh,25309,29933,Leave,4624
+South West,West Somerset,8566,13168,Leave,4602
+South East,Hastings,20011,24339,Leave,4328
+North West,Preston,30227,34518,Leave,4291
+Wales,Denbighshire,23955,28117,Leave,4162
+Yorkshire and The Humber,Hambleton,25480,29502,Leave,4022
+West Midlands,Worcester,25125,29114,Leave,3989
+Scotland,Clackmannanshire,14691,10736,Remain,3955
+South West,Taunton Deane,30944,34789,Leave,3845
+South East,Basingstoke and Deane,48257,52071,Leave,3814
+West Midlands,Birmingham,223451,227251,Leave,3800
+South East,Runnymede,20259,24035,Leave,3776
+Yorkshire and The Humber,Richmondshire,11945,15691,Leave,3746
+South East,Wycombe,49261,45529,Remain,3732
+North West,South Lakeland,34531,30800,Remain,3731
+South East,Eastleigh,36172,39902,Leave,3730
+Wales,Merthyr Tydfil,12574,16291,Leave,3717
+Wales,Ceredigion,21711,18031,Remain,3680
+South East,Milton Keynes,63393,67063,Leave,3670
+South East,Worthing,28851,32515,Leave,3664
+Wales,Swansea,58307,61936,Leave,3629
+East,Welwyn Hatfield,27550,31060,Leave,3510
+South West,Tewkesbury,25084,28568,Leave,3484
+South East,Adur,16914,20315,Leave,3401
+South East,Mole Valley,29088,25708,Remain,3380
+Yorkshire and The Humber,Ryedale,14340,17710,Leave,3370
+South East,West Berkshire,48300,44977,Remain,3323
+South West,Mid Devon,22400,25606,Leave,3206
+South West,South Hams,29308,26142,Remain,3166
+East,Bedford,41497,44569,Leave,3072
+Scotland,Orkney Islands,7189,4193,Remain,2996
+East Midlands,Leicester,70980,67992,Remain,2988
+South East,Test Valley,36170,39091,Leave,2921
+South East,Tandridge,24251,27169,Leave,2918
+East Midlands,Oadby and Wigston,14292,17173,Leave,2881
+South East,Hart,30282,27513,Remain,2769
+East,South Norfolk,38817,41541,Leave,2724
+North West,Cheshire West and Chester,95455,98082,Leave,2627
+South East,Horsham,43785,41303,Remain,2482
+West Midlands,Stratford-on-Avon,38341,40817,Leave,2476
+South East,Lewes,30974,28508,Remain,2466
+London,Hounslow,58755,56321,Remain,2434
+Yorkshire and The Humber,Leeds,194863,192474,Remain,2389
+London,Bromley,92398,90034,Remain,2364
+South West,West Devon,16658,18937,Leave,2279
+London,City of London,3312,1087,Remain,2225
+North West,Knowsley,34345,36558,Leave,2213
+North West,Eden,14807,16911,Leave,2104
+West Midlands,Malvern Hills,23203,25294,Leave,2091
+Yorkshire and The Humber,Craven,16930,18961,Leave,2031
+East Midlands,Nottingham,59318,61343,Leave,2025
+South East,Epsom and Ewell,23596,21707,Remain,1889
+Yorkshire and The Humber,Harrogate,48211,46374,Remain,1837
+North East,Newcastle upon Tyne,65405,63598,Remain,1807
+South East,Canterbury,40169,41879,Leave,1710
+Scotland,Shetland Islands,6907,5315,Remain,1592
+North West,Lancaster,35732,37309,Leave,1577
+Scotland,Eilean Siar,8232,6671,Remain,1561
+East Midlands,Derbyshire Dales,22633,24095,Leave,1462
+South West,Mendip,33427,32028,Remain,1399
+East,Three Rivers,25751,27097,Leave,1346
+South West,West Dorset,31924,33267,Leave,1343
+South East,Chichester,35011,36326,Leave,1315
+South West,Cotswold,28015,26806,Remain,1209
+East,Dacorum,42542,43702,Leave,1160
+South East,Aylesbury Vale,52877,53956,Leave,1079
+Wales,Vale of Glamorgan,36681,35628,Remain,1053
+South East,Surrey Heath,25638,26667,Leave,1029
+East,Hertsmere,27593,28532,Leave,939
+East,East Cambridgeshire,23599,24487,Leave,888
+East Midlands,Harborough,27028,27850,Leave,822
+South East,Reigate and Banstead,40181,40980,Leave,799
+South East,East Hampshire,37346,36576,Remain,770
+Wales,Isle of Anglesey,18618,19333,Leave,715
+East,Uttlesford,25619,26324,Leave,705
+East,East Hertfordshire,42372,42994,Leave,622
+East Midlands,High Peak,27116,27717,Leave,601
+South East,South Bucks,20077,20647,Leave,570
+South East,Cherwell,40668,41168,Leave,500
+Wales,Monmouthshire,28061,27569,Remain,492
+East Midlands,Rutland,11353,11613,Leave,260
+East,Watford,23167,23419,Leave,252
+South West,Isles of Scilly,803,621,Remain,182
+Scotland,Moray,24114,23992,Remain,122

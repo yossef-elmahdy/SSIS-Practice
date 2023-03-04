@@ -1,0 +1,11 @@
+﻿Series,Episodes,Premiere,Finale,Winner
+1,6,17/08/10,21/09/10,Edd Kimber
+2,8,14/08/11,04/10/11,Joanne Wheatley
+3,10,14/08/12,16/10/12,John Whaite
+4,10,20/08/13,22/10/13,Frances Quinn
+5,10,06/08/14,08/10/14,Nancy Birtwhistle
+6,10,05/08/15,07/10/15,Nadiya Hussain
+7,10,24/08/16,26/10/16,Candice Brown
+8,10,29/08/17,31/10/17,Sophie Faldo
+9,10,28/08/18,30/10/18,Rahul Mandal
+10,10,27/08/19,29/10/19,TBA

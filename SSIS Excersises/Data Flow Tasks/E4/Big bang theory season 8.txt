@@ -1,0 +1,25 @@
+Title,Episode number,Series number,First aired
+The Locomotion Interruption,160,8,22/09/2014
+The Junior Professor Solution,161,8,22/09/2014
+The First Pitch Insufficiency,162,8,29/09/2014
+The Hook-up Reverberation,163,8,06/10/2014
+The Focus Attenuation,164,8,13/10/2014
+The Expedition Approximation,165,8,20/10/2014
+The Misinterpretation Agitation,166,8,30/10/2014
+The Prom Equivalency,167,8,06/11/2014
+The Septum Deviation,168,8,13/11/2014
+The Champagne Reflection,169,8,20/11/2014
+The Clean Room Infiltration,170,8,11/12/2014
+The Space Probe Disintegration,171,8,08/01/2015
+The Anxiety Optimization,172,8,29/01/2015
+The Troll Manifestation,173,8,05/02/2015
+The Comic Book Store Regeneration,174,8,19/02/2015
+The Intimacy Acceleration,175,8,26/02/2015
+The Colonization Application,176,8,05/03/2015
+The Leftover Thermalization,177,8,12/03/2015
+The Skywalker Incursion,178,8,02/04/2015
+The Fortification Implementation,179,8,09/04/2015
+The Communication Deterioration,180,8,16/04/2015
+The Graduation Transmission,181,8,23/04/2015
+The Maternal Combustion,182,8,30/04/2015
+The Commitment Determination,183,8,07/05/2015

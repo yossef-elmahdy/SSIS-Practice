@@ -1,0 +1,25 @@
+Title,Episode number,Series number,First aired
+The Hofstadter Insufficiency,136,7,26/09/2013
+The Deception Verification,137,7,26/09/2013
+The Scavenger Vortex,138,7,03/10/2013
+The Raiders Minimization,139,7,10/10/2013
+The Workplace Proximity,140,7,17/10/2013
+The Romance Resonance,141,7,24/10/2013
+The Proton Displacement,142,7,07/11/2013
+The Itchy Brain Simulation,143,7,14/11/2013
+The Thanksgiving Decoupling,144,7,21/11/2013
+The Discovery Dissipation,145,7,05/12/2013
+The Cooper Extraction,146,7,12/12/2013
+The Hesitation Ramification,147,7,02/01/2014
+The Occupation Recalibration,148,7,09/01/2014
+The Convention Conundrum,149,7,30/01/2014
+The Locomotive Manipulation,150,7,06/02/2014
+The Table Polarization,151,7,27/02/2014
+The Friendship Turbulence,152,7,06/03/2014
+The Mommy Observation,153,7,13/03/2014
+The Indecision Amalgamation,154,7,03/04/2014
+The Relationship Diremption,155,7,10/04/2014
+The Anything Can Happen Recurrence,156,7,24/04/2014
+The Proton Transmogrification,157,7,01/05/2014
+The Gorilla Dissolution,158,7,08/05/2014
+The Status Quo Combustion,159,7,15/05/2014

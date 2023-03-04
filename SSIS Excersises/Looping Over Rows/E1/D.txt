@@ -1,0 +1,4 @@
+﻿Item id,Item name
+10,Oysters
+11,Cockroaches
+12,Moth balls

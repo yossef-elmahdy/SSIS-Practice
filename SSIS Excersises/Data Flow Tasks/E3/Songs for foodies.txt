@@ -1,0 +1,7 @@
+﻿Position,Artist,Song
+1,Don McLean,American Pie
+2,Booker T and the MG's,Green Onions
+3,The Beatles,Strawberry Fields Forever
+4,The Rolling Stones,Brown Sugar
+5,Fats Domino,Blueberry Hill
+6,Abba,"Honey, Honey"

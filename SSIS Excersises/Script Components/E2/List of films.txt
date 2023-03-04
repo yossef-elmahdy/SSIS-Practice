@@ -1,0 +1,1201 @@
+﻿FilmID,Title,RunTimeMinutes,Genre
+1,Jurassic Park,126,Adventure
+2,Spider-Man,121,Action
+3,King Kong,187,Adventure
+5,Superman Returns,154,Action
+6,Titanic,194,Romance
+7,Evan Almighty,96,Comedy
+8,Waterworld,135,Adventure
+9,Pearl Harbor,183,War
+10,Transformers,144,Science Fiction
+11,Harry Potter and the Order of the Phoenix,138,Fantasy
+12,Beowulf,115,Fantasy
+13,Bee Movie,91,Animation
+14,Pirates of the Caribbean: At World's End,168,Adventure
+15,I Am Legend,100,Horror
+16,Ratatouille,111,Animation
+17,Troy,162,Adventure
+18,Harry Potter and the Goblet of Fire,156,Fantasy
+19,Batman Begins,141,Action
+20,Charlie and the Chocolate Factory,115,Fantasy
+21,Pirates of the Caribbean: Dead Man's Chest,151,Adventure
+22,Die Another Day,133,Thriller
+23,Lethal Weapon 4,127,Action
+24,Armageddon,151,Science Fiction
+25,Men in Black II,89,Science Fiction
+26,Spider-Man 3,139,Action
+27,Spider-Man 2,127,Action
+28,Stealth,121,Action
+29,Final Fantasy: The Spirits Within,106,Animation
+30,Miami Vice,134,Thriller
+31,The World Is Not Enough,128,Thriller
+32,Master and Commander: The Far Side of the World,138,Adventure
+33,War of the Worlds,116,Science Fiction
+34,The Bourne Ultimatum,115,Thriller
+35,Harry Potter and the Prisoner of Azkaban,141,Fantasy
+36,The Matrix Reloaded,138,Science Fiction
+37,The Da Vinci Code,146,Mystery
+38,Harry Potter and the Philosopher's Stone,152,Fantasy
+39,The Day After Tomorrow,124,Thriller
+40,Pirates of the Caribbean: Curse of the Black Pearl,135,Adventure
+41,The Last Samurai,154,Adventure
+42,The Perfect Storm,130,Adventure
+43,Mission: Impossible III,125,Thriller
+44,Mission: Impossible II,123,Thriller
+45,Windtalkers,134,War
+46,Star Wars: Episode II - Attack of the Clones,142,Science Fiction
+47,"Monsters, Inc.",92,Animation
+48,Star Wars: Episode I - The Phantom Menace,133,Science Fiction
+49,Star Wars: Episode III - Revenge of the Sith,140,Science Fiction
+50,The Matrix Revolutions,129,Science Fiction
+51,Tomorrow Never Dies,119,Thriller
+52,Ocean's Eleven,117,Crime
+53,Live Free or Die Hard,130,Action
+54,Around the World in 80 Days,120,Adventure
+55,Kingdom of Heaven,144,Adventure
+56,Mr. & Mrs. Smith,120,Action
+57,The Aviator,170,Biography
+58,Ali,157,Biography
+59,The Lord of the Rings: Fellowship of the Ring,178,Fantasy
+60,"I, Robot",115,Science Fiction
+61,Casino Royale,144,Thriller
+62,Minority Report,145,Science Fiction
+63,Terminator 2: Judgement Day,136,Science Fiction
+64,Catwoman,104,Action
+65,Harry Potter and the Chamber of Secrets,155,Fantasy
+66,American Gangster,158,Biography
+67,Blood Diamond,143,Adventure
+68,Gladiator,155,Adventure
+69,True Lies,141,Thriller
+70,Gangs of New York,160,Drama
+71,Black Hawk Down,144,War
+72,The Fifth Element,127,Science Fiction
+73,The Lord of the Rings: Return of the King,201,Fantasy
+74,The Lord of the Rings: The Two Towers,179,Fantasy
+75,Rush Hour 3,91,Martial Arts
+76,Rush Hour 2,90,Martial Arts
+77,Men in Black,98,Science Fiction
+78,The Departed,151,Thriller
+79,Die Hard: With A Vengeance,131,Action
+80,Cinderella Man,144,Drama
+81,The Bourne Supremacy,108,Thriller
+82,Last Action Hero,130,Action
+83,Cast Away,143,Drama
+84,Ocean's Twelve,125,Crime
+85,Click,107,Comedy
+86,Bruce Almighty,101,Comedy
+87,Mission: Impossible,110,Thriller
+88,Deep Impact,121,Science Fiction
+89,Road to Perdition,117,Crime
+90,A Beautiful Mind,135,Drama
+91,Children of Men,109,Science Fiction
+92,Munich,163,Drama
+93,Independence Day,145,Science Fiction
+94,X-Men,104,Action
+95,X2,134,Action
+96,The Rock,136,Thriller
+97,Constantine,121,Thriller
+98,Unbreakable,106,Drama
+99,Talladega Nights: The Ballad of Ricky Bobby,108,Comedy
+100,The Simpsons Movie,87,Animation
+101,Braveheart,177,History
+102,Jarhead,125,War
+103,The Village,108,Thriller
+104,Shrek the Third,93,Animation
+105,Shrek 2,93,Animation
+106,The Abyss,140,Science Fiction
+107,Star Trek: Insurrection,103,Science Fiction
+108,Who Framed Roger Rabbit?,103,Comedy
+109,Sleepy Hollow,105,Horror
+110,xXx,124,Action
+111,Die Hard 2,124,Action
+112,The Long Kiss Goodnight,120,Action
+113,Apollo 13,140,History
+114,Saving Private Ryan,170,War
+115,Fight Club,139,Thriller
+116,The Matrix,136,Science Fiction
+117,Total Recall,113,Science Fiction
+118,Cliffhanger,113,Action
+119,Clear and Present Danger,141,Thriller
+120,GoldenEye,130,Thriller
+121,The Black Dahlia,122,Crime
+122,The Truman Show,103,Drama
+123,Event Horizon,96,Science Fiction
+124,The Bourne Identity,118,Thriller
+125,Hellboy,122,Action
+126,Starsky & Hutch,101,Comedy
+127,Intolerable Cruelty,100,Comedy
+128,300,117,Adventure
+129,Star Trek: Nemesis,116,Science Fiction
+130,Superman,143,Adventure
+131,Crimson Tide,116,Thriller
+132,Deja Vu,126,Thriller
+133,Man On Fire,146,Thriller
+134,Enemy of the State,132,Thriller
+135,Kill Bill: Vol. 1,111,Martial Arts
+136,Alien 3,115,Science Fiction
+137,Shanghai Noon,110,Martial Arts
+138,Kill Bill: Vol. 2,136,Martial Arts
+139,Blade II,116,Action
+140,Flags of our Fathers,132,War
+141,Casino,178,Crime
+142,Robin Hood: Prince of Thieves,155,Adventure
+143,Shrek,90,Animation
+144,Shanghai Knights,114,Martial Arts
+145,Indiana Jones and the Last Crusade,127,Adventure
+146,Star Trek: First Contact,111,Science Fiction
+147,Blade,120,Fantasy
+148,Patriot Games,117,Thriller
+149,The Fugitive,130,Thriller
+150,The Prestige,130,Mystery
+151,The Last of the Mohicans,112,Adventure
+152,Apocalypto,138,Adventure
+153,Wedding Crashers,119,Comedy
+154,Back to the Future Part III,118,Science Fiction
+155,Back to the Future Part II,108,Science Fiction
+156,Licence to Kill,133,Thriller
+157,The Living Daylights,131,Thriller
+158,Sin City,124,Crime
+159,Serenity,119,Science Fiction
+160,Star Trek: Generations,118,Science Fiction
+161,Never Say Never Again,134,Thriller
+162,Star Trek: The Motion Picture,132,Science Fiction
+163,Rush Hour,97,Action
+164,Lethal Weapon 3,118,Action
+165,Star Wars: Episode VI - Return of the Jedi,132,Science Fiction
+166,A History of Violence,96,Drama
+167,Moonraker,126,Thriller
+168,Get Shorty,105,Crime
+169,The Assassination of Jesse James by the Coward Robert Ford,159,Western
+170,Million Dollar Baby,132,Sport
+171,Seven,127,Thriller
+172,The Hunt For Red October,134,Thriller
+173,Ghostbusters,107,Comedy
+174,Star Trek V: The Final Frontier,106,Science Fiction
+175,Indiana Jones and the Temple of Doom,118,Adventure
+176,Blade Runner,116,Science Fiction
+177,Die Hard,132,Action
+178,For Your Eyes Only,127,Thriller
+179,Octopussy,131,Thriller
+180,Star Trek VI: The Undiscovered Country,113,Science Fiction
+181,The Running Man,101,Science Fiction
+182,Open Range,139,Western
+183,Kindergarten Cop,111,Comedy
+184,"O Brother, Where Art Thou?",107,Comedy
+185,Goodfellas,146,Crime
+186,The Passion of the Christ,126,Drama
+187,The Untouchables,119,Crime
+188,Schindler's List,197,History
+189,Anchorman: The Legend of Ron Burgundy,95,Comedy
+190,Scarface,170,Crime
+191,Star Trek IV: The Voyage Home,122,Science Fiction
+192,King Kong,134,Adventure
+193,Star Wars: Episode V - The Empire Strikes Back,124,Science Fiction
+194,Gandhi,188,Biography
+195,Equilibrium,107,Science Fiction
+196,From Dusk Till Dawn,108,Horror
+197,Raiders of the Lost Ark,115,Adventure
+199,Back to the Future,116,Science Fiction
+200,Dances with Wolves,180,Western
+201,Star Trek III: The Search For Spock,105,Science Fiction
+202,Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan,84,Comedy
+203,Raging Bull,129,Sport
+204,Aliens,137,Science Fiction
+205,Hero,99,Martial Arts
+206,Hot Fuzz,121,Comedy
+207,Leon,110,Thriller
+208,High Plains Drifter,105,Western
+209,Collateral,120,Thriller
+210,American Beauty,122,Drama
+211,Lethal Weapon,110,Action
+212,Lethal Weapon 2,114,Action
+213,"Crouching Tiger, Hidden Dragon",120,Martial Arts
+214,Brokeback Mountain,134,Drama
+215,Hulk,138,Action
+216,Sense and Sensibility,136,Romance
+217,Ride with the Devil,138,Western
+218,Twins,105,Comedy
+219,28 Days Later,113,Horror
+220,The Beach,115,Drama
+221,Trainspotting,93,Drama
+222,The Spy Who Loved Me,125,Thriller
+223,Downfall,155,War
+224,Letters from Iwo Jima,141,War
+225,Star Trek II: The Wrath of Khan,113,Science Fiction
+226,House of Flying Daggers,119,Martial Arts
+227,Das Boot,149,War
+228,Casino Royale,131,Thriller
+229,Star Wars: Episode IV: A New Hope,121,Science Fiction
+230,E.T.: The Extra-Terrestrial,115,Science Fiction
+231,Amelie,123,Comedy
+232,You Only Live Twice,117,Thriller
+233,Thunderball,130,Thriller
+234,Alien,117,Science Fiction
+236,On Her Majesty's Secret Service,140,Thriller
+237,Pulp Fiction,154,Crime
+238,Rumble in the Bronx,106,Martial Arts
+239,Diamonds are Forever,120,Thriller
+240,Fargo,98,Crime
+241,Live and Let Die,121,Thriller
+242,The Man with the Golden Gun,125,Thriller
+243,"Good Night, and Good Luck",93,Drama
+244,Pale Rider,116,Western
+245,The Terminator,108,Science Fiction
+246,Around the World in 80 Days,183,Adventure
+249,The Usual Suspects,106,Crime
+250,Memento,113,Thriller
+251,Shaun of the Dead,99,Comedy
+252,Four Weddings and a Funeral,117,Romance
+253,Night Watch,114,Fantasy
+254,Goldfinger,110,Thriller
+255,The Lives of Others,137,Drama
+256,From Russia with Love,115,Thriller
+257,Reservoir Dogs,99,Crime
+258,Dr. No,109,Thriller
+259,King Kong,100,Adventure
+260,Seven Samurai,207,Action
+261,Super Size Me,98,Documentary
+262,Kagemusha,180,Drama
+263,Ran,162,Drama
+264,Sunshine,107,Science Fiction
+265,Once Were Warriors,102,Drama
+266,Flushed Away,85,Animation
+267,Indiana Jones and the Kingdom of the Crystal Skull,122,Adventure
+270,Transformers: Age of Extinction,165,Science Fiction
+271,The Hobbit: The Battle of the Five Armies,174,Fantasy
+272,Guardians of the Galaxy,122,Science Fiction
+273,Maleficent,98,Fantasy
+274,X-Men: Days of Future Past,131,Action
+275,Captain America: The Winter Soldier,136,Action
+276,The Hunger Games: Mockingjay Part 1,123,Adventure
+277,The Amazing Spider-Man 2,141,Action
+278,Dawn of the Planet of the Apes,130,Action
+279,Interstellar,169,Science Fiction
+280,Frozen,102,Animation
+281,Iron Man 3,130,Action
+282,Despicable Me 2,98,Animation
+283,The Hobbit: The Desolation of Smaug,161,Fantasy
+284,The Hunger Games: Catching Fire,146,Adventure
+285,Fast & Furious 6,130,Action
+286,Monsters University,104,Animation
+287,Gravity,91,Science Fiction
+288,Man of Steel,143,Action
+289,Thor: The Dark World,112,Action
+290,The Avengers,143,Action
+291,Skyfall,143,Thriller
+292,The Dark Knight Rises,165,Action
+293,The Hobbit: An Unexpected Journey,169,Fantasy
+294,Ice Age: Continental Drift,88,Animation
+295,The Twilight Saga: Breaking Dawn - Part 2,115,Awful
+296,The Amazing Spider-Man,136,Action
+297,Madagascar 3: Europe's Most Wanted,93,Animation
+298,The Hunger Games,142,Science Fiction
+299,Men in Black 3,106,Science Fiction
+300,Harry Potter and the Deathly Hallows - Part 2,130,Fantasy
+301,Transformers: Dark of the Moon,157,Science Fiction
+302,Pirates of the Caribbean: On Stranger Tides,137,Adventure
+303,The Twilight Saga: Breaking Dawn - Part 1,117,Awful
+304,Mission: Impossible - Ghost Protocol,133,Thriller
+305,Kung Fu Panda 2,90,Animation
+306,Fast Five,130,Action
+307,The Hangover Part II,102,Comedy
+308,The Smurfs,103,Animation
+309,Cars 2,106,Animation
+310,Toy Story 3,103,Animation
+311,Alice in Wonderland,108,Fantasy
+312,Harry Potter and the Deathly Hallows - Part 1,146,Fantasy
+313,Inception,148,Science Fiction
+314,Shrek Forever After,93,Animation
+315,The Twilight Saga: Eclipse,123,Awful
+316,Iron Man 2,125,Action
+317,Tangled,100,Animation
+318,Despicable Me,95,Animation
+319,How to Train Your Dragon,98,Animation
+320,Avatar,161,Science Fiction
+321,Harry Potter and the Half-Blood Prince,153,Fantasy
+322,Ice Age: Dawn of the Dinosaurs,94,Animation
+323,Transformers: Revenge of the Fallen,150,Science Fiction
+324,2012,158,Disaster
+325,Up,96,Animation
+326,The Twilight Saga: New Moon,130,Awful
+327,Sherlock Holmes,128,Mystery
+328,Angels & Demons,138,Mystery
+329,The Hangover,100,Comedy
+330,The Dark Knight,152,Action
+332,Kung Fu Panda,92,Animation
+333,Hancock,92,Action
+334,Mamma Mia!,109,Musical
+335,Madagascar: Escape 2 Africa,89,Animation
+336,Quantum of Solace,106,Thriller
+337,Iron Man,126,Action
+338,WALL-E,98,Animation
+339,The Chronicles of Narnia: Prince Caspian,150,Fantasy
+340,National Treasure: Book of Secrets,124,Adventure
+341,Frost/Nixon,122,Drama
+342,Ice Age: The Meltdown,91,Animation
+343,Night at the Museum,108,Adventure
+344,Cars,116,Animation
+345,Happy Feet,108,Animation
+346,"The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",145,Fantasy
+347,Madagascar,86,Animation
+348,Hitch,118,Romance
+349,The Incredibles,115,Animation
+350,Meet the Fockers,115,Comedy
+351,Shark Tale,90,Animation
+352,Finding Nemo,100,Animation
+353,Terminator 3: Rise of the Machines,109,Science Fiction
+354,Bad Boys II,147,Action
+355,Signs,107,Mystery
+356,Ice Age,81,Animation
+357,My Big Fat Greek Wedding,95,Comedy
+358,The Mummy Returns,130,Adventure
+359,Jurassic Park III,92,Adventure
+360,Hannibal,132,Thriller
+361,What Women Want,127,Comedy
+362,Dinosaur,82,Animation
+363,How the Grinch Stole Christmas,104,Comedy
+364,Meet the Parents,108,Comedy
+365,What Lies Beneath,130,Horror
+366,Toy Story 2,95,Animation
+367,Tarzan,88,Animation
+368,The Mummy,125,Adventure
+369,Notting Hill,124,Romantic Comedy
+370,Austin Powers: The Spy Who Shagged Me,96,Comedy
+371,Godzilla,139,Science Fiction
+372,There's Something About Mary,119,Comedy
+373,A Bug's Life,95,Animation
+374,Mulan,87,Animation
+375,Dr. Dolittle,85,Comedy
+376,Shakespeare in Love,123,Romantic Comedy
+377,The Lost World: Jurassic Park,129,Adventure
+378,Air Force One,124,Thriller
+380,Liar Liar,88,Comedy
+381,My Best Friend's Wedding,104,Romantic Comedy
+382,The Full Monty,91,Comedy
+383,Twister,113,Disaster
+384,The Hunchback of Notre Dame,91,Animation
+385,101 Dalmatians,103,Family
+386,Ransom,121,Thriller
+387,The Nutty Professor,95,Comedy
+388,Jerry Maguire,139,Drama
+389,Eraser,114,Action
+390,Toy Story,81,Animation
+391,Pocahontas,82,Animation
+392,Batman Forever,122,Action
+393,Casper,101,Comedy
+394,Jumanji,104,Adventure
+395,The Lion King,88,Animation
+396,The Mask,101,Comedy
+397,Speed,115,Action
+398,The Flintstones,91,Comedy
+399,Dumb and Dumber,107,Comedy
+400,Donnie Brasco,126,Crime
+401,Interview with the Vampire: The Vampire Chronicles,122,Horror
+403,Mrs. Doubtfire,125,Comedy
+404,The Firm,154,Thriller
+405,Indecent Proposal,118,Drama
+406,Sleepless in Seattle,105,Romance
+407,Philadelphia,126,Drama
+408,The Pelican Brief,141,Thriller
+409,Aladdin,90,Animation
+410,The Bodyguard,129,Thriller
+411,Home Alone 2: Lost in New York,120,Family
+412,Basic Instinct,128,Thriller
+413,Batman Returns,126,Action
+414,A Few Good Men,138,Drama
+415,Sister Act,100,Comedy
+416,Bram Stoker's Dracula,128,Horror
+417,Wayne's World,95,Comedy
+418,Beauty and the Beast,84,Animation
+419,Hook,144,Adventure
+420,The Silence of the Lambs,118,Thriller
+421,JFK,188,Thriller
+422,The Addams Family,99,Comedy
+423,Cape Fear,128,Thriller
+424,Hot Shots!,84,Comedy
+425,City Slickers,112,Comedy
+426,Ghost,127,Romance
+427,Home Alone,102,Comedy
+428,Pretty Woman,119,Romance
+430,Teenage Mutant Ninja Turtles,93,Action
+431,Batman,126,Action
+432,Look Who's Talking,96,Comedy
+433,Dead Poets Society,128,Drama
+434,"Honey, I Shrunk the Kids",94,Adventure
+435,Ghostbusters II,108,Comedy
+436,The Little Mermaid,82,Animation
+437,Born on the Fourth of July,145,Biography
+438,Rain Man,133,Drama
+439,Coming to America,117,Comedy
+440,Big,104,Comedy
+441,Crocodile Dundee II,112,Adventure
+442,The Naked Gun: From the Files of Police Squad!,85,Comedy
+443,Cocktail,103,Romance
+444,Beetlejuice,92,Comedy
+445,Three Men and a Baby,104,Comedy
+446,Fatal Attraction,119,Thriller
+447,Beverly Hills Cop II,103,Action
+448,"Good Morning, Vietnam",120,Comedy
+449,Moonstruck,102,Romance
+450,The Secret of My Success,111,Comedy
+451,Stakeout,117,Comedy
+452,The Witches of Eastwick,118,Comedy
+453,Top Gun,110,Action
+454,Crocodile Dundee,98,Comedy
+455,Platoon,120,War
+456,"The Karate Kid, Part II",113,Drama
+458,The Golden Child,94,Adventure
+460,Ferris Bueller's Day Off,103,Comedy
+461,Rambo: First Blood Part II,96,Action
+462,Rocky IV,91,Sport
+463,The Color Purple,153,Drama
+464,Out Of Africa,161,Romance
+465,Cocoon,117,Science Fiction
+466,The Jewel of the Nile,107,Adventure
+468,The Goonies,114,Adventure
+469,Spies Like Us,102,Comedy
+470,Beverly Hills Cop,105,Action
+472,Gremlins,106,Comedy
+473,The Karate Kid,127,Drama
+474,Police Academy,96,Comedy
+475,Footloose,110,Drama
+476,Romancing the Stone,106,Adventure
+477,Terms of Endearment,132,Drama
+478,Flashdance,98,Drama
+479,Trading Places,116,Comedy
+480,WarGames,114,Thriller
+481,Sudden Impact,117,Thriller
+482,Staying Alive,93,Drama
+485,Tootsie,116,Comedy
+486,An Officer and a Gentleman,122,Drama
+487,Rocky III,100,Sport
+488,Porky's,98,Comedy
+489,48 Hrs.,96,Action
+490,Poltergeist,114,Horror
+492,Annie,128,Musical
+494,Superman II,127,Action
+495,Arthur,97,Comedy
+497,The Cannonball Run,95,Comedy
+498,Chariots of Fire,124,Sport
+500,Time Bandits,113,Fantasy
+501,9 to 5,110,Comedy
+502,Stir Crazy,111,Comedy
+503,Airplane!,87,Comedy
+504,Any Which Way You Can,116,Action
+505,Private Benjamin,109,Comedy
+507,Smokey and the Bandit II,100,Comedy
+509,The Blues Brothers,132,Comedy
+510,Kramer vs. Kramer,105,Drama
+511,The Amityville Horror,118,Horror
+512,Rocky II,119,Drama
+513,Apocalypse Now,153,War
+514,10,122,Romantic Comedy
+515,The Jerk,94,Comedy
+516,The Muppet Movie,97,Family
+517,Grease,110,Musical
+518,National Lampoon's Animal House,109,Comedy
+519,Every Which Way but Loose,114,Action
+522,Jaws 2,116,Thriller
+523,Dawn of the Dead,127,Horror
+524,Revenge of the Pink Panther,98,Comedy
+525,The Deer Hunter,183,Drama
+526,Smokey and the Bandit,96,Comedy
+527,Close Encounters of the Third Kind,135,Science Fiction
+529,Saturday Night Fever,118,Drama
+531,A Bridge Too Far,176,War
+532,The Deep,124,Adventure
+533,Annie Hall,93,Romantic Comedy
+534,Rocky,119,Drama
+537,All the President's Men,138,Thriller
+538,The Omen,111,Horror
+540,Silver Streak,114,Comedy
+541,The Enforcer,96,Action
+542,Midway,131,War
+543,Jaws,124,Thriller
+544,The Rocky Horror Picture Show,100,Musical
+545,One Flew Over the Cuckoo's Nest,133,Drama
+546,Dog Day Afternoon,125,Crime
+547,Shampoo,110,Drama
+548,The Return of the Pink Panther,114,Comedy
+553,Blazing Saddles,92,Comedy
+554,The Towering Inferno,165,Disaster
+556,Young Frankenstein,105,Comedy
+557,Earthquake,121,Disaster
+558,The Godfather Part II,202,Crime
+559,Airport 1975,106,Disaster
+561,The Longest Yard,121,Comedy
+563,The Sting,129,Crime
+564,The Exorcist,121,Horror
+565,American Graffiti,112,Drama
+566,Papillon,150,Crime
+568,Magnum Force,124,Action
+570,Robin Hood,83,Animation
+572,The Godfather,177,Crime
+573,The Poseidon Adventure,117,Disaster
+576,Deliverance,110,Thriller
+578,Cabaret,124,Musical
+582,Fiddler on the Roof,179,Musical
+583,The French Connection,104,Crime
+584,Dirty Harry,102,Thriller
+588,A Clockwork Orange,136,Drama
+589,Bedknobs and Broomsticks,117,Adventure
+590,Love Story,100,Romance
+591,Airport,137,Disaster
+592,MASH,116,Comedy
+593,Patton,170,Biography
+598,Tora! Tora! Tora!,144,War
+600,Butch Cassidy and the Sundance Kid,110,Western
+601,Midnight Cowboy,113,Drama
+602,Easy Rider,95,Drama
+605,Paint Your Wagon,154,Musical
+606,True Grit,128,Western
+609,2001: A Space Odyssey,142,Science Fiction
+611,The Love Bug,108,Comedy
+612,The Odd Couple,105,Comedy
+613,Bullitt,113,Crime
+614,Romeo and Juliet,138,Romance
+615,Oliver!,153,Musical
+617,Planet of the Apes,112,Science Fiction
+618,The Graduate,105,Comedy
+619,The Jungle Book,78,Animation
+621,Bonnie and Clyde,111,Crime
+622,The Dirty Dozen,150,War
+627,Night of the Living Dead,96,Horror
+633,"The Good, the Bad and the Ugly",177,Western
+636,Grand Prix,179,Sport
+638,The Sound of Music,174,Musical
+639,Doctor Zhivago,193,Romance
+644,What's New Pussycat?,108,Comedy
+646,Von Ryan's Express,117,War
+647,Mary Poppins,139,Musical
+648,My Fair Lady,170,Musical
+650,A Fistful of Dollars,99,Western
+652,A Shot in the Dark,102,Comedy
+653,A Hard Day's Night,87,Musical
+655,Cleopatra,248,History
+656,How the West Was Won,164,Western
+657,"It's a Mad, Mad, Mad, Mad World",210,Comedy
+660,The Sword in the Stone,79,Animation
+662,The Birds,119,Horror
+664,Lawrence of Arabia,222,Biography
+665,The Longest Day,178,War
+669,Mutiny on the Bounty,185,History
+670,To Kill a Mockingbird,129,Drama
+674,West Side Story,152,Musical
+675,The Guns of Navarone,158,War
+676,El Cid,184,History
+677,The Absent-Minded Professor,97,Comedy
+678,The Parent Trap,128,Comedy
+679,La Dolce Vita,174,Comedy
+682,One Hundred and One Dalmatians,79,Animation
+684,Spartacus,184,History
+685,Psycho,109,Horror
+687,Swiss Family Robinson,126,Adventure
+688,The Alamo,167,War
+691,Ocean's 11,127,Comedy
+694,Ben-Hur,212,Drama
+695,Sleeping Beauty,75,Animation
+696,North by Northwest,136,Thriller
+697,Some Like It Hot,121,Romantic Comedy
+702,Rio Bravo,141,Western
+704,South Pacific,171,Musical
+706,Cat on a Hot Tin Roof,107,Drama
+709,The Vikings,116,Adventure
+710,Vertigo,128,Thriller
+714,The Bridge on the River Kwai,161,War
+717,Old Yeller,83,Drama
+721,A Farewell to Arms,152,Drama
+722,Gunfight at the O.K. Corral,122,Western
+724,The Ten Commandments,220,Fantasy
+726,War and Peace,208,Drama
+727,The King and I,133,Musical
+728,The Searchers,119,Western
+731,High Society,111,Musical
+736,Oklahoma!,145,Musical
+737,Guys and Dolls,150,Musical
+738,Lady and the Tramp,75,Animation
+744,"20,000 Leagues Under the Sea",127,Adventure
+753,The Robe,135,Drama
+754,From Here to Eternity,118,Drama
+755,Shane,118,Western
+757,Peter Pan,76,Animation
+761,Gentlemen Prefer Blondes,91,Musical
+766,Ivanhoe,106,Adventure
+767,Singin' in the Rain,103,Musical
+769,Moulin Rouge,119,Drama
+774,Alice in Wonderland,75,Animation
+776,A Streetcar Named Desire,122,Drama
+779,The African Queen,105,Adventure
+781,Strangers on a Train,101,Thriller
+783,Cinderella,75,Animation
+784,King Solomon's Mines,103,Adventure
+785,Annie Get Your Gun,107,Musical
+796,Sands of Iwo Jima,100,War
+853,For Whom the Bell Tolls,170,War
+858,Casablanca,102,Drama
+885,The Great Dictator,124,Comedy
+887,The Grapes of Wrath,129,Drama
+893,Gone with the Wind,221,Romance
+899,"Goodbye, Mr. Chips",114,Drama
+900,The Wizard of Oz,101,Fantasy
+911,Angels with Dirty Faces,97,Crime
+913,Snow White and the Seven Dwarfs,83,Animation
+941,Anna Karenina,95,Drama
+972,Frankenstein,71,Horror
+977,Dracula,85,Horror
+982,All Quiet on the Western Front,152,War
+1063,The Kid,68,Comedy
+1120,Star Wars: The Force Awakens,136,Science Fiction
+1121,Jurassic World,124,Adventure
+1122,Furious 7,137,Action
+1123,Avengers: Age of Ultron,141,Action
+1124,Minions,91,Animation
+1125,Spectre,148,Thriller
+1126,Inside Out,94,Animation
+1127,Mission: Impossible - Rogue Nation,131,Action
+1128,The Hunger Games: Mockingjay - Part 2,137,Science Fiction
+1129,The Martian,141,Science Fiction
+1130,Captain America: Civil War,147,Action
+1131,Finding Dory,97,Animation
+1132,Zootopia,108,Animation
+1133,The Jungle Book,105,Adventure
+1134,Batman v Superman: Dawn of Justice,151,Action
+1135,The Secret Life of Pets,87,Animation
+1136,Deadpool,108,Action
+1137,Suicide Squad,123,Action
+1138,The Mermaid,94,Fantasy
+1139,X-Men: Apocalypse,144,Action
+1140,Doctor Strange,115,Action
+1141,City of God,130,Crime
+1142,The Parent Trap,128,Comedy
+1143,Captain Blood,119,Adventure
+1144,The Adventures of Robin Hood,102,Adventure
+1145,The Charge of the Light Brigade,115,Adventure
+1146,The Hound of the Baskervilles,81,Mystery
+1147,The Adventures of Sherlock Holmes,81,Mystery
+1148,Mutiny on the Bounty,132,Drama
+1149,The Misfits,125,Drama
+1150,Lolita,152,Drama
+1151,The 39 Steps,86,Thriller
+1152,Citizen Kane,119,Drama
+1153,Metropolis,153,Science Fiction
+1154,Anna Karenina,139,Drama
+1155,Scarface,95,Crime
+1156,The Public Enemy,83,Crime
+1157,It's a Wonderful Life,130,Fantasy
+1158,Mr. Smith Goes to Washington,129,Comedy
+1159,Brief Encounter,86,Romance
+1160,The Killers,103,Crime
+1161,The Seventh Veil,94,Crime
+1162,Great Expectations,113,Drama
+1163,Miracle on 34th Street,96,Comedy
+1164,Hamlet,155,Drama
+1165,Joan of Arc,145,Biography
+1166,The Three Musketeers,125,Adventure
+1167,The Big Boss,110,Martial Arts
+1168,Fist of Fury,108,Martial Arts
+1169,Way of the Dragon,100,Martial Arts
+1170,Game of Death,85,Martial Arts
+1171,Enter the Dragon,102,Martial Arts
+1172,Monty Python and the Holy Grail,92,Comedy
+1173,Monty Python's Life of Brian,93,Comedy
+1174,Drunken Master,110,Martial Arts
+1175,Half a Loaf of Kung Fu,98,Martial Arts
+1176,Snake and Crane Arts of Shaolin,93,Martial Arts
+1177,The Fearless Hyena,97,Martial Arts
+1178,Snake in the Eagle's Shadow,98,Martial Arts
+1179,Spiritual Kung Fu,97,Martial Arts
+1180,Dragon Fist,93,Martial Arts
+1181,Magnificent Bodyguards,78,Martial Arts
+1182,The Young Master,106,Martial Arts
+1183,Project A,106,Martial Arts
+1184,Wheels on Meals,104,Martial Arts
+1185,Cannonball Run II,108,Comedy
+1186,Police Story,101,Martial Arts
+1187,Winners and Sinners,101,Martial Arts
+1188,My Lucky Stars,96,Martial Arts
+1189,"Twinkle, Twinkle Lucky Stars",90,Martial Arts
+1190,Armour of God,97,Martial Arts
+1191,Project A Part II,106,Martial Arts
+1192,Police Story 2,101,Martial Arts
+1193,Dragons Forever,94,Martial Arts
+1194,Armour of God II: Operation Condor,106,Martial Arts
+1195,Police Story 3: Super Cop,95,Martial Arts
+1196,Once Upon a Time in China,134,Martial Arts
+1197,Twin Dragons,104,Martial Arts
+1198,Once Upon a Time in China II,113,Martial Arts
+1199,Once Upon a Time in China III,105,Martial Arts
+1200,Fong Sai-yuk,106,Martial Arts
+1201,Fong Sai-yuk II,96,Martial Arts
+1202,Fist of Legend,103,Martial Arts
+1203,Romeo Must Die,115,Action
+1204,The One,87,Science Fiction
+1205,Kiss of the Dragon,98,Action
+1206,Cradle 2 the Grave,101,Action
+1207,Unleashed,102,Martial Arts
+1208,Fearless,105,Martial Arts
+1209,The Warlords,127,War
+1210,Dragon,116,Martial Arts
+1211,The Forbidden Kingdom,104,Martial Arts
+1212,The Mummy: Tomb of the Dragon Emperor,111,Adventure
+1213,The Expendables,103,Action
+1214,The Expendables 2,103,Action
+1215,The Expendables 3,126,Action
+1216,The Incredible Hulk,112,Action
+1217,Now You See Me,115,Mystery
+1218,Clash of the Titans,106,Adventure
+1219,Clash of the Titans,118,Adventure
+1220,The Transporter,92,Action
+1221,Transporter 2,88,Action
+1222,Zu Warriors from the Magic Mountain,98,Adventure
+1223,A Better Tomorrow,95,Action
+1224,A Better Tomorrow II,104,Action
+1225,The Master,92,Martial Arts
+1226,A Better Tomorrow III,145,Action
+1227,The Killer,110,Action
+1228,Seven Swords,153,Martial Arts
+1229,Detective Dee and the Mystery of the Phantom Flame,122,Adventure
+1230,Flying Swords of Dragon Gate,125,Martial Arts
+1231,Young Detective Dee: Rise of the Sea Dragon,133,Adventure
+1232,Hard Boiled,128,Action
+1233,Hard Target,97,Action
+1234,Broken Arrow,108,Action
+1235,Face/Off,139,Action
+1236,Paycheck,119,Science Fiction
+1237,Red Cliff,146,War
+1238,Red Cliff II,142,War
+1239,The Raid,101,Martial Arts
+1240,Merantau,135,Martial Arts
+1241,The Raid 2,150,Martial Arts
+1242,Ong-Bak,108,Martial Arts
+1243,Ong-Bak 2,98,Martial Arts
+1244,Ong-Bak 3,95,Martial Arts
+1245,Warrior King,110,Martial Arts
+1246,Warrior King 2,103,Martial Arts
+1247,Ip Man,108,Martial Arts
+1248,Ip Man 2,109,Martial Arts
+1249,Ip Man 3,105,Martial Arts
+1250,Iron Monkey,90,Martial Arts
+1251,"Crouching Tiger, Hidden Dragon: Sword of Destiny",105,Martial Arts
+1252,Dragon Tiger Gate,96,Martial Arts
+1253,Rashomon,88,Drama
+1254,Ikiru,143,Drama
+1255,Throne of Blood,110,Drama
+1256,The Hidden Fortress,139,Adventure
+1257,Yojimbo,110,Action
+1258,Sanjuro,95,Action
+1259,47 Ronin,132,Action
+1260,47 Samurai,207,Action
+1261,47 Ronin,127,Action
+1262,The Tale of Osaka Castle,95,Action
+1263,Whirlwind,108,Action
+1264,Samurai Saga,111,Action
+1265,Nippon tanjo,182,Fantasy
+1266,Samurai I: Musashi Miyamoto,93,Action
+1267,Samurai II: Duel at Ichijoji Temple,103,Action
+1268,Samurai III: Duel at Ganryu Island,105,Action
+1269,Ichi the Killer,128,Crime
+1270,13 Assassins,125,Action
+1271,Hara-Kiri: Death of a Samurai,126,Drama
+1272,Zatoichi,116,Action
+1273,Thor,114,Action
+1274,Battleship,131,Action
+1275,The Kingdom,109,Thriller
+1276,Lone Survivor,121,War
+1277,Deepwater Horizon,107,Disaster
+1278,Boiling Point,96,Crime
+1279,Outrage,109,Crime
+1280,Beyond Outrage,112,Crime
+1281,Battle Royale,113,Action
+1282,The Fall of Ako Castle,158,Action
+1283,Shogun's Samurai,130,Action
+1284,Samurai Reincarnation,122,Action
+1285,The Fast and the Furious: Tokyo Drift,104,Action
+1286,The Bushido Blade,104,Action
+1287,When the Last Sword Is Drawn,137,Drama
+1288,Departures,130,Drama
+1289,The Twilight Samurai,129,Drama
+1290,The Hidden Blade,132,Drama
+1291,Love and Honor,118,Drama
+1292,Lone Wolf and Cub: Sword of Vengeance,83,Adventure
+1293,Lone Wolf and Cub: Baby Cart at the River Styx,85,Adventure
+1294,Lone Wolf and Cub: Baby Cart to Hades,89,Adventure
+1295,Lone Wolf and Cub: Baby Cart in Peril,81,Adventure
+1296,Lone Wolf and Cub: Baby Cart in the Land of Demons,89,Adventure
+1297,Lone Wolf and Cub: White Heaven in Hell,84,Adventure
+1298,Godzilla,96,Action
+1299,King Kong vs. Godzilla,97,Action
+1300,Mothra vs. Godzilla,88,Action
+1301,District 13,86,Action
+1302,District 13: Ultimatum,106,Action
+1303,Taken,90,Thriller
+1304,From Paris with Love,92,Thriller
+1305,The Gunman,115,Thriller
+1306,Mesrine Part 1: Killer Instinct,113,Crime
+1307,Mesrine Part 2: Public Enemy Number 1,133,Crime
+1308,Assault on Precinct 13,109,Thriller
+1309,A Prophet,155,Crime
+1310,Kung Fu Hustle,98,Martial Arts
+1311,This Is England,102,Drama
+1312,A Room for Romeo Brass,90,Drama
+1313,Once Upon a Time in the Midlands,104,Romantic Comedy
+1314,Dead Man's Shoes,90,Thriller
+1315,The League of Gentlemen's Apocalypse,92,Comedy
+1316,Down Terrace,93,Crime
+1317,Kill List,95,Thriller
+1318,Sightseers,85,Comedy
+1319,A Field in England,91,Thriller
+1320,High-Rise,119,Science Fiction
+1321,Free Fire,90,Comedy
+1322,Momentum,96,Thriller
+1323,District 9,112,Science Fiction
+1324,Elysium,109,Science Fiction
+1325,Chappie,120,Science Fiction
+1326,Slumdog Millionaire,120,Drama
+1327,The Best Exotic Marigold Hotel,124,Comedy
+1328,The Second Best Exotic Marigold Hotel,122,Comedy
+1329,John Carter,132,Science Fiction
+1330,Ironclad,121,History
+1331,Solomon Kane,104,Adventure
+1332,A Knight's Tale,132,Adventure
+1333,Shallow Grave,92,Crime
+1334,A Life Less Ordinary,103,Comedy
+1335,28 Weeks Later,100,Horror
+1336,127 Hours,93,Biography
+1337,Trance,101,Crime
+1338,Steve Jobs,122,Biography
+1339,Life of Pi,127,Adventure
+1340,Terminator Genisys,126,Science Fiction
+1341,Maggie,95,Horror
+1342,Sabotage,109,Crime
+1343,Escape Plan,115,Action
+1344,The Last Stand,107,Action
+1345,Terminator Salvation,115,Science Fiction
+1346,Collateral Damage,108,Action
+1347,The 6th Day,124,Science Fiction
+1348,End of Days,123,Horror
+1349,Batman & Robin,125,Action
+1350,Jingle All the Way,89,Family
+1351,Junior,109,Comedy
+1352,Total Recall,118,Science Fiction
+1353,True Grit,110,Western
+1354,Red Heat,103,Action
+1355,Predator,107,Science Fiction
+1356,Raw Deal,107,Action
+1357,Commando,90,Action
+1358,X-Men: The Last Stand,104,Action
+1359,Red Sonja,89,Fantasy
+1360,Conan the Destroyer,101,Fantasy
+1361,Conan the Barbarian,129,Fantasy
+1362,Conan the Barbarian,113,Fantasy
+1363,Pumping Iron,85,Documentary
+1364,Hercules in New York,91,Comedy
+1365,3 Days to Kill,117,Thriller
+1366,This Means War,97,Action
+1367,We Are Marshall,131,Drama
+1368,X-Men: First Class,132,Action
+1369,Charlie's Angels,98,Action
+1370,Charlie's Angels: Full Throttle,106,Action
+1371,Kingsman: The Secret Service,129,Action
+1372,Kick-Ass,117,Action
+1373,Stardust,127,Fantasy
+1374,Layer Cake,105,Crime
+1375,Underworld,121,Action
+1376,Underworld: Evolution,106,Action
+1377,For a Few Dollars More,132,Western
+1378,Once Upon a Time in the West,165,Western
+1379,Once Upon a Time in America,229,Crime
+1380,Underworld: Rise of the Lycans,92,Action
+1381,Underworld: Awakening,89,Action
+1382,Underworld: Blood Wars,91,Action
+1383,Stargate,128,Science Fiction
+1384,Under Siege,103,Action
+1385,Bridge of Spies,141,Thriller
+1386,Duel,89,Thriller
+1387,Empire of the Sun,154,War
+1388,Amistad,154,History
+1389,A.I. Artificial Intelligence,146,Science Fiction
+1390,Catch Me If You Can,141,Biography
+1391,The Terminal,128,Comedy
+1392,Lincoln,150,Biography
+1393,Abraham Lincoln: Vampire Hunter,105,History
+1394,The BFG,117,Family
+1395,Day Watch,131,Fantasy
+1396,Unbroken,137,Biography
+1397,Inside Llewyn Davis,105,Drama
+1398,Burn After Reading,96,Comedy
+1399,No Country for Old Men,122,Crime
+1400,The Ladykillers,104,Comedy
+1401,The Ladykillers,97,Comedy
+1402,The Big Lebowski,117,Comedy
+1403,Miller's Crossing,115,Crime
+1404,Outland,109,Science Fiction
+1405,Outlander,115,Science Fiction
+1406,Timecop,98,Science Fiction
+1407,Kung Fu Panda 3,95,Animation
+1408,Universal Soldier,102,Science Fiction
+1409,Double Impact,107,Action
+1410,Death Warrant,89,Action
+1411,Kickboxer,103,Martial Arts
+1412,Cyborg,82,Science Fiction
+1413,Bloodsport,92,Martial Arts
+1414,Brooklyn's Finest,132,Crime
+1415,Full Metal Jacket,116,War
+1416,Eyes Wide Shut,159,Drama
+1417,The Shining,146,Horror
+1418,Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,94,Comedy
+1419,Paths of Glory,88,War
+1420,The Treasure of the Sierra Madre,126,Western
+1421,Key Largo,101,Crime
+1422,The Unforgiven,125,Western
+1423,Unforgiven,131,Western
+1424,The Big Sleep,116,Crime
+1425,A Fistful of Dynamite,157,Western
+1426,To Have and Have Not,100,Romance
+1427,Murder on the Orient Express,131,Crime
+1428,The Shootist,100,Western
+1429,Flash Gordon,114,Science Fiction
+1430,Unforgiven,135,Western
+1431,Hang 'Em High,114,Western
+1432,Coogan's Bluff,93,Action
+1433,Where Eagles Dare,155,War
+1434,Kelly's Heroes,146,War
+1436,The Outlaw Josey Wales,135,Western
+1437,Heartbreak Ridge,130,War
+1438,The Dead Pool,91,Thriller
+1439,Space Cowboys,130,Thriller
+1440,Gran Torino,116,Drama
+1441,Invictus,133,Sport
+1442,American Sniper,132,Biography
+1443,Sully,96,Biography
+1444,J. Edgar,137,Biography
+1445,Changeling,141,Biography
+1446,Blade: Trinity,113,Action
+1447,U.S. Marshals,131,Thriller
+1448,Drop Zone,101,Action
+1449,Demolition Man,115,Action
+1450,Passenger 57,84,Action
+1451,The Princess Bride,98,Fantasy
+1452,The Long Riders,99,Western
+1453,The Wild Bunch,143,Western
+1454,American History X,119,Drama
+1455,Convoy,112,Action
+1456,Cross of Iron,133,War
+1457,The Getaway,122,Crime
+1458,Straw Dogs,117,Thriller
+1459,Judgment at Nuremberg,179,Drama
+1460,The Great Escape,172,War
+1461,Zulu,139,History
+1462,Lucky Number Slevin,110,Crime
+1463,Star Trek Beyond,122,Science Fiction
+1464,Star Trek Into Darkness,133,Science Fiction
+1465,Star Trek,127,Science Fiction
+1466,RoboCop,101,Science Fiction
+1467,RoboCop,118,Science Fiction
+1468,Clerks,92,Comedy
+1469,Mallrats,94,Comedy
+1470,Chasing Amy,113,Romantic Comedy
+1471,Dogma,128,Comedy
+1472,Bronson,92,Crime
+1473,Drive,100,Crime
+1474,Only God Forgives,90,Thriller
+1475,Taxi Driver,113,Drama
+1476,Mean Streets,112,Crime
+1477,Cape Fear,105,Thriller
+1478,"New York, New York",163,Musical
+1479,The King of Comedy,109,Comedy
+1480,The Color of Money,120,Drama
+1481,The Last Temptation of Christ,162,Drama
+1482,The Age of Innocence,139,Romance
+1483,Silence,159,Drama
+1484,The Wolf of Wall Street,179,Biography
+1485,Hugo,126,Adventure
+1486,Shutter Island,138,Thriller
+1487,Zoolander,89,Comedy
+1488,Labyrinth,101,Fantasy
+1489,Willow,126,Fantasy
+1490,Mad Max,93,Action
+1491,Mad Max 2,96,Action
+1492,Mad Max Beyond Thunderdome,107,Action
+1493,Mad Max: Fury Road,120,Action
+1494,Happy Feet Two,100,Animation
+1495,Zoolander 2,102,Comedy
+1496,Dune,136,Science Fiction
+1497,Gods of Egypt,127,Fantasy
+1498,The Nice Guys,116,Comedy
+1499,Kiss Kiss Bang Bang,103,Comedy
+1500,Independence Day: Resurgence,120,Science Fiction
+1501,Ghostbusters,116,Comedy
+1503,Jason Bourne,123,Thriller
+1504,Sausage Party,88,Animation
+1505,Scott Pilgrim vs. the World,112,Comedy
+1506,Death Proof,114,Thriller
+1507,Jackie Brown,154,Crime
+1508,Inglourious Basterds,153,War
+1509,Django Unchained,165,Western
+1510,The Hateful Eight,168,Western
+1511,Bill & Ted's Excellent Adventure,89,Adventure
+1512,Bill & Ted's Bogus Journey,93,Adventure
+1513,The Magnificent Seven,128,Western
+1514,The Magnificent Seven,133,Western
+1515,The Replacement Killers,87,Thriller
+1516,Training Day,122,Crime
+1517,Tears of the Sun,121,War
+1518,King Arthur,142,Adventure
+1519,Shooter,125,Action
+1520,Olympus Has Fallen,119,Action
+1521,The Equalizer,132,Thriller
+1522,Southpaw,123,Drama
+1523,Miss Peregrine's Home for Peculiar Children,127,Fantasy
+1524,Mars Attacks!,106,Science Fiction
+1525,Planet of the Apes,120,Science Fiction
+1526,Big Fish,125,Fantasy
+1527,Dark Shadows,113,Comedy
+1528,Watchmen,163,Action
+1529,Man of Steel,143,Action
+1530,Sucker Punch,109,Action
+1531,Dawn of the Dead,100,Horror
+1532,Jack Reacher: Never Go Back,118,Thriller
+1533,Jack Reacher,130,Thriller
+1534,The Way of the Gun,119,Action
+1535,Fantastic Beasts and Where to Find Them,133,Fantasy
+1536,Moana,107,Animation
+1537,Bad Santa,91,Comedy
+1538,Bad Santa 2,92,Comedy
+1539,Rogue One: A Star Wars Story,133,Science Fiction
+1540,Passengers,116,Science Fiction
+1541,The Imitation Game,114,Biography
+1542,Ex Machina,108,Science Fiction
+1543,Anna Karenina,130,Romance
+1544,Anna Karenina,108,Romance
+1545,Godzilla,123,Action
+1546,Chocolat,121,Romance
+1547,The English Patient,162,Romance
+1548,Near Dark,95,Horror
+1549,Blue Steel,101,Action
+1550,Point Break,122,Action
+1551,Point Break,114,Action
+1552,Invincible,104,Sport
+1553,Strange Days,145,Science Fiction
+1554,K-19: The Widowmaker,138,Thriller
+1555,The Hurt Locker,131,War
+1556,Zero Dark Thirty,157,Thriller
+1557,"Lock, Stock and Two Smoking Barrels",106,Crime
+1558,Snatch,102,Crime
+1559,Revolver,110,Crime
+1560,RocknRolla,114,Crime
+1561,Sherlock Holmes: A Game of Shadows,129,Action
+1562,The Man from U.N.C.L.E.,116,Action
+1563,Prometheus,124,Science Fiction
+1564,Legend,125,Fantasy
+1565,Black Rain,125,Thriller
+1566,Thelma & Louise,129,Adventure
+1567,1492: Conquest of Paradise,142,Adventure
+1568,G.I. Jane,124,War
+1569,Matchstick Men,116,Crime
+1570,Body of Lies,128,Action
+1571,Robin Hood,140,Adventure
+1572,The Counsellor,118,Thriller
+1573,Exodus: Gods and Kings,150,Adventure
+1574,Twilight,121,Awful
+1575,The Girl with the Dragon Tattoo,153,Thriller
+1577,Dead Man Down,117,Crime
+1578,The Girl Who Played with Fire,129,Thriller
+1579,The Girl Who Kicked the Hornets' Nest,147,Thriller
+1580,The Girl with the Dragon Tattoo,158,Thriller
+1581,John Wick,101,Action
+1582,The Seventh Seal,96,Drama
+1583,The Revenant,156,Adventure
+1584,Birdman,119,Comedy
+1585,21 Grams,124,Drama
+1586,Ted,106,Comedy
+1587,Ted 2,115,Comedy
+1588,A Million Ways to Die in the West,116,Comedy
+1589,Hansel & Gretel: Witch Hunters,88,Action
+1590,There Will Be Blood,158,Drama
+1591,Punch-Drunk Love,95,Romance
+1592,The Master,137,Drama
+1593,Inherent Vice,149,Crime
+1594,Boogie Nights,155,Drama
+1595,Innerspace,120,Science Fiction
+1596,Gremlins 2: The New Batch,106,Comedy
+1597,The Punisher,123,Action
+1599,The Theory of Everything,123,Biography
+1600,Looper,118,Science Fiction
+1601,12 Years a Slave,134,Biography
+1602,Prisoners,153,Thriller
+1603,Cowboys & Aliens,118,Science Fiction
+1604,Knight and Day,110,Action
+1605,Man on Wire,94,Documentary
+1606,The Danish Girl,119,Biography
+1607,Jupiter Ascending,127,Science Fiction
+1608,Black Death,101,Adventure
+1609,The Other Boleyn Girl,115,Drama
+1610,Mandela: Long Walk to Freedom,146,Biography
+1612,Les Misérables,158,Musical
+1613,The King's Speech,119,Biography
+1614,Sicario,121,Thriller
+1615,Edge of Tomorrow,113,Science Fiction
+1616,The Adjustment Bureau,106,Science Fiction
+1617,The Wolfman,103,Horror
+1618,Charlie Wilson's War,100,Comedy
+1619,Sin City: A Dame to Kill For,102,Action
+1620,Shame,101,Drama
+1621,Ant-Man,117,Action
+1622,3:10 to Yuma,122,Western
+1623,3:10 to Yuma,92,Western
+1624,The Wolverine,126,Action
+1625,Rush,122,Sport
+1626,Solaris,98,Science Fiction
+1627,Magic Mike,110,Drama
+1628,The Three Musketeers,105,Adventure
+1629,Mr. Holland's Opus,143,Drama
+1630,The Mighty Ducks,101,Comedy
+1631,Young Guns,103,Western
+1632,Young Guns II: Blaze of Glory,104,Western
+1633,The Lost Boys,98,Horror
+1634,Flatliners,115,Horror
+1635,21 Jump Street,109,Comedy
+1636,Cloudy with a Chance of Meatballs,90,Animation
+1637,Anastasia,105,Drama
+1638,Hot Rod,88,Comedy
+1639,Cloudy with a Chance of Meatballs 2,95,Animation
+1640,The Lego Movie,100,Animation
+1641,Bad Boys,119,Action
+1642,22 Jump Street,112,Comedy
+1643,Ice Age: Collision Course,94,Animation
+1644,The Eagle,114,Adventure
+1645,The Last King of Scotland,123,Drama
+1646,Centurion,97,Adventure
+1647,Jason and the Argonauts,101,Fantasy
+1648,Pete's Dragon,134,Fantasy
+1649,Pete's Dragon,102,Fantasy
+1650,One Million Years B.C.,100,Adventure
+1651,The Three Musketeers,105,Adventure
+1652,The Return of the Musketeers,102,Adventure
+1653,Superman III,125,Action
+1654,The Four Musketeers,108,Adventure
+1655,Fantastic Voyage,100,Science Fiction
+1656,Julius Caesar,116,History
+1657,Othello,165,Drama
+1658,Julius Caesar,121,History
+1659,Othello,91,Drama
+1660,King Solomon's Mines,100,Adventure
+1661,King Solomon's Mines,80,Adventure
+1662,East of Eden,117,Drama
+1663,Giant,201,Western
+1664,Rebel Without a Cause,111,Drama
+1665,Miracle on 34th Street,114,Family
+1666,Gentleman's Agreement,118,Drama
+1667,Viva Zapata!,113,Biography
+1668,On the Waterfront,108,Crime
+1669,Ice Cold in Alex,130,War
+1670,The Diary of Anne Frank,180,Drama
+1671,The Greatest Story Ever Told,260,Drama
+1672,A Place in the Sun,122,Drama
+1673,The Talk of the Town,118,Comedy
+1674,Samson and Delilah,128,Drama
+1675,The NeverEnding Story,93,Fantasy
+1676,Enemy Mine,108,Science Fiction
+1677,In the Line of Fire,128,Thriller
+1678,Outbreak,128,Thriller

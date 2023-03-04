@@ -1,0 +1,5 @@
+TV program,Wise Owl rating
+Bananas in Pyjamas,4
+Grange Hill,8
+Pingu,9
+Blue Peter,7

@@ -1,0 +1,4 @@
+﻿Item id,Item name
+1,Owl intestines
+2,Snake eyes
+3,Celery

@@ -1,0 +1,21 @@
+﻿Team,Played,Won,Drawn,Lost,Points
+Chelsea,38,26,9,3,87
+Manchester City,38,24,7,7,79
+Arsenal,38,22,9,7,75
+Manchester United,38,20,10,8,70
+Tottenham Hotspur,38,19,7,12,64
+Liverpool,38,18,8,12,62
+Southampton,38,18,6,14,60
+Swansea City,38,16,8,14,56
+Stoke City,38,15,9,14,54
+Crystal Palace,38,13,9,16,48
+Everton,38,12,11,15,47
+West Ham United,38,12,11,15,47
+West Bromwich Albion,38,11,11,16,44
+Leicester City,38,11,8,19,41
+Newcastle United,38,10,9,19,39
+Sunderland,38,7,17,14,38
+Aston Villa,38,10,8,20,38
+Hull City,38,8,11,19,35
+Burnley,38,7,12,19,33
+Queens Park Rangers,38,8,6,24,30

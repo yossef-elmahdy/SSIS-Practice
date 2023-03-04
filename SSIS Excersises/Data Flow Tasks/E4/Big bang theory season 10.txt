@@ -1,0 +1,20 @@
+Title,Episode number,Series number,First aired
+The Conjugal Conjecture,208,10,19/09/2016
+The Military Miniaturization,209,10,26/09/2016
+The Dependence Transcendence,210,10,03/10/2016
+The Cohabitation Experimentation,211,10,10/10/2016
+The Hot Tub Contamination,212,10,17/10/2016
+The Fetal Kick Catalyst,213,10,27/10/2016
+The Veracity Elasticity,214,10,03/11/2016
+The Brain Bowl Incubation,215,10,10/11/2016
+The Geology Elevation,216,10,17/11/2016
+The Property Division Collision,217,10,01/12/2016
+The Birthday Synchronicity,218,10,15/12/2016
+The Holiday Summation,219,10,05/01/2017
+The Romance Recalibration,220,10,19/01/2017
+The Emotion Detection Automation,221,10,02/02/2017
+The Locomotion Reverberation,222,10,09/02/2017
+The Allowance Evaporation,223,10,16/02/2017
+The Comic-con Conundrum,224,10,23/02/2017
+The Escape Hatch Identification,225,10,09/03/2017
+The Collaboration Fluctuation,226,10,30/03/2017

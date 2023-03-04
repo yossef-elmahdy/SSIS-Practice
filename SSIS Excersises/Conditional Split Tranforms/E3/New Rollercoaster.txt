@@ -1,0 +1,50 @@
+Air,Alton Towers,Steel,Flying,Operating,2002,46.6,MEDIUM
+Boomerang,Pleasure Island Family Theme Park,Steel,Sit Down,Operating,1993,47,LOW
+Cobra,Paultons Park,Steel,Sit Down,Operating,2006,31.1,LOW
+Colossus,Thorpe Park,Steel,Sit Down,Operating,2002,45,LOW
+Corkscrew,Flamingo Land Theme Park & Zoo,Steel,Sit Down,Operating,1983,40,MEDIUM
+Corkscrew,Alton Towers,Steel,Sit Down,Operating,1980,40,MEDIUM
+Crazy Mouse,South Pier,Steel,Sit Down,Operating,1998,29.1,LOW
+Crazy Mouse,Brighton Pier,Steel,Sit Down,Operating,2000,29.1,LOW
+Enigma,Pleasurewood Hills,Steel,Sit Down,Operating,1995,34,LOW
+Express,M&Ds Scotland's Theme Park,Steel,Sit Down,Operating,2006,28,LOW
+Fantasy Mouse,Fantasy Island,Steel,Sit Down,Operating,2000,29.1,LOW
+G Force,Drayton Manor Park,Steel,Sit Down,Operating,2005,43.5,LOW
+Grand National,"Pleasure Beach, Blackpool",Wood,Sit Down,Operating,1935,40,MEDIUM
+Infusion,"Pleasure Beach, Blackpool",Steel,Inverted,Operating,2007,49.7,MEDIUM
+Irn-Bru Revolution,"Pleasure Beach, Blackpool",Steel,Sit Down,Operating,1979,45,MEDIUM
+Jubilee Odyssey,Fantasy Island,Steel,Inverted,Operating,2002,63,MEDIUM
+Jungle Coaster,Legoland Windsor,Steel,Sit Down,Operating,2004,35,LOW
+Knightmare,Camelot Theme Park,Steel,Sit Down,Operating,2007,43.5,LOW
+Kumali,Flamingo Land Theme Park & Zoo,Steel,Inverted,Operating,2006,54.9,MEDIUM
+Magic Mouse,Brean Leisure Park,Steel,Sit Down,Operating,2007,29.1,LOW
+Megafobia,Oakwood Theme Park,Wood,Sit Down,Operating,1996,48,HIGH
+Millennium Roller Coaster,Fantasy Island,Steel,Sit Down,Operating,1999,55.9,LOW
+Nemesis,Alton Towers,Steel,Inverted,Operating,1994,50,MEDIUM
+Nemesis Inferno,Thorpe Park,Steel,Inverted,Operating,2003,47.8,MEDIUM
+New Roller Coaster,New MetroLand,Steel,Sit Down,Operating,1988,26.8,MEDIUM
+Oblivion,Alton Towers,Steel,Sit Down,Operating,1998,68,LOW
+Pepsi Max Big One,"Pleasure Beach, Blackpool",Steel,Sit Down,Operating,1994,74,MEDIUM
+Rage,Adventure Island,Steel,Sit Down,Operating,2007,43.5,LOW
+Rat,Loudoun Castle,Steel,Sit Down,Operating,2005,28,LOW
+Rattlesnake,Chessington World of Adventures,Steel,Sit Down,Operating,1998,28,LOW
+Rhino Coaster,West Midlands Safari Park,Steel,Sit Down,Operating,1992,28.5,LOW
+Rita - Queen of Speed,Alton Towers,Steel,Sit Down,Operating,2005,61.1,LOW
+Roller Coaster,"Pleasure Beach, Blackpool",Wood,Sit Down,Operating,1933,35,MEDIUM
+Roller Coaster,Great Yarmouth Pleasure Beach,Wood,Sit Down,Operating,1932,45,HIGH
+Roller Coaster,Wicksteed Park,Steel,Sit Down,Operating,2000,28,LOW
+Shockwave,Drayton Manor Park,Steel,Stand Up,Operating,1994,53,MEDIUM
+Speed: No Limits,Oakwood Theme Park,Steel,Sit Down,Operating,2006,59,LOW
+Stealth,Thorpe Park,Steel,Sit Down,Operating,2006,80,LOW
+Tornado,M&Ds Scotland's Theme Park,Steel,Sit Down,Operating,1998,44.7,LOW
+Tsunami,M&Ds Scotland's Theme Park,Steel,Inverted,Operating,2004,38,MEDIUM
+Twist and Shout,Loudoun Castle,Steel,Sit Down,Operating,2003,41,LOW
+Twister,Lightwater Valley,Steel,Sit Down,Operating,2001,29.1,LOW
+Ultimate,Lightwater Valley,Steel,Sit Down,Operating,1991,50,LOW
+Vampire,Chessington World of Adventures,Steel,Suspended,Operating,2002,45,MEDIUM
+Velocity,Flamingo Land Theme Park & Zoo,Steel,Sit Down,Operating,2005,54,LOW
+Wall's Twister Ride,West Midlands Safari Park,Steel,Sit Down,Operating,1998,29.1,LOW
+Whirlwind,Camelot Theme Park,Steel,Sit Down,Operating,2003,37.3,LOW
+Wild Mouse,Flamingo Land Theme Park & Zoo,Steel,Sit Down,Operating,1997,28,LOW
+Wipeout,Pleasurewood Hills,Steel,Sit Down,Operating,2007,47,LOW
+X:\ No Way Out,Thorpe Park,Steel,Sit Down,Operating,1996,27.7,LOW

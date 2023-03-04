@@ -1,0 +1,1138 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/19/2017 9:25:04 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="HUMPH"
+  DTS:CreatorName="WISEOWL\Andy.Brown"
+  DTS:DTSID="{C6D58570-C602-4F42-B2C3-A43E0BF058F4}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="13.0.1601.5"
+  DTS:LocaleID="2057"
+  DTS:ObjectName="Revisiting youth"
+  DTS:PackageType="5"
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{EE670BB8-FE09-4895-B7F4-2D6B75CAC9FF}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CSV list]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{B09E5997-BF52-4B36-8A5A-7C7AB221799A}"
+      DTS:ObjectName="CSV list">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="2057"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\ajb\TV programs.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TV program"
+              DTS:DTSID="{B84F2017-B23F-4CE2-ACEA-C3DB9C80265B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Wise Owl rating"
+              DTS:DTSID="{9FB2A82A-52A5-400C-AC18-E62658C5EF80}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel workbook of programmes]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{5053AA85-B6BF-4064-B418-FDF22C1AE990}"
+      DTS:ObjectName="Excel workbook of programmes">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\ajb\TV programs.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Get rid of old programmes"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{72CDE6CC-7ADC-45E7-B66E-29D115FC009B}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Get rid of old programmes"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{548C867D-C15A-45F2-BD64-686786072B0E}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE TvPrograms" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Import and combine two files"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{AEF3E5B9-717A-4A90-A820-D9EE657489F7}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Import and combine two files"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Import and combine two files\Combine two lists"
+              componentClassID="Microsoft.UnionAll"
+              contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
+              name="Combine two lists"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\Import and combine two files\Combine two lists.Inputs[Union All Input 1]"
+                  name="Union All Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import and combine two files\Combine two lists.Inputs[Union All Input 1].Columns[Program]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Program"
+                      lineageId="Package\Import and combine two files\Excel list.Outputs[Excel Source Output].Columns[Program]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import and combine two files\Combine two lists.Outputs[Union All Output 1].Columns[Program]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import and combine two files\Combine two lists.Inputs[Union All Input 1].Columns[Rating]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Rating"
+                      lineageId="Package\Import and combine two files\Excel list.Outputs[Excel Source Output].Columns[Rating]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import and combine two files\Combine two lists.Outputs[Union All Output 1].Columns[Rating]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import and combine two files\Combine two lists.Inputs[Union All Input 1].Columns[ProgramName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="ProgramName"
+                      lineageId="Package\Import and combine two files\Convert data types.Outputs[Data Conversion Output].Columns[ProgramName]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import and combine two files\Combine two lists.Outputs[Union All Output 1].Columns[ProgramName]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import and combine two files\Combine two lists.Inputs[Union All Input 1].Columns[WiseOwlRating]"
+                      cachedDataType="i1"
+                      cachedName="WiseOwlRating"
+                      lineageId="Package\Import and combine two files\Convert data types.Outputs[Data Conversion Output].Columns[WiseOwlRating]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import and combine two files\Combine two lists.Outputs[Union All Output 1].Columns[WiseOwlRating]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Import and combine two files\Combine two lists.Inputs[Union All Input 2]"
+                  hasSideEffects="true"
+                  name="Union All Input 2">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import and combine two files\Combine two lists.Inputs[Union All Input 2].Columns[ProgramName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="ProgramName"
+                      lineageId="Package\Import and combine two files\Convert data types 2.Outputs[Data Conversion Output].Columns[ProgramName]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import and combine two files\Combine two lists.Outputs[Union All Output 1].Columns[ProgramName]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import and combine two files\Combine two lists.Inputs[Union All Input 2].Columns[WiseOwlRating]"
+                      cachedDataType="i1"
+                      cachedName="WiseOwlRating"
+                      lineageId="Package\Import and combine two files\Convert data types 2.Outputs[Data Conversion Output].Columns[WiseOwlRating]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import and combine two files\Combine two lists.Outputs[Union All Output 1].Columns[WiseOwlRating]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Import and combine two files\Combine two lists.Inputs[Union All Input 3]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Union All Input 3">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import and combine two files\Combine two lists.Outputs[Union All Output 1]"
+                  name="Union All Output 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import and combine two files\Combine two lists.Outputs[Union All Output 1].Columns[Program]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Import and combine two files\Combine two lists.Outputs[Union All Output 1].Columns[Program]"
+                      name="Program" />
+                    <outputColumn
+                      refId="Package\Import and combine two files\Combine two lists.Outputs[Union All Output 1].Columns[Rating]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Import and combine two files\Combine two lists.Outputs[Union All Output 1].Columns[Rating]"
+                      name="Rating" />
+                    <outputColumn
+                      refId="Package\Import and combine two files\Combine two lists.Outputs[Union All Output 1].Columns[ProgramName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Import and combine two files\Combine two lists.Outputs[Union All Output 1].Columns[ProgramName]"
+                      name="ProgramName" />
+                    <outputColumn
+                      refId="Package\Import and combine two files\Combine two lists.Outputs[Union All Output 1].Columns[WiseOwlRating]"
+                      dataType="i1"
+                      lineageId="Package\Import and combine two files\Combine two lists.Outputs[Union All Output 1].Columns[WiseOwlRating]"
+                      name="WiseOwlRating" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import and combine two files\Convert data types"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Convert data types"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Import and combine two files\Convert data types.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import and combine two files\Convert data types.Inputs[Data Conversion Input].Columns[Program]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Program"
+                      lineageId="Package\Import and combine two files\Excel list.Outputs[Excel Source Output].Columns[Program]" />
+                    <inputColumn
+                      refId="Package\Import and combine two files\Convert data types.Inputs[Data Conversion Input].Columns[Rating]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Rating"
+                      lineageId="Package\Import and combine two files\Excel list.Outputs[Excel Source Output].Columns[Rating]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import and combine two files\Convert data types.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Import and combine two files\Convert data types.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import and combine two files\Convert data types.Outputs[Data Conversion Output].Columns[ProgramName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Import and combine two files\Convert data types.Outputs[Data Conversion Output].Columns[ProgramName]"
+                      name="ProgramName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Import and combine two files\Excel list.Outputs[Excel Source Output].Columns[Program]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import and combine two files\Convert data types.Outputs[Data Conversion Output].Columns[WiseOwlRating]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import and combine two files\Convert data types.Outputs[Data Conversion Output].Columns[WiseOwlRating]"
+                      name="WiseOwlRating"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Import and combine two files\Excel list.Outputs[Excel Source Output].Columns[Rating]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import and combine two files\Convert data types.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Import and combine two files\Convert data types.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import and combine two files\Convert data types.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import and combine two files\Convert data types.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import and combine two files\Convert data types.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import and combine two files\Convert data types.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import and combine two files\Convert data types 2"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Convert data types 2"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Import and combine two files\Convert data types 2.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import and combine two files\Convert data types 2.Inputs[Data Conversion Input].Columns[TV program]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="TV program"
+                      lineageId="Package\Import and combine two files\CSV list.Outputs[Flat File Source Output].Columns[TV program]" />
+                    <inputColumn
+                      refId="Package\Import and combine two files\Convert data types 2.Inputs[Data Conversion Input].Columns[Wise Owl rating]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Wise Owl rating"
+                      lineageId="Package\Import and combine two files\CSV list.Outputs[Flat File Source Output].Columns[Wise Owl rating]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import and combine two files\Convert data types 2.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Import and combine two files\Convert data types 2.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import and combine two files\Convert data types 2.Outputs[Data Conversion Output].Columns[ProgramName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Import and combine two files\Convert data types 2.Outputs[Data Conversion Output].Columns[ProgramName]"
+                      name="ProgramName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Import and combine two files\CSV list.Outputs[Flat File Source Output].Columns[TV program]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import and combine two files\Convert data types 2.Outputs[Data Conversion Output].Columns[WiseOwlRating]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import and combine two files\Convert data types 2.Outputs[Data Conversion Output].Columns[WiseOwlRating]"
+                      name="WiseOwlRating"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Import and combine two files\CSV list.Outputs[Flat File Source Output].Columns[Wise Owl rating]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import and combine two files\Convert data types 2.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Import and combine two files\Convert data types 2.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import and combine two files\Convert data types 2.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import and combine two files\Convert data types 2.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import and combine two files\Convert data types 2.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import and combine two files\Convert data types 2.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import and combine two files\CSV list"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="2057"
+              name="CSV list"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import and combine two files\CSV list.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[CSV list]"
+                  connectionManagerRefId="Package.ConnectionManagers[CSV list]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Import and combine two files\CSV list.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import and combine two files\CSV list.Outputs[Flat File Source Output].Columns[TV program]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import and combine two files\CSV list.Outputs[Flat File Source Output].ExternalColumns[TV program]"
+                      length="50"
+                      lineageId="Package\Import and combine two files\CSV list.Outputs[Flat File Source Output].Columns[TV program]"
+                      name="TV program"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import and combine two files\CSV list.Outputs[Flat File Source Output].Columns[Wise Owl rating]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import and combine two files\CSV list.Outputs[Flat File Source Output].ExternalColumns[Wise Owl rating]"
+                      length="50"
+                      lineageId="Package\Import and combine two files\CSV list.Outputs[Flat File Source Output].Columns[Wise Owl rating]"
+                      name="Wise Owl rating"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import and combine two files\CSV list.Outputs[Flat File Source Output].ExternalColumns[TV program]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TV program" />
+                    <externalMetadataColumn
+                      refId="Package\Import and combine two files\CSV list.Outputs[Flat File Source Output].ExternalColumns[Wise Owl rating]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Wise Owl rating" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Import and combine two files\CSV list.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import and combine two files\CSV list.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Import and combine two files\CSV list.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Import and combine two files\CSV list.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import and combine two files\CSV list.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import and combine two files\CSV list.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import and combine two files\CSV list.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import and combine two files\Excel list"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Excel list"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">'Programs from Excel$'</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import and combine two files\Excel list.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel workbook of programmes]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel workbook of programmes]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Import and combine two files\Excel list.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import and combine two files\Excel list.Outputs[Excel Source Output].Columns[Program]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import and combine two files\Excel list.Outputs[Excel Source Output].ExternalColumns[Program]"
+                      length="255"
+                      lineageId="Package\Import and combine two files\Excel list.Outputs[Excel Source Output].Columns[Program]"
+                      name="Program"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import and combine two files\Excel list.Outputs[Excel Source Output].Columns[Rating]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import and combine two files\Excel list.Outputs[Excel Source Output].ExternalColumns[Rating]"
+                      length="255"
+                      lineageId="Package\Import and combine two files\Excel list.Outputs[Excel Source Output].Columns[Rating]"
+                      name="Rating"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import and combine two files\Excel list.Outputs[Excel Source Output].ExternalColumns[Program]"
+                      dataType="wstr"
+                      length="255"
+                      name="Program" />
+                    <externalMetadataColumn
+                      refId="Package\Import and combine two files\Excel list.Outputs[Excel Source Output].ExternalColumns[Rating]"
+                      dataType="wstr"
+                      length="255"
+                      name="Rating" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Import and combine two files\Excel list.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import and combine two files\Excel list.Outputs[Excel Source Error Output].Columns[Program]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Import and combine two files\Excel list.Outputs[Excel Source Error Output].Columns[Program]"
+                      name="Program" />
+                    <outputColumn
+                      refId="Package\Import and combine two files\Excel list.Outputs[Excel Source Error Output].Columns[Rating]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Import and combine two files\Excel list.Outputs[Excel Source Error Output].Columns[Rating]"
+                      name="Rating" />
+                    <outputColumn
+                      refId="Package\Import and combine two files\Excel list.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import and combine two files\Excel list.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import and combine two files\Excel list.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import and combine two files\Excel list.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import and combine two files\Final table"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Final table"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[TvPrograms]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import and combine two files\Final table.Connections[OleDbConnection]"
+                  connectionManagerID="{548C867D-C15A-45F2-BD64-686786072B0E}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[__sql2016.Wistful]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import and combine two files\Final table.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import and combine two files\Final table.Inputs[OLE DB Destination Input].Columns[ProgramName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="ProgramName"
+                      externalMetadataColumnId="Package\Import and combine two files\Final table.Inputs[OLE DB Destination Input].ExternalColumns[ProgramName]"
+                      lineageId="Package\Import and combine two files\Combine two lists.Outputs[Union All Output 1].Columns[ProgramName]" />
+                    <inputColumn
+                      refId="Package\Import and combine two files\Final table.Inputs[OLE DB Destination Input].Columns[WiseOwlRating]"
+                      cachedDataType="i1"
+                      cachedName="WiseOwlRating"
+                      externalMetadataColumnId="Package\Import and combine two files\Final table.Inputs[OLE DB Destination Input].ExternalColumns[OwlRating]"
+                      lineageId="Package\Import and combine two files\Combine two lists.Outputs[Union All Output 1].Columns[WiseOwlRating]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import and combine two files\Final table.Inputs[OLE DB Destination Input].ExternalColumns[ProgramId]"
+                      dataType="i4"
+                      name="ProgramId" />
+                    <externalMetadataColumn
+                      refId="Package\Import and combine two files\Final table.Inputs[OLE DB Destination Input].ExternalColumns[ProgramName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="ProgramName" />
+                    <externalMetadataColumn
+                      refId="Package\Import and combine two files\Final table.Inputs[OLE DB Destination Input].ExternalColumns[OwlRating]"
+                      dataType="ui1"
+                      name="OwlRating" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import and combine two files\Final table.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Import and combine two files\Final table.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import and combine two files\Final table.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import and combine two files\Final table.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import and combine two files\Final table.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import and combine two files\Final table.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Import and combine two files.Paths[Data Conversion Output]"
+              endId="Package\Import and combine two files\Combine two lists.Inputs[Union All Input 1]"
+              name="Data Conversion Output"
+              startId="Package\Import and combine two files\Convert data types.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Import and combine two files.Paths[Data Conversion Output1]"
+              endId="Package\Import and combine two files\Combine two lists.Inputs[Union All Input 2]"
+              name="Data Conversion Output"
+              startId="Package\Import and combine two files\Convert data types 2.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Import and combine two files.Paths[Excel Source Output]"
+              endId="Package\Import and combine two files\Convert data types.Inputs[Data Conversion Input]"
+              name="Excel Source Output"
+              startId="Package\Import and combine two files\Excel list.Outputs[Excel Source Output]" />
+            <path
+              refId="Package\Import and combine two files.Paths[Flat File Source Output]"
+              endId="Package\Import and combine two files\Convert data types 2.Inputs[Data Conversion Input]"
+              name="Flat File Source Output"
+              startId="Package\Import and combine two files\CSV list.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Import and combine two files.Paths[Union All Output 1]"
+              endId="Package\Import and combine two files\Final table.Inputs[OLE DB Destination Input]"
+              name="Union All Output 1"
+              startId="Package\Import and combine two files\Combine two lists.Outputs[Union All Output 1]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{13550871-895A-4AE9-8648-CE9BBC1134B6}"
+      DTS:From="Package\Get rid of old programmes"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Import and combine two files" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="216.8,41.6"
+          Id="Package\Import and combine two files"
+          TopLeft="65.7142868333933,95.435295456091" />
+        <NodeLayout
+          Size="202.4,41.6"
+          Id="Package\Get rid of old programmes"
+          TopLeft="79.428572781232,24.4705885784849" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="177.371429807313,66.0705885784849">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,29.3647068776062"
+              Start="0,0"
+              End="0,21.8647068776062">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.8647068776062" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Import and combine two files">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="119.2,41.6"
+          Id="Package\Import and combine two files\Excel list"
+          TopLeft="57.7142866971542,22.0235297206364" />
+        <NodeLayout
+          Size="113.6,41.6"
+          Id="Package\Import and combine two files\CSV list"
+          TopLeft="257.142861521974,23.8588238640228" />
+        <NodeLayout
+          Size="167.2,41.6"
+          Id="Package\Import and combine two files\Convert data types"
+          TopLeft="30.2857148014769,102.776472029636" />
+        <EdgeLayout
+          Id="Package\Import and combine two files.Paths[Excel Source Output]"
+          TopLeft="115.600000749316,63.6235297206364">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39.1529423090001"
+              Start="0,0"
+              End="0,31.6529423090001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.6529423090001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="176.8,41.6"
+          Id="Package\Import and combine two files\Convert data types 2"
+          TopLeft="236.571432600216,100.329413171788" />
+        <EdgeLayout
+          Id="Package\Import and combine two files.Paths[Flat File Source Output]"
+          TopLeft="313.942861521974,65.4588238640228">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="11.0285710782421,34.8705893077652"
+              Start="0,0"
+              End="11.0285710782421,27.3705893077652">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.4352946538826" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.4352946538826"
+                    Point2="0,17.4352946538826"
+                    Point3="4,17.4352946538826" />
+                  <mssgle:LineSegment
+                    End="7.02857107824207,17.4352946538826" />
+                  <mssgle:CubicBezierSegment
+                    Point1="7.02857107824207,17.4352946538826"
+                    Point2="11.0285710782421,17.4352946538826"
+                    Point3="11.0285710782421,21.4352946538826" />
+                  <mssgle:LineSegment
+                    End="11.0285710782421,27.3705893077652" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="161.6,41.6"
+          Id="Package\Import and combine two files\Combine two lists"
+          TopLeft="160.571431305944,191.482355626644" />
+        <EdgeLayout
+          Id="Package\Import and combine two files.Paths[Data Conversion Output]"
+          TopLeft="113.885714801477,144.376472029636">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="101.885716504467,47.1058835970077"
+              Start="0,0"
+              End="101.885716504467,39.6058835970077">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.9864367252811" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.9864367252811"
+                    Point2="0,27.9864367252811"
+                    Point3="4,27.9864367252811" />
+                  <mssgle:LineSegment
+                    End="97.8857165044668,27.9864367252811" />
+                  <mssgle:CubicBezierSegment
+                    Point1="97.8857165044668,27.9864367252811"
+                    Point2="101.885716504467,27.9864367252811"
+                    Point3="101.885716504467,31.9864367252811" />
+                  <mssgle:LineSegment
+                    End="101.885716504467,39.6058835970077" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import and combine two files.Paths[Data Conversion Output1]"
+          TopLeft="324.971432600216,141.929413171788">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-58.0000012942723,49.5529424548562"
+              Start="0,0"
+              End="-58.0000012942723,42.0529424548562">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.4402775761204" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.4402775761204"
+                    Point2="0,29.4402775761204"
+                    Point3="-4,29.4402775761204" />
+                  <mssgle:LineSegment
+                    End="-54.0000012942723,29.4402775761204" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-54.0000012942723,29.4402775761204"
+                    Point2="-58.0000012942723,29.4402775761204"
+                    Point3="-58.0000012942723,33.4402775761205" />
+                  <mssgle:LineSegment
+                    End="-58.0000012942723,42.0529424548562" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="127.2,41.6"
+          Id="Package\Import and combine two files\Final table"
+          TopLeft="163.428574211743,272.235297935644" />
+        <EdgeLayout
+          Id="Package\Import and combine two files.Paths[Union All Output 1]"
+          TopLeft="241.371431305944,233.082355626644">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-14.3428570942003,39.1529423090001"
+              Start="0,0"
+              End="-14.3428570942003,31.6529423090001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.5764711545" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.5764711545"
+                    Point2="0,19.5764711545"
+                    Point3="-4,19.5764711545" />
+                  <mssgle:LineSegment
+                    End="-10.3428570942003,19.5764711545" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-10.3428570942003,19.5764711545"
+                    Point2="-14.3428570942003,19.5764711545"
+                    Point3="-14.3428570942003,23.5764711545" />
+                  <mssgle:LineSegment
+                    End="-14.3428570942003,31.6529423090001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import and combine two files\Excel list">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import and combine two files\Final table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

@@ -1,0 +1,798 @@
+﻿Id,ShopDate,Store,Item,Shelf,Unit,Quantity, Price 
+1,1/3/2017,Tesco,Gala apples,Fruit and veg,Kilogram,1, 0.80 
+2,1/3/2017,Tesco,Bramley apples,Fruit and veg,Kilogram,1, 0.98 
+3,1/3/2017,Tesco,Bananas,Fruit and veg,Kilogram,1, 0.68 
+4,1/3/2017,Tesco,Semi-skimmed milk,Dairy,4 pint bottle,1, 1.22 
+5,1/3/2017,Tesco,Own brand yoghurts,Dairy,Each,1, 0.45 
+6,1/3/2017,Tesco,Cheddar,Dairy,Kilogram,3, 2.20 
+7,1/3/2017,Tesco,Muesli,Groceries,Kilogram bag,2, 2.47 
+8,1/3/2017,Tesco,Special K red berries,Groceries,500gm box,1, 3.00 
+9,1/3/2017,Tesco,Multigrain bread,Groceries,500 gm loaf,1, 0.97 
+10,1/3/2017,Tesco,Potatoes,Fruit and veg,Kilogram,1, 0.71 
+11,1/3/2017,Tesco,Onions,Fruit and veg,Kilogram,1, 0.60 
+12,1/3/2017,Tesco,Butter,Dairy,250 gm pack,1, 1.41 
+13,1/3/2017,Tesco,Coffee beans,Groceries,Standard box,3, 2.32 
+14,1/3/2017,Tesco,Vimto squash,Groceries,Standard bottle,1, 1.31 
+15,1/3/2017,Tesco,Tomato ketchup,Groceries,Standard bottle,2, 0.87 
+16,1/3/2017,Tesco,Eggs,Groceries,Box of 12 large,2, 1.78 
+17,1/6/2017,Marks and Spencer,Broccoli,Fruit and veg,Kilogram,1, 0.68 
+18,1/6/2017,Marks and Spencer,Semi-skimmed milk,Dairy,4 pint bottle,3, 1.36 
+19,1/6/2017,Marks and Spencer,Activia yoghurts,Dairy,4 pack,2, 1.49 
+20,1/6/2017,Marks and Spencer,Muesli,Groceries,Kilogram bag,2, 2.94 
+21,1/6/2017,Marks and Spencer,Beef mince,Meat,Kilogram,3, 5.21 
+22,1/6/2017,Marks and Spencer,Potatoes,Fruit and veg,Kilogram,1, 0.82 
+23,1/6/2017,Marks and Spencer,Onions,Fruit and veg,Kilogram,3, 0.68 
+24,1/6/2017,Marks and Spencer,Teabags,Groceries,Box of 80,2, 1.39 
+25,1/6/2017,Marks and Spencer,Coffee beans,Groceries,Standard box,1, 2.69 
+26,1/6/2017,Marks and Spencer,Vimto squash,Groceries,Standard bottle,3, 1.49 
+27,1/6/2017,Marks and Spencer,Baked beans,Groceries,4 tin pack,1, 1.60 
+28,1/6/2017,Marks and Spencer,Tomato ketchup,Groceries,Standard bottle,1, 0.97 
+29,1/6/2017,Marks and Spencer,Margarita pizzas,Groceries,"12"" diameter",1, 2.82 
+30,1/24/2017,Tesco,Bramley apples,Fruit and veg,Kilogram,2, 1.00 
+31,1/24/2017,Tesco,Broccoli,Fruit and veg,Kilogram,1, 0.58 
+32,1/24/2017,Tesco,Semi-skimmed milk,Dairy,4 pint bottle,1, 1.21 
+33,1/24/2017,Tesco,Special K red berries,Groceries,500gm box,1, 2.94 
+34,1/24/2017,Tesco,Beef mince,Meat,Kilogram,1, 4.63 
+35,1/24/2017,Tesco,Onions,Fruit and veg,Kilogram,1, 0.58 
+36,1/24/2017,Tesco,Butter,Dairy,250 gm pack,1, 1.37 
+37,1/24/2017,Tesco,Teabags,Groceries,Box of 80,1, 1.23 
+38,1/24/2017,Tesco,Tomato ketchup,Groceries,Standard bottle,2, 0.85 
+39,1/24/2017,Tesco,Margarita pizzas,Groceries,"12"" diameter",1, 2.50 
+40,1/28/2017,Asda,Gala apples,Fruit and veg,Kilogram,1, 0.75 
+41,1/28/2017,Asda,Bananas,Fruit and veg,Kilogram,1, 0.65 
+42,1/28/2017,Asda,Broccoli,Fruit and veg,Kilogram,3, 0.57 
+43,1/28/2017,Asda,Semi-skimmed milk,Dairy,4 pint bottle,1, 1.13 
+44,1/28/2017,Asda,Activia yoghurts,Dairy,4 pack,2, 1.24 
+45,1/28/2017,Asda,Own brand yoghurts,Dairy,Each,1, 0.42 
+46,1/28/2017,Asda,Cheddar,Dairy,Kilogram,2, 2.08 
+47,1/28/2017,Asda,White sliced bread,Groceries,500 gm loaf,1, 0.73 
+48,1/28/2017,Asda,Onions,Fruit and veg,Kilogram,1, 0.55 
+49,1/28/2017,Asda,Butter,Dairy,250 gm pack,3, 1.31 
+50,1/28/2017,Asda,Baked beans,Groceries,4 tin pack,1, 1.34 
+51,1/28/2017,Asda,Margarita pizzas,Groceries,"12"" diameter",1, 2.34 
+52,2/2/2017,Marks and Spencer,Gala apples,Fruit and veg,Kilogram,2, 0.94 
+53,2/2/2017,Marks and Spencer,Chicken portions,Meat,Kilogram,2, 1.72 
+54,2/2/2017,Marks and Spencer,Semi-skimmed milk,Dairy,4 pint bottle,1, 1.40 
+55,2/2/2017,Marks and Spencer,Activia yoghurts,Dairy,4 pack,3, 1.46 
+56,2/2/2017,Marks and Spencer,Own brand yoghurts,Dairy,Each,1, 0.52 
+57,2/2/2017,Marks and Spencer,Cheddar,Dairy,Kilogram,3, 2.52 
+58,2/2/2017,Marks and Spencer,Muesli,Groceries,Kilogram bag,1, 2.89 
+59,2/2/2017,Marks and Spencer,Special K red berries,Groceries,500gm box,1, 3.38 
+60,2/2/2017,Marks and Spencer,Beef mince,Meat,Kilogram,1, 5.26 
+61,2/2/2017,Marks and Spencer,Potatoes,Fruit and veg,Kilogram,1, 0.79 
+62,2/2/2017,Marks and Spencer,Onions,Fruit and veg,Kilogram,1, 0.70 
+63,2/2/2017,Marks and Spencer,Butter,Dairy,250 gm pack,1, 1.63 
+64,2/2/2017,Marks and Spencer,Teabags,Groceries,Box of 80,1, 1.40 
+65,2/2/2017,Marks and Spencer,Coffee beans,Groceries,Standard box,2, 2.62 
+66,2/2/2017,Marks and Spencer,Baked beans,Groceries,4 tin pack,1, 1.62 
+67,2/3/2017,Morrison,Cheddar,Dairy,Kilogram,1, 2.20 
+68,2/3/2017,Morrison,Special K red berries,Groceries,500gm box,1, 2.88 
+69,2/3/2017,Morrison,Beef mince,Meat,Kilogram,3, 4.50 
+70,2/3/2017,Morrison,Teabags,Groceries,Box of 80,1, 1.18 
+71,2/3/2017,Morrison,Baked beans,Groceries,4 tin pack,1, 1.34 
+72,2/3/2017,Morrison,Margarita pizzas,Groceries,"12"" diameter",1, 2.45 
+73,2/5/2017,Independent,Bramley apples,Fruit and veg,Kilogram,1, 1.23 
+74,2/5/2017,Independent,Carrots,Fruit and veg,Kilogram,3, 0.63 
+75,2/5/2017,Independent,Semi-skimmed milk,Dairy,4 pint bottle,3, 1.53 
+76,2/5/2017,Independent,Own brand yoghurts,Dairy,Each,1, 0.56 
+77,2/5/2017,Independent,Muesli,Groceries,Kilogram bag,1, 3.14 
+78,2/5/2017,Independent,Beef mince,Meat,Kilogram,3, 5.66 
+79,2/5/2017,Independent,Potatoes,Fruit and veg,Kilogram,1, 0.86 
+80,2/5/2017,Independent,Onions,Fruit and veg,Kilogram,3, 0.75 
+81,2/5/2017,Independent,Vimto squash,Groceries,Standard bottle,1, 1.59 
+82,2/5/2017,Independent,Baked beans,Groceries,4 tin pack,1, 1.77 
+83,2/5/2017,Independent,Tomato ketchup,Groceries,Standard bottle,3, 1.04 
+84,2/5/2017,Independent,Margarita pizzas,Groceries,"12"" diameter",1, 3.17 
+85,2/10/2017,Aldi,Broccoli,Fruit and veg,Kilogram,1, 0.53 
+86,2/10/2017,Aldi,Carrots,Fruit and veg,Kilogram,3, 0.46 
+87,2/10/2017,Aldi,Chicken portions,Meat,Kilogram,1, 1.36 
+88,2/10/2017,Aldi,Semi-skimmed milk,Dairy,4 pint bottle,1, 1.10 
+89,2/10/2017,Aldi,Own brand yoghurts,Dairy,Each,2, 0.40 
+90,2/10/2017,Aldi,Special K red berries,Groceries,500gm box,1, 2.72 
+91,2/10/2017,Aldi,Potatoes,Fruit and veg,Kilogram,1, 0.63 
+92,2/10/2017,Aldi,Onions,Fruit and veg,Kilogram,1, 0.55 
+93,2/10/2017,Aldi,Vimto squash,Groceries,Standard bottle,1, 1.14 
+94,2/10/2017,Aldi,Baked beans,Groceries,4 tin pack,1, 1.27 
+95,2/10/2017,Aldi,Tomato ketchup,Groceries,Standard bottle,1, 0.75 
+96,2/10/2017,Aldi,Eggs,Groceries,Box of 12 large,3, 1.63 
+97,2/12/2017,Marks and Spencer,Bramley apples,Fruit and veg,Kilogram,1, 1.15 
+98,2/12/2017,Marks and Spencer,Bananas,Fruit and veg,Kilogram,1, 0.82 
+99,2/12/2017,Marks and Spencer,Chicken portions,Meat,Kilogram,2, 1.73 
+100,2/12/2017,Marks and Spencer,Activia yoghurts,Dairy,4 pack,1, 1.46 
+101,2/12/2017,Marks and Spencer,Cheddar,Dairy,Kilogram,1, 2.57 
+102,2/12/2017,Marks and Spencer,Special K red berries,Groceries,500gm box,1, 3.47 
+103,2/12/2017,Marks and Spencer,Multigrain bread,Groceries,500 gm loaf,1, 1.10 
+104,2/12/2017,Marks and Spencer,Butter,Dairy,250 gm pack,1, 1.63 
+105,2/12/2017,Marks and Spencer,Vimto squash,Groceries,Standard bottle,3, 1.49 
+106,2/12/2017,Marks and Spencer,Eggs,Groceries,Box of 12 large,1, 2.12 
+107,2/15/2017,Tesco,Bramley apples,Fruit and veg,Kilogram,3, 0.98 
+108,2/15/2017,Tesco,Bananas,Fruit and veg,Kilogram,3, 0.70 
+109,2/15/2017,Tesco,Special K red berries,Groceries,500gm box,1, 3.02 
+110,2/15/2017,Tesco,Multigrain bread,Groceries,500 gm loaf,2, 0.94 
+111,2/15/2017,Tesco,White sliced bread,Groceries,500 gm loaf,1, 0.77 
+112,2/15/2017,Tesco,Potatoes,Fruit and veg,Kilogram,1, 0.71 
+113,2/15/2017,Tesco,Teabags,Groceries,Box of 80,1, 1.20 
+114,2/15/2017,Tesco,Vimto squash,Groceries,Standard bottle,1, 1.28 
+115,2/15/2017,Tesco,Baked beans,Groceries,4 tin pack,1, 1.40 
+116,2/15/2017,Tesco,Eggs,Groceries,Box of 12 large,1, 1.83 
+117,2/15/2017,Tesco,Margarita pizzas,Groceries,"12"" diameter",2, 2.45 
+118,2/18/2017,Independent,Bramley apples,Fruit and veg,Kilogram,1, 1.26 
+119,2/18/2017,Independent,Bananas,Fruit and veg,Kilogram,1, 0.89 
+120,2/18/2017,Independent,Broccoli,Fruit and veg,Kilogram,1, 0.76 
+121,2/18/2017,Independent,Carrots,Fruit and veg,Kilogram,1, 0.62 
+122,2/18/2017,Independent,Semi-skimmed milk,Dairy,4 pint bottle,1, 1.53 
+123,2/18/2017,Independent,Activia yoghurts,Dairy,4 pack,1, 1.62 
+124,2/18/2017,Independent,Cheddar,Dairy,Kilogram,2, 2.75 
+125,2/18/2017,Independent,Beef mince,Meat,Kilogram,1, 5.66 
+126,2/18/2017,Independent,Multigrain bread,Groceries,500 gm loaf,1, 1.20 
+127,2/18/2017,Independent,Potatoes,Fruit and veg,Kilogram,1, 0.88 
+128,2/18/2017,Independent,Onions,Fruit and veg,Kilogram,1, 0.73 
+129,2/18/2017,Independent,Teabags,Groceries,Box of 80,1, 1.53 
+130,2/18/2017,Independent,Coffee beans,Groceries,Standard box,1, 2.82 
+131,2/18/2017,Independent,Vimto squash,Groceries,Standard bottle,1, 1.62 
+132,2/18/2017,Independent,Margarita pizzas,Groceries,"12"" diameter",1, 3.12 
+133,2/22/2017,Morrison,Gala apples,Fruit and veg,Kilogram,1, 0.76 
+134,2/22/2017,Morrison,Bananas,Fruit and veg,Kilogram,1, 0.70 
+135,2/22/2017,Morrison,Semi-skimmed milk,Dairy,4 pint bottle,1, 1.15 
+136,2/22/2017,Morrison,Own brand yoghurts,Dairy,Each,2, 0.43 
+137,2/22/2017,Morrison,Cheddar,Dairy,Kilogram,3, 2.15 
+138,2/22/2017,Morrison,Special K red berries,Groceries,500gm box,3, 2.97 
+139,2/22/2017,Morrison,White sliced bread,Groceries,500 gm loaf,3, 0.72 
+140,2/22/2017,Morrison,Onions,Fruit and veg,Kilogram,2, 0.60 
+141,2/22/2017,Morrison,Butter,Dairy,250 gm pack,3, 1.41 
+142,2/22/2017,Morrison,Teabags,Groceries,Box of 80,1, 1.16 
+143,2/22/2017,Morrison,Margarita pizzas,Groceries,"12"" diameter",1, 2.42 
+144,2/26/2017,Sainsbury,Chicken portions,Meat,Kilogram,1, 1.55 
+145,2/26/2017,Sainsbury,Semi-skimmed milk,Dairy,4 pint bottle,1, 1.25 
+146,2/26/2017,Sainsbury,Muesli,Groceries,Kilogram bag,1, 2.62 
+147,2/26/2017,Sainsbury,Special K red berries,Groceries,500gm box,1, 3.23 
+148,2/26/2017,Sainsbury,Beef mince,Meat,Kilogram,1, 4.63 
+149,2/26/2017,Sainsbury,Multigrain bread,Groceries,500 gm loaf,2, 1.01 
+150,2/26/2017,Sainsbury,Potatoes,Fruit and veg,Kilogram,1, 0.72 
+151,2/26/2017,Sainsbury,Butter,Dairy,250 gm pack,1, 1.46 
+152,2/26/2017,Sainsbury,Teabags,Groceries,Box of 80,1, 1.29 
+153,2/26/2017,Sainsbury,Vimto squash,Groceries,Standard bottle,1, 1.39 
+154,2/26/2017,Sainsbury,Tomato ketchup,Groceries,Standard bottle,1, 0.91 
+155,3/3/2017,Tesco,Bramley apples,Fruit and veg,Kilogram,1, 1.00 
+156,3/3/2017,Tesco,Broccoli,Fruit and veg,Kilogram,2, 0.59 
+157,3/3/2017,Tesco,Semi-skimmed milk,Dairy,4 pint bottle,1, 1.17 
+158,3/3/2017,Tesco,Activia yoghurts,Dairy,4 pack,1, 1.30 
+159,3/3/2017,Tesco,Own brand yoghurts,Dairy,Each,1, 0.45 
+160,3/3/2017,Tesco,Cheddar,Dairy,Kilogram,2, 2.26 
+161,3/3/2017,Tesco,Muesli,Groceries,Kilogram bag,3, 2.50 
+162,3/3/2017,Tesco,Special K red berries,Groceries,500gm box,1, 3.05 
+163,3/3/2017,Tesco,White sliced bread,Groceries,500 gm loaf,1, 0.75 
+164,3/3/2017,Tesco,Potatoes,Fruit and veg,Kilogram,2, 0.69 
+165,3/3/2017,Tesco,Butter,Dairy,250 gm pack,2, 1.38 
+166,3/3/2017,Tesco,Teabags,Groceries,Box of 80,3, 1.23 
+167,3/3/2017,Tesco,Vimto squash,Groceries,Standard bottle,2, 1.32 
+168,3/3/2017,Tesco,Margarita pizzas,Groceries,"12"" diameter",1, 2.57 
+169,3/5/2017,Independent,Gala apples,Fruit and veg,Kilogram,1, 1.00 
+170,3/5/2017,Independent,Broccoli,Fruit and veg,Kilogram,2, 0.75 
+171,3/5/2017,Independent,Semi-skimmed milk,Dairy,4 pint bottle,3, 1.50 
+172,3/5/2017,Independent,Activia yoghurts,Dairy,4 pack,2, 1.61 
+173,3/5/2017,Independent,Cheddar,Dairy,Kilogram,1, 2.77 
+174,3/5/2017,Independent,Muesli,Groceries,Kilogram bag,1, 3.17 
+175,3/5/2017,Independent,Special K red berries,Groceries,500gm box,1, 3.75 
+176,3/5/2017,Independent,Beef mince,Meat,Kilogram,3, 5.62 
+177,3/5/2017,Independent,Potatoes,Fruit and veg,Kilogram,1, 0.88 
+178,3/5/2017,Independent,Onions,Fruit and veg,Kilogram,1, 0.76 
+179,3/5/2017,Independent,Teabags,Groceries,Box of 80,1, 1.50 
+180,3/5/2017,Independent,Coffee beans,Groceries,Standard box,2, 2.85 
+181,3/5/2017,Independent,Vimto squash,Groceries,Standard bottle,3, 1.62 
+182,3/5/2017,Independent,Baked beans,Groceries,4 tin pack,1, 1.73 
+183,3/5/2017,Independent,Eggs,Groceries,Box of 12 large,1, 2.30 
+184,3/5/2017,Independent,Margarita pizzas,Groceries,"12"" diameter",1, 3.12 
+185,3/10/2017,Aldi,Special K red berries,Groceries,500gm box,1, 2.66 
+186,3/10/2017,Aldi,Multigrain bread,Groceries,500 gm loaf,2, 0.84 
+187,3/10/2017,Aldi,Potatoes,Fruit and veg,Kilogram,3, 0.65 
+188,3/10/2017,Aldi,Onions,Fruit and veg,Kilogram,1, 0.54 
+189,3/10/2017,Aldi,Butter,Dairy,250 gm pack,1, 1.28 
+190,3/10/2017,Aldi,Teabags,Groceries,Box of 80,3, 1.09 
+191,3/10/2017,Aldi,Coffee beans,Groceries,Standard box,1, 2.06 
+192,3/10/2017,Aldi,Vimto squash,Groceries,Standard bottle,1, 1.20 
+193,3/10/2017,Aldi,Tomato ketchup,Groceries,Standard bottle,1, 0.78 
+194,3/10/2017,Aldi,Eggs,Groceries,Box of 12 large,1, 1.63 
+195,3/10/2017,Aldi,Margarita pizzas,Groceries,"12"" diameter",1, 2.19 
+196,3/14/2017,Independent,Gala apples,Fruit and veg,Kilogram,1, 1.02 
+197,3/14/2017,Independent,Broccoli,Fruit and veg,Kilogram,3, 0.76 
+198,3/14/2017,Independent,Carrots,Fruit and veg,Kilogram,2, 0.62 
+199,3/14/2017,Independent,Chicken portions,Meat,Kilogram,2, 1.87 
+200,3/14/2017,Independent,Semi-skimmed milk,Dairy,4 pint bottle,1, 1.50 
+201,3/14/2017,Independent,Activia yoghurts,Dairy,4 pack,1, 1.61 
+202,3/14/2017,Independent,Cheddar,Dairy,Kilogram,2, 2.79 
+203,3/14/2017,Independent,Multigrain bread,Groceries,500 gm loaf,3, 1.21 
+204,3/14/2017,Independent,Potatoes,Fruit and veg,Kilogram,2, 0.88 
+205,3/14/2017,Independent,Onions,Fruit and veg,Kilogram,2, 0.75 
+206,3/14/2017,Independent,Teabags,Groceries,Box of 80,1, 1.52 
+207,3/14/2017,Independent,Tomato ketchup,Groceries,Standard bottle,1, 1.06 
+208,3/14/2017,Independent,Margarita pizzas,Groceries,"12"" diameter",3, 3.10 
+209,3/19/2017,Independent,Bananas,Fruit and veg,Kilogram,1, 0.88 
+210,3/19/2017,Independent,Broccoli,Fruit and veg,Kilogram,3, 0.74 
+211,3/19/2017,Independent,Chicken portions,Meat,Kilogram,1, 1.87 
+212,3/19/2017,Independent,Cheddar,Dairy,Kilogram,1, 2.75 
+213,3/19/2017,Independent,Special K red berries,Groceries,500gm box,3, 3.77 
+214,3/19/2017,Independent,Beef mince,Meat,Kilogram,1, 5.71 
+215,3/19/2017,Independent,Multigrain bread,Groceries,500 gm loaf,1, 1.20 
+216,3/19/2017,Independent,White sliced bread,Groceries,500 gm loaf,3, 0.93 
+217,3/19/2017,Independent,Potatoes,Fruit and veg,Kilogram,1, 0.86 
+218,3/19/2017,Independent,Onions,Fruit and veg,Kilogram,1, 0.75 
+219,3/19/2017,Independent,Butter,Dairy,250 gm pack,1, 1.77 
+220,3/19/2017,Independent,Coffee beans,Groceries,Standard box,1, 2.89 
+221,3/19/2017,Independent,Vimto squash,Groceries,Standard bottle,1, 1.59 
+222,3/19/2017,Independent,Baked beans,Groceries,4 tin pack,3, 1.72 
+223,3/19/2017,Independent,Eggs,Groceries,Box of 12 large,1, 2.21 
+224,3/19/2017,Independent,Margarita pizzas,Groceries,"12"" diameter",3, 3.19 
+225,4/5/2017,Independent,Gala apples,Fruit and veg,Kilogram,1, 0.98 
+226,4/5/2017,Independent,Bananas,Fruit and veg,Kilogram,3, 0.86 
+227,4/5/2017,Independent,Broccoli,Fruit and veg,Kilogram,1, 0.75 
+228,4/5/2017,Independent,Chicken portions,Meat,Kilogram,3, 1.90 
+229,4/5/2017,Independent,Activia yoghurts,Dairy,4 pack,2, 1.66 
+230,4/5/2017,Independent,Muesli,Groceries,Kilogram bag,1, 3.14 
+231,4/5/2017,Independent,Beef mince,Meat,Kilogram,2, 5.71 
+232,4/5/2017,Independent,Multigrain bread,Groceries,500 gm loaf,3, 1.16 
+233,4/5/2017,Independent,Potatoes,Fruit and veg,Kilogram,1, 0.89 
+234,4/5/2017,Independent,Onions,Fruit and veg,Kilogram,1, 0.74 
+235,4/5/2017,Independent,Butter,Dairy,250 gm pack,2, 1.77 
+236,4/5/2017,Independent,Vimto squash,Groceries,Standard bottle,3, 1.61 
+237,4/5/2017,Independent,Baked beans,Groceries,4 tin pack,1, 1.76 
+238,4/5/2017,Independent,Tomato ketchup,Groceries,Standard bottle,1, 1.05 
+239,4/13/2017,Waitrose,Bramley apples,Fruit and veg,Kilogram,1, 1.21 
+240,4/13/2017,Waitrose,Bananas,Fruit and veg,Kilogram,3, 0.83 
+241,4/13/2017,Waitrose,Carrots,Fruit and veg,Kilogram,1, 0.61 
+242,4/13/2017,Waitrose,Chicken portions,Meat,Kilogram,1, 1.84 
+243,4/13/2017,Waitrose,Semi-skimmed milk,Dairy,4 pint bottle,1, 1.45 
+244,4/13/2017,Waitrose,Own brand yoghurts,Dairy,Each,1, 0.54 
+245,4/13/2017,Waitrose,Beef mince,Meat,Kilogram,1, 5.44 
+246,4/13/2017,Waitrose,Potatoes,Fruit and veg,Kilogram,1, 0.82 
+247,4/13/2017,Waitrose,Onions,Fruit and veg,Kilogram,1, 0.70 
+248,4/13/2017,Waitrose,Butter,Dairy,250 gm pack,1, 1.69 
+249,4/13/2017,Waitrose,Coffee beans,Groceries,Standard box,3, 2.71 
+250,4/13/2017,Waitrose,Margarita pizzas,Groceries,"12"" diameter",1, 2.95 
+251,4/17/2017,Independent,Gala apples,Fruit and veg,Kilogram,1, 1.00 
+252,4/17/2017,Independent,Bananas,Fruit and veg,Kilogram,3, 0.88 
+253,4/17/2017,Independent,Broccoli,Fruit and veg,Kilogram,3, 0.75 
+254,4/17/2017,Independent,Semi-skimmed milk,Dairy,4 pint bottle,1, 1.48 
+255,4/17/2017,Independent,Activia yoghurts,Dairy,4 pack,1, 1.61 
+256,4/17/2017,Independent,Cheddar,Dairy,Kilogram,1, 2.77 
+257,4/17/2017,Independent,White sliced bread,Groceries,500 gm loaf,1, 0.92 
+258,4/17/2017,Independent,Butter,Dairy,250 gm pack,1, 1.77 
+259,4/17/2017,Independent,Baked beans,Groceries,4 tin pack,1, 1.75 
+260,4/17/2017,Independent,Tomato ketchup,Groceries,Standard bottle,1, 1.04 
+261,5/7/2017,Waitrose,Gala apples,Fruit and veg,Kilogram,1, 0.95 
+262,5/7/2017,Waitrose,Bramley apples,Fruit and veg,Kilogram,3, 1.19 
+263,5/7/2017,Waitrose,Bananas,Fruit and veg,Kilogram,1, 0.84 
+264,5/7/2017,Waitrose,Carrots,Fruit and veg,Kilogram,3, 0.61 
+265,5/7/2017,Waitrose,Chicken portions,Meat,Kilogram,2, 1.84 
+266,5/7/2017,Waitrose,Activia yoghurts,Dairy,4 pack,3, 1.56 
+267,5/7/2017,Waitrose,Cheddar,Dairy,Kilogram,3, 2.61 
+268,5/7/2017,Waitrose,Muesli,Groceries,Kilogram bag,1, 3.02 
+269,5/7/2017,Waitrose,White sliced bread,Groceries,500 gm loaf,1, 0.90 
+270,5/7/2017,Waitrose,Potatoes,Fruit and veg,Kilogram,2, 0.83 
+271,5/7/2017,Waitrose,Butter,Dairy,250 gm pack,1, 1.72 
+272,5/7/2017,Waitrose,Teabags,Groceries,Box of 80,1, 1.45 
+273,5/7/2017,Waitrose,Vimto squash,Groceries,Standard bottle,1, 1.53 
+274,5/7/2017,Waitrose,Baked beans,Groceries,4 tin pack,2, 1.68 
+275,5/7/2017,Waitrose,Tomato ketchup,Groceries,Standard bottle,1, 1.02 
+276,5/8/2017,Waitrose,Gala apples,Fruit and veg,Kilogram,1, 0.97 
+277,5/8/2017,Waitrose,Bramley apples,Fruit and veg,Kilogram,1, 1.23 
+278,5/8/2017,Waitrose,Bananas,Fruit and veg,Kilogram,2, 0.82 
+279,5/8/2017,Waitrose,Carrots,Fruit and veg,Kilogram,1, 0.59 
+280,5/8/2017,Waitrose,Chicken portions,Meat,Kilogram,1, 1.81 
+281,5/8/2017,Waitrose,Own brand yoghurts,Dairy,Each,2, 0.53 
+282,5/8/2017,Waitrose,Cheddar,Dairy,Kilogram,1, 2.66 
+283,5/8/2017,Waitrose,Special K red berries,Groceries,500gm box,1, 3.69 
+284,5/8/2017,Waitrose,Multigrain bread,Groceries,500 gm loaf,1, 1.15 
+285,5/8/2017,Waitrose,Onions,Fruit and veg,Kilogram,1, 0.72 
+286,5/8/2017,Waitrose,Teabags,Groceries,Box of 80,1, 1.41 
+287,5/8/2017,Waitrose,Baked beans,Groceries,4 tin pack,1, 1.66 
+288,5/8/2017,Waitrose,Margarita pizzas,Groceries,"12"" diameter",3, 3.05 
+289,5/14/2017,Independent,Bananas,Fruit and veg,Kilogram,3, 0.88 
+290,5/14/2017,Independent,Carrots,Fruit and veg,Kilogram,2, 0.63 
+291,5/14/2017,Independent,Activia yoghurts,Dairy,4 pack,1, 1.62 
+292,5/14/2017,Independent,Cheddar,Dairy,Kilogram,1, 2.81 
+293,5/14/2017,Independent,Beef mince,Meat,Kilogram,2, 5.75 
+294,5/14/2017,Independent,Onions,Fruit and veg,Kilogram,1, 0.73 
+295,5/14/2017,Independent,Butter,Dairy,250 gm pack,1, 1.79 
+296,5/14/2017,Independent,Coffee beans,Groceries,Standard box,1, 2.87 
+297,5/14/2017,Independent,Eggs,Groceries,Box of 12 large,1, 2.28 
+298,5/14/2017,Independent,Margarita pizzas,Groceries,"12"" diameter",1, 3.14 
+299,5/19/2017,Independent,Gala apples,Fruit and veg,Kilogram,1, 0.99 
+300,5/19/2017,Independent,Bramley apples,Fruit and veg,Kilogram,3, 1.26 
+301,5/19/2017,Independent,Bananas,Fruit and veg,Kilogram,1, 0.88 
+302,5/19/2017,Independent,Broccoli,Fruit and veg,Kilogram,1, 0.76 
+303,5/19/2017,Independent,Chicken portions,Meat,Kilogram,3, 1.88 
+304,5/19/2017,Independent,Activia yoghurts,Dairy,4 pack,1, 1.63 
+305,5/19/2017,Independent,Cheddar,Dairy,Kilogram,1, 2.75 
+306,5/19/2017,Independent,Muesli,Groceries,Kilogram bag,1, 3.14 
+307,5/19/2017,Independent,Beef mince,Meat,Kilogram,1, 5.53 
+308,5/19/2017,Independent,Multigrain bread,Groceries,500 gm loaf,1, 1.19 
+309,5/19/2017,Independent,Butter,Dairy,250 gm pack,3, 1.79 
+310,5/19/2017,Independent,Eggs,Groceries,Box of 12 large,1, 2.28 
+311,5/22/2017,Tesco,Chicken portions,Meat,Kilogram,1, 1.54 
+312,5/22/2017,Tesco,Semi-skimmed milk,Dairy,4 pint bottle,3, 1.20 
+313,5/22/2017,Tesco,Own brand yoghurts,Dairy,Each,1, 0.46 
+314,5/22/2017,Tesco,Cheddar,Dairy,Kilogram,3, 2.22 
+315,5/22/2017,Tesco,Beef mince,Meat,Kilogram,1, 4.54 
+316,5/22/2017,Tesco,Onions,Fruit and veg,Kilogram,1, 0.60 
+317,5/22/2017,Tesco,Teabags,Groceries,Box of 80,1, 1.21 
+318,5/22/2017,Tesco,Coffee beans,Groceries,Standard box,1, 2.30 
+319,5/22/2017,Tesco,Eggs,Groceries,Box of 12 large,1, 1.76 
+320,5/22/2017,Tesco,Margarita pizzas,Groceries,"12"" diameter",1, 2.47 
+321,6/4/2017,Morrison,Gala apples,Fruit and veg,Kilogram,3, 0.80 
+322,6/4/2017,Morrison,Bramley apples,Fruit and veg,Kilogram,1, 0.98 
+323,6/4/2017,Morrison,Broccoli,Fruit and veg,Kilogram,3, 0.58 
+324,6/4/2017,Morrison,Carrots,Fruit and veg,Kilogram,3, 0.50 
+325,6/4/2017,Morrison,Chicken portions,Meat,Kilogram,3, 1.48 
+326,6/4/2017,Morrison,Own brand yoghurts,Dairy,Each,3, 0.43 
+327,6/4/2017,Morrison,Beef mince,Meat,Kilogram,1, 4.41 
+328,6/4/2017,Morrison,White sliced bread,Groceries,500 gm loaf,3, 0.74 
+329,6/4/2017,Morrison,Butter,Dairy,250 gm pack,1, 1.37 
+330,6/4/2017,Morrison,Coffee beans,Groceries,Standard box,2, 2.27 
+331,6/4/2017,Morrison,Vimto squash,Groceries,Standard bottle,2, 1.26 
+332,6/4/2017,Morrison,Baked beans,Groceries,4 tin pack,1, 1.34 
+333,6/4/2017,Morrison,Tomato ketchup,Groceries,Standard bottle,2, 0.83 
+334,6/4/2017,Morrison,Eggs,Groceries,Box of 12 large,1, 1.74 
+335,6/16/2017,Sainsbury,Gala apples,Fruit and veg,Kilogram,2, 0.85 
+336,6/16/2017,Sainsbury,Bramley apples,Fruit and veg,Kilogram,3, 1.04 
+337,6/16/2017,Sainsbury,Bananas,Fruit and veg,Kilogram,1, 0.75 
+338,6/16/2017,Sainsbury,Chicken portions,Meat,Kilogram,1, 1.58 
+339,6/16/2017,Sainsbury,Muesli,Groceries,Kilogram bag,3, 2.64 
+340,6/16/2017,Sainsbury,Special K red berries,Groceries,500gm box,2, 3.14 
+341,6/16/2017,Sainsbury,Multigrain bread,Groceries,500 gm loaf,2, 0.97 
+342,6/16/2017,Sainsbury,Butter,Dairy,250 gm pack,1, 1.44 
+343,6/16/2017,Sainsbury,Teabags,Groceries,Box of 80,1, 1.27 
+344,6/16/2017,Sainsbury,Vimto squash,Groceries,Standard bottle,1, 1.37 
+345,6/16/2017,Sainsbury,Tomato ketchup,Groceries,Standard bottle,1, 0.90 
+346,6/16/2017,Sainsbury,Eggs,Groceries,Box of 12 large,1, 1.90 
+347,6/21/2017,Marks and Spencer,Gala apples,Fruit and veg,Kilogram,1, 0.91 
+348,6/21/2017,Marks and Spencer,Bananas,Fruit and veg,Kilogram,1, 0.82 
+349,6/21/2017,Marks and Spencer,Chicken portions,Meat,Kilogram,1, 1.75 
+350,6/21/2017,Marks and Spencer,Activia yoghurts,Dairy,4 pack,1, 1.49 
+351,6/21/2017,Marks and Spencer,Own brand yoghurts,Dairy,Each,3, 0.51 
+352,6/21/2017,Marks and Spencer,Cheddar,Dairy,Kilogram,1, 2.57 
+353,6/21/2017,Marks and Spencer,Special K red berries,Groceries,500gm box,1, 3.44 
+354,6/21/2017,Marks and Spencer,Beef mince,Meat,Kilogram,1, 5.21 
+355,6/21/2017,Marks and Spencer,Multigrain bread,Groceries,500 gm loaf,1, 1.10 
+356,6/21/2017,Marks and Spencer,Onions,Fruit and veg,Kilogram,1, 0.67 
+357,6/21/2017,Marks and Spencer,Teabags,Groceries,Box of 80,1, 1.37 
+358,6/21/2017,Marks and Spencer,Vimto squash,Groceries,Standard bottle,2, 1.49 
+359,6/21/2017,Marks and Spencer,Margarita pizzas,Groceries,"12"" diameter",2, 2.92 
+360,6/25/2017,Tesco,Gala apples,Fruit and veg,Kilogram,3, 0.78 
+361,6/25/2017,Tesco,Bramley apples,Fruit and veg,Kilogram,1, 0.98 
+362,6/25/2017,Tesco,Broccoli,Fruit and veg,Kilogram,2, 0.61 
+363,6/25/2017,Tesco,Chicken portions,Meat,Kilogram,1, 1.48 
+364,6/25/2017,Tesco,Semi-skimmed milk,Dairy,4 pint bottle,1, 1.23 
+365,6/25/2017,Tesco,Activia yoghurts,Dairy,4 pack,1, 1.28 
+366,6/25/2017,Tesco,Own brand yoghurts,Dairy,Each,1, 0.44 
+367,6/25/2017,Tesco,Special K red berries,Groceries,500gm box,3, 3.05 
+368,6/25/2017,Tesco,Beef mince,Meat,Kilogram,1, 4.54 
+369,6/25/2017,Tesco,Multigrain bread,Groceries,500 gm loaf,3, 0.94 
+370,6/25/2017,Tesco,White sliced bread,Groceries,500 gm loaf,1, 0.73 
+371,6/25/2017,Tesco,Onions,Fruit and veg,Kilogram,3, 0.58 
+372,6/25/2017,Tesco,Coffee beans,Groceries,Standard box,1, 2.34 
+373,7/13/2017,Tesco,Gala apples,Fruit and veg,Kilogram,1, 0.80 
+374,7/13/2017,Tesco,Bananas,Fruit and veg,Kilogram,1, 0.70 
+375,7/13/2017,Tesco,Broccoli,Fruit and veg,Kilogram,3, 0.60 
+376,7/13/2017,Tesco,Carrots,Fruit and veg,Kilogram,3, 0.49 
+377,7/13/2017,Tesco,Activia yoghurts,Dairy,4 pack,2, 1.30 
+378,7/13/2017,Tesco,Own brand yoghurts,Dairy,Each,3, 0.46 
+379,7/13/2017,Tesco,Cheddar,Dairy,Kilogram,1, 2.22 
+380,7/13/2017,Tesco,Muesli,Groceries,Kilogram bag,1, 2.52 
+381,7/13/2017,Tesco,Special K red berries,Groceries,500gm box,1, 3.05 
+382,7/13/2017,Tesco,Beef mince,Meat,Kilogram,1, 4.63 
+383,7/13/2017,Tesco,Multigrain bread,Groceries,500 gm loaf,3, 0.95 
+384,7/13/2017,Tesco,White sliced bread,Groceries,500 gm loaf,1, 0.74 
+385,7/13/2017,Tesco,Potatoes,Fruit and veg,Kilogram,3, 0.70 
+386,7/13/2017,Tesco,Onions,Fruit and veg,Kilogram,2, 0.58 
+387,7/13/2017,Tesco,Teabags,Groceries,Box of 80,3, 1.17 
+388,7/13/2017,Tesco,Coffee beans,Groceries,Standard box,1, 2.36 
+389,7/13/2017,Tesco,Tomato ketchup,Groceries,Standard bottle,1, 0.83 
+390,7/13/2017,Tesco,Eggs,Groceries,Box of 12 large,1, 1.76 
+391,7/18/2017,Tesco,Bramley apples,Fruit and veg,Kilogram,2, 1.00 
+392,7/18/2017,Tesco,Bananas,Fruit and veg,Kilogram,2, 0.71 
+393,7/18/2017,Tesco,Semi-skimmed milk,Dairy,4 pint bottle,3, 1.20 
+394,7/18/2017,Tesco,Own brand yoghurts,Dairy,Each,1, 0.46 
+395,7/18/2017,Tesco,Cheddar,Dairy,Kilogram,2, 2.20 
+396,7/18/2017,Tesco,Muesli,Groceries,Kilogram bag,1, 2.50 
+397,7/18/2017,Tesco,Multigrain bread,Groceries,500 gm loaf,3, 0.95 
+398,7/18/2017,Tesco,Butter,Dairy,250 gm pack,2, 1.42 
+399,7/18/2017,Tesco,Coffee beans,Groceries,Standard box,2, 2.32 
+400,7/18/2017,Tesco,Baked beans,Groceries,4 tin pack,2, 1.37 
+401,7/18/2017,Tesco,Eggs,Groceries,Box of 12 large,1, 1.80 
+402,7/20/2017,Asda,Broccoli,Fruit and veg,Kilogram,1, 0.57 
+403,7/20/2017,Asda,Semi-skimmed milk,Dairy,4 pint bottle,1, 1.11 
+404,7/20/2017,Asda,Activia yoghurts,Dairy,4 pack,1, 1.26 
+405,7/20/2017,Asda,Own brand yoghurts,Dairy,Each,2, 0.41 
+406,7/20/2017,Asda,Cheddar,Dairy,Kilogram,1, 2.08 
+407,7/20/2017,Asda,Special K red berries,Groceries,500gm box,1, 2.87 
+408,7/20/2017,Asda,Beef mince,Meat,Kilogram,1, 4.36 
+409,7/20/2017,Asda,Multigrain bread,Groceries,500 gm loaf,1, 0.91 
+410,7/20/2017,Asda,White sliced bread,Groceries,500 gm loaf,2, 0.71 
+411,7/20/2017,Asda,Potatoes,Fruit and veg,Kilogram,1, 0.65 
+412,7/20/2017,Asda,Butter,Dairy,250 gm pack,1, 1.34 
+413,7/20/2017,Asda,Teabags,Groceries,Box of 80,1, 1.17 
+414,7/20/2017,Asda,Eggs,Groceries,Box of 12 large,3, 1.69 
+415,7/22/2017,Tesco,Broccoli,Fruit and veg,Kilogram,1, 0.60 
+416,7/22/2017,Tesco,Cheddar,Dairy,Kilogram,1, 2.17 
+417,7/22/2017,Tesco,Muesli,Groceries,Kilogram bag,3, 2.54 
+418,7/22/2017,Tesco,Multigrain bread,Groceries,500 gm loaf,1, 0.94 
+419,7/22/2017,Tesco,Potatoes,Fruit and veg,Kilogram,3, 0.69 
+420,7/22/2017,Tesco,Butter,Dairy,250 gm pack,1, 1.40 
+421,7/22/2017,Tesco,Coffee beans,Groceries,Standard box,3, 2.34 
+422,7/22/2017,Tesco,Vimto squash,Groceries,Standard bottle,1, 1.33 
+423,7/22/2017,Tesco,Eggs,Groceries,Box of 12 large,1, 1.78 
+424,7/27/2017,Independent,Bramley apples,Fruit and veg,Kilogram,1, 1.25 
+425,7/27/2017,Independent,Bananas,Fruit and veg,Kilogram,2, 0.86 
+426,7/27/2017,Independent,Broccoli,Fruit and veg,Kilogram,1, 0.74 
+427,7/27/2017,Independent,Carrots,Fruit and veg,Kilogram,1, 0.63 
+428,7/27/2017,Independent,Chicken portions,Meat,Kilogram,1, 1.91 
+429,7/27/2017,Independent,Activia yoghurts,Dairy,4 pack,1, 1.62 
+430,7/27/2017,Independent,Cheddar,Dairy,Kilogram,2, 2.70 
+431,7/27/2017,Independent,Muesli,Groceries,Kilogram bag,2, 3.12 
+432,7/27/2017,Independent,Special K red berries,Groceries,500gm box,3, 3.77 
+433,7/27/2017,Independent,Beef mince,Meat,Kilogram,1, 5.58 
+434,7/27/2017,Independent,Multigrain bread,Groceries,500 gm loaf,1, 1.19 
+435,7/27/2017,Independent,Potatoes,Fruit and veg,Kilogram,2, 0.86 
+436,7/27/2017,Independent,Tomato ketchup,Groceries,Standard bottle,3, 1.07 
+437,7/27/2017,Independent,Margarita pizzas,Groceries,"12"" diameter",1, 3.19 
+438,7/29/2017,Sainsbury,Bramley apples,Fruit and veg,Kilogram,1, 1.03 
+439,7/29/2017,Sainsbury,Carrots,Fruit and veg,Kilogram,3, 0.51 
+440,7/29/2017,Sainsbury,Chicken portions,Meat,Kilogram,1, 1.55 
+441,7/29/2017,Sainsbury,Cheddar,Dairy,Kilogram,1, 2.30 
+442,7/29/2017,Sainsbury,Muesli,Groceries,Kilogram bag,2, 2.62 
+443,7/29/2017,Sainsbury,Special K red berries,Groceries,500gm box,1, 3.14 
+444,7/29/2017,Sainsbury,Beef mince,Meat,Kilogram,2, 4.67 
+445,7/29/2017,Sainsbury,White sliced bread,Groceries,500 gm loaf,1, 0.78 
+446,7/29/2017,Sainsbury,Potatoes,Fruit and veg,Kilogram,1, 0.73 
+447,7/29/2017,Sainsbury,Onions,Fruit and veg,Kilogram,2, 0.64 
+448,7/29/2017,Sainsbury,Teabags,Groceries,Box of 80,2, 1.27 
+449,7/29/2017,Sainsbury,Coffee beans,Groceries,Standard box,1, 2.39 
+450,7/29/2017,Sainsbury,Vimto squash,Groceries,Standard bottle,1, 1.40 
+451,7/29/2017,Sainsbury,Margarita pizzas,Groceries,"12"" diameter",2, 2.57 
+452,8/3/2017,Marks and Spencer,Gala apples,Fruit and veg,Kilogram,1, 0.90 
+453,8/3/2017,Marks and Spencer,Bananas,Fruit and veg,Kilogram,3, 0.79 
+454,8/3/2017,Marks and Spencer,Carrots,Fruit and veg,Kilogram,2, 0.56 
+455,8/3/2017,Marks and Spencer,Chicken portions,Meat,Kilogram,2, 1.75 
+456,8/3/2017,Marks and Spencer,Activia yoghurts,Dairy,4 pack,1, 1.53 
+457,8/3/2017,Marks and Spencer,Own brand yoghurts,Dairy,Each,1, 0.52 
+458,8/3/2017,Marks and Spencer,Cheddar,Dairy,Kilogram,1, 2.50 
+459,8/3/2017,Marks and Spencer,Beef mince,Meat,Kilogram,1, 5.30 
+460,8/3/2017,Marks and Spencer,White sliced bread,Groceries,500 gm loaf,1, 0.88 
+461,8/3/2017,Marks and Spencer,Potatoes,Fruit and veg,Kilogram,2, 0.81 
+462,8/3/2017,Marks and Spencer,Onions,Fruit and veg,Kilogram,1, 0.67 
+463,8/3/2017,Marks and Spencer,Butter,Dairy,250 gm pack,1, 1.59 
+464,8/3/2017,Marks and Spencer,Vimto squash,Groceries,Standard bottle,1, 1.53 
+465,8/7/2017,Asda,Bramley apples,Fruit and veg,Kilogram,1, 0.96 
+466,8/7/2017,Asda,Carrots,Fruit and veg,Kilogram,1, 0.48 
+467,8/7/2017,Asda,Chicken portions,Meat,Kilogram,1, 1.46 
+468,8/7/2017,Asda,Activia yoghurts,Dairy,4 pack,1, 1.26 
+469,8/7/2017,Asda,Own brand yoghurts,Dairy,Each,1, 0.42 
+470,8/7/2017,Asda,Multigrain bread,Groceries,500 gm loaf,1, 0.93 
+471,8/7/2017,Asda,White sliced bread,Groceries,500 gm loaf,3, 0.70 
+472,8/7/2017,Asda,Butter,Dairy,250 gm pack,2, 1.31 
+473,8/7/2017,Asda,Teabags,Groceries,Box of 80,3, 1.16 
+474,8/7/2017,Asda,Margarita pizzas,Groceries,"12"" diameter",3, 2.39 
+475,8/18/2017,Waitrose,Bramley apples,Fruit and veg,Kilogram,1, 1.20 
+476,8/18/2017,Waitrose,Broccoli,Fruit and veg,Kilogram,1, 0.73 
+477,8/18/2017,Waitrose,Carrots,Fruit and veg,Kilogram,1, 0.59 
+478,8/18/2017,Waitrose,Semi-skimmed milk,Dairy,4 pint bottle,3, 1.42 
+479,8/18/2017,Waitrose,Cheddar,Dairy,Kilogram,3, 2.68 
+480,8/18/2017,Waitrose,Multigrain bread,Groceries,500 gm loaf,1, 1.13 
+481,8/18/2017,Waitrose,Potatoes,Fruit and veg,Kilogram,3, 0.85 
+482,8/18/2017,Waitrose,Butter,Dairy,250 gm pack,1, 1.66 
+483,8/18/2017,Waitrose,Vimto squash,Groceries,Standard bottle,1, 1.59 
+484,8/18/2017,Waitrose,Baked beans,Groceries,4 tin pack,1, 1.65 
+485,8/18/2017,Waitrose,Eggs,Groceries,Box of 12 large,1, 2.14 
+486,8/18/2017,Waitrose,Margarita pizzas,Groceries,"12"" diameter",3, 3.07 
+487,8/20/2017,Independent,Gala apples,Fruit and veg,Kilogram,1, 1.02 
+488,8/20/2017,Independent,Bramley apples,Fruit and veg,Kilogram,3, 1.26 
+489,8/20/2017,Independent,Chicken portions,Meat,Kilogram,1, 1.90 
+490,8/20/2017,Independent,Semi-skimmed milk,Dairy,4 pint bottle,2, 1.52 
+491,8/20/2017,Independent,Own brand yoghurts,Dairy,Each,3, 0.56 
+492,8/20/2017,Independent,Beef mince,Meat,Kilogram,1, 5.58 
+493,8/20/2017,Independent,Multigrain bread,Groceries,500 gm loaf,2, 1.20 
+494,8/20/2017,Independent,Potatoes,Fruit and veg,Kilogram,2, 0.89 
+495,8/20/2017,Independent,Onions,Fruit and veg,Kilogram,1, 0.75 
+496,8/20/2017,Independent,Teabags,Groceries,Box of 80,3, 1.52 
+497,8/20/2017,Independent,Baked beans,Groceries,4 tin pack,1, 1.77 
+498,8/20/2017,Independent,Eggs,Groceries,Box of 12 large,1, 2.26 
+499,8/20/2017,Independent,Margarita pizzas,Groceries,"12"" diameter",1, 3.07 
+500,8/25/2017,Aldi,Bramley apples,Fruit and veg,Kilogram,2, 0.90 
+501,8/25/2017,Aldi,Bananas,Fruit and veg,Kilogram,1, 0.61 
+502,8/25/2017,Aldi,Broccoli,Fruit and veg,Kilogram,3, 0.54 
+503,8/25/2017,Aldi,Carrots,Fruit and veg,Kilogram,1, 0.43 
+504,8/25/2017,Aldi,Activia yoghurts,Dairy,4 pack,2, 1.19 
+505,8/25/2017,Aldi,Own brand yoghurts,Dairy,Each,3, 0.40 
+506,8/25/2017,Aldi,Cheddar,Dairy,Kilogram,1, 1.97 
+507,8/25/2017,Aldi,Special K red berries,Groceries,500gm box,1, 2.72 
+508,8/25/2017,Aldi,Multigrain bread,Groceries,500 gm loaf,1, 0.87 
+509,8/25/2017,Aldi,Butter,Dairy,250 gm pack,1, 1.23 
+510,8/25/2017,Aldi,Teabags,Groceries,Box of 80,1, 1.10 
+511,8/25/2017,Aldi,Coffee beans,Groceries,Standard box,1, 2.11 
+512,8/25/2017,Aldi,Baked beans,Groceries,4 tin pack,3, 1.28 
+513,8/25/2017,Aldi,Tomato ketchup,Groceries,Standard bottle,1, 0.75 
+514,8/25/2017,Aldi,Margarita pizzas,Groceries,"12"" diameter",1, 2.19 
+515,9/11/2017,Aldi,Bramley apples,Fruit and veg,Kilogram,1, 0.89 
+516,9/11/2017,Aldi,Bananas,Fruit and veg,Kilogram,1, 0.64 
+517,9/11/2017,Aldi,Chicken portions,Meat,Kilogram,1, 1.37 
+518,9/11/2017,Aldi,Activia yoghurts,Dairy,4 pack,1, 1.14 
+519,9/11/2017,Aldi,Beef mince,Meat,Kilogram,2, 4.13 
+520,9/11/2017,Aldi,White sliced bread,Groceries,500 gm loaf,3, 0.69 
+521,9/11/2017,Aldi,Potatoes,Fruit and veg,Kilogram,2, 0.65 
+522,9/11/2017,Aldi,Butter,Dairy,250 gm pack,1, 1.24 
+523,9/11/2017,Aldi,Coffee beans,Groceries,Standard box,1, 2.02 
+524,9/11/2017,Aldi,Vimto squash,Groceries,Standard bottle,1, 1.18 
+525,9/11/2017,Aldi,Tomato ketchup,Groceries,Standard bottle,1, 0.78 
+526,9/11/2017,Aldi,Eggs,Groceries,Box of 12 large,3, 1.63 
+527,9/11/2017,Aldi,Margarita pizzas,Groceries,"12"" diameter",2, 2.24 
+528,9/12/2017,Marks and Spencer,Bramley apples,Fruit and veg,Kilogram,1, 1.12 
+529,9/12/2017,Marks and Spencer,Carrots,Fruit and veg,Kilogram,3, 0.57 
+530,9/12/2017,Marks and Spencer,Semi-skimmed milk,Dairy,4 pint bottle,2, 1.39 
+531,9/12/2017,Marks and Spencer,Activia yoghurts,Dairy,4 pack,1, 1.49 
+532,9/12/2017,Marks and Spencer,Own brand yoghurts,Dairy,Each,1, 0.50 
+533,9/12/2017,Marks and Spencer,Muesli,Groceries,Kilogram bag,2, 2.84 
+534,9/12/2017,Marks and Spencer,White sliced bread,Groceries,500 gm loaf,1, 0.85 
+535,9/12/2017,Marks and Spencer,Potatoes,Fruit and veg,Kilogram,1, 0.82 
+536,9/12/2017,Marks and Spencer,Butter,Dairy,250 gm pack,1, 1.60 
+537,9/12/2017,Marks and Spencer,Teabags,Groceries,Box of 80,1, 1.39 
+538,9/12/2017,Marks and Spencer,Coffee beans,Groceries,Standard box,1, 2.62 
+539,9/12/2017,Marks and Spencer,Vimto squash,Groceries,Standard bottle,1, 1.52 
+540,9/12/2017,Marks and Spencer,Eggs,Groceries,Box of 12 large,1, 2.03 
+541,9/12/2017,Marks and Spencer,Margarita pizzas,Groceries,"12"" diameter",3, 2.92 
+542,9/15/2017,Sainsbury,Gala apples,Fruit and veg,Kilogram,3, 0.83 
+543,9/15/2017,Sainsbury,Bramley apples,Fruit and veg,Kilogram,1, 1.07 
+544,9/15/2017,Sainsbury,Carrots,Fruit and veg,Kilogram,3, 0.51 
+545,9/15/2017,Sainsbury,Activia yoghurts,Dairy,4 pack,1, 1.39 
+546,9/15/2017,Sainsbury,Own brand yoghurts,Dairy,Each,1, 0.48 
+547,9/15/2017,Sainsbury,Special K red berries,Groceries,500gm box,3, 3.14 
+548,9/15/2017,Sainsbury,Beef mince,Meat,Kilogram,3, 4.72 
+549,9/15/2017,Sainsbury,Multigrain bread,Groceries,500 gm loaf,1, 1.02 
+550,9/15/2017,Sainsbury,White sliced bread,Groceries,500 gm loaf,1, 0.80 
+551,9/15/2017,Sainsbury,Butter,Dairy,250 gm pack,2, 1.48 
+552,9/15/2017,Sainsbury,Coffee beans,Groceries,Standard box,2, 2.39 
+553,9/15/2017,Sainsbury,Baked beans,Groceries,4 tin pack,2, 1.46 
+554,9/15/2017,Sainsbury,Eggs,Groceries,Box of 12 large,3, 1.85 
+555,9/19/2017,Co-op,Bananas,Fruit and veg,Kilogram,1, 0.77 
+556,9/19/2017,Co-op,Broccoli,Fruit and veg,Kilogram,3, 0.67 
+557,9/19/2017,Co-op,Chicken portions,Meat,Kilogram,1, 1.63 
+558,9/19/2017,Co-op,Own brand yoghurts,Dairy,Each,3, 0.48 
+559,9/19/2017,Co-op,Special K red berries,Groceries,500gm box,1, 3.36 
+560,9/19/2017,Co-op,Multigrain bread,Groceries,500 gm loaf,2, 1.04 
+561,9/19/2017,Co-op,White sliced bread,Groceries,500 gm loaf,1, 0.81 
+562,9/19/2017,Co-op,Potatoes,Fruit and veg,Kilogram,1, 0.76 
+563,9/19/2017,Co-op,Teabags,Groceries,Box of 80,1, 1.33 
+564,9/19/2017,Co-op,Vimto squash,Groceries,Standard bottle,3, 1.44 
+565,9/19/2017,Co-op,Tomato ketchup,Groceries,Standard bottle,2, 0.93 
+566,9/19/2017,Co-op,Eggs,Groceries,Box of 12 large,3, 2.01 
+567,9/24/2017,Waitrose,Gala apples,Fruit and veg,Kilogram,1, 0.97 
+568,9/24/2017,Waitrose,Bananas,Fruit and veg,Kilogram,3, 0.86 
+569,9/24/2017,Waitrose,Activia yoghurts,Dairy,4 pack,1, 1.58 
+570,9/24/2017,Waitrose,Cheddar,Dairy,Kilogram,2, 2.70 
+571,9/24/2017,Waitrose,Muesli,Groceries,Kilogram bag,3, 3.00 
+572,9/24/2017,Waitrose,White sliced bread,Groceries,500 gm loaf,1, 0.88 
+573,9/24/2017,Waitrose,Butter,Dairy,250 gm pack,1, 1.69 
+574,9/24/2017,Waitrose,Teabags,Groceries,Box of 80,2, 1.45 
+575,9/24/2017,Waitrose,Coffee beans,Groceries,Standard box,1, 2.71 
+576,9/24/2017,Waitrose,Baked beans,Groceries,4 tin pack,1, 1.65 
+577,9/24/2017,Waitrose,Tomato ketchup,Groceries,Standard bottle,1, 1.00 
+578,10/13/2017,Aldi,Gala apples,Fruit and veg,Kilogram,1, 0.70 
+579,10/13/2017,Aldi,Bananas,Fruit and veg,Kilogram,1, 0.63 
+580,10/13/2017,Aldi,Broccoli,Fruit and veg,Kilogram,1, 0.53 
+581,10/13/2017,Aldi,Chicken portions,Meat,Kilogram,1, 1.33 
+582,10/13/2017,Aldi,Cheddar,Dairy,Kilogram,1, 2.02 
+583,10/13/2017,Aldi,Muesli,Groceries,Kilogram bag,1, 2.27 
+584,10/13/2017,Aldi,Beef mince,Meat,Kilogram,3, 4.04 
+585,10/13/2017,Aldi,White sliced bread,Groceries,500 gm loaf,2, 0.65 
+586,10/13/2017,Aldi,Potatoes,Fruit and veg,Kilogram,1, 0.65 
+587,10/13/2017,Aldi,Coffee beans,Groceries,Standard box,1, 2.13 
+588,10/13/2017,Aldi,Vimto squash,Groceries,Standard bottle,1, 1.19 
+589,10/13/2017,Aldi,Baked beans,Groceries,4 tin pack,1, 1.27 
+590,10/13/2017,Aldi,Tomato ketchup,Groceries,Standard bottle,1, 0.76 
+591,10/13/2017,Aldi,Eggs,Groceries,Box of 12 large,3, 1.67 
+592,10/13/2017,Aldi,Margarita pizzas,Groceries,"12"" diameter",1, 2.29 
+593,10/16/2017,Aldi,Gala apples,Fruit and veg,Kilogram,1, 0.71 
+594,10/16/2017,Aldi,Bramley apples,Fruit and veg,Kilogram,3, 0.87 
+595,10/16/2017,Aldi,Carrots,Fruit and veg,Kilogram,1, 0.43 
+596,10/16/2017,Aldi,Own brand yoghurts,Dairy,Each,1, 0.40 
+597,10/16/2017,Aldi,Muesli,Groceries,Kilogram bag,3, 2.32 
+598,10/16/2017,Aldi,Special K red berries,Groceries,500gm box,1, 2.69 
+599,10/16/2017,Aldi,Multigrain bread,Groceries,500 gm loaf,1, 0.87 
+600,10/16/2017,Aldi,White sliced bread,Groceries,500 gm loaf,1, 0.66 
+601,10/16/2017,Aldi,Potatoes,Fruit and veg,Kilogram,3, 0.61 
+602,10/16/2017,Aldi,Butter,Dairy,250 gm pack,1, 1.28 
+603,10/16/2017,Aldi,Coffee beans,Groceries,Standard box,1, 2.04 
+604,10/16/2017,Aldi,Margarita pizzas,Groceries,"12"" diameter",1, 2.22 
+605,10/17/2017,Sainsbury,Gala apples,Fruit and veg,Kilogram,1, 0.86 
+606,10/17/2017,Sainsbury,Bananas,Fruit and veg,Kilogram,2, 0.74 
+607,10/17/2017,Sainsbury,Broccoli,Fruit and veg,Kilogram,1, 0.64 
+608,10/17/2017,Sainsbury,Chicken portions,Meat,Kilogram,1, 1.55 
+609,10/17/2017,Sainsbury,Semi-skimmed milk,Dairy,4 pint bottle,1, 1.23 
+610,10/17/2017,Sainsbury,Activia yoghurts,Dairy,4 pack,2, 1.35 
+611,10/17/2017,Sainsbury,Muesli,Groceries,Kilogram bag,1, 2.62 
+612,10/17/2017,Sainsbury,Special K red berries,Groceries,500gm box,2, 3.17 
+613,10/17/2017,Sainsbury,Beef mince,Meat,Kilogram,1, 4.67 
+614,10/17/2017,Sainsbury,Potatoes,Fruit and veg,Kilogram,1, 0.73 
+615,10/17/2017,Sainsbury,Onions,Fruit and veg,Kilogram,1, 0.64 
+616,10/17/2017,Sainsbury,Coffee beans,Groceries,Standard box,3, 2.36 
+617,10/17/2017,Sainsbury,Vimto squash,Groceries,Standard bottle,1, 1.40 
+618,10/17/2017,Sainsbury,Baked beans,Groceries,4 tin pack,1, 1.44 
+619,10/17/2017,Sainsbury,Margarita pizzas,Groceries,"12"" diameter",1, 2.64 
+620,10/19/2017,Aldi,Bramley apples,Fruit and veg,Kilogram,1, 0.89 
+621,10/19/2017,Aldi,Broccoli,Fruit and veg,Kilogram,1, 0.52 
+622,10/19/2017,Aldi,Semi-skimmed milk,Dairy,4 pint bottle,1, 1.10 
+623,10/19/2017,Aldi,Own brand yoghurts,Dairy,Each,1, 0.39 
+624,10/19/2017,Aldi,Cheddar,Dairy,Kilogram,1, 2.02 
+625,10/19/2017,Aldi,Special K red berries,Groceries,500gm box,1, 2.72 
+626,10/19/2017,Aldi,Multigrain bread,Groceries,500 gm loaf,1, 0.87 
+627,10/19/2017,Aldi,Potatoes,Fruit and veg,Kilogram,1, 0.63 
+628,10/19/2017,Aldi,Butter,Dairy,250 gm pack,3, 1.24 
+629,10/19/2017,Aldi,Teabags,Groceries,Box of 80,3, 1.05 
+630,10/19/2017,Aldi,Baked beans,Groceries,4 tin pack,2, 1.23 
+631,10/19/2017,Aldi,Margarita pizzas,Groceries,"12"" diameter",1, 2.19 
+632,11/8/2017,Aldi,Gala apples,Fruit and veg,Kilogram,1, 0.71 
+633,11/8/2017,Aldi,Bramley apples,Fruit and veg,Kilogram,1, 0.89 
+634,11/8/2017,Aldi,Broccoli,Fruit and veg,Kilogram,3, 0.53 
+635,11/8/2017,Aldi,Chicken portions,Meat,Kilogram,2, 1.39 
+636,11/8/2017,Aldi,Semi-skimmed milk,Dairy,4 pint bottle,1, 1.10 
+637,11/8/2017,Aldi,Activia yoghurts,Dairy,4 pack,3, 1.16 
+638,11/8/2017,Aldi,Own brand yoghurts,Dairy,Each,1, 0.41 
+639,11/8/2017,Aldi,Cheddar,Dairy,Kilogram,1, 2.04 
+640,11/8/2017,Aldi,Muesli,Groceries,Kilogram bag,3, 2.24 
+641,11/8/2017,Aldi,White sliced bread,Groceries,500 gm loaf,2, 0.68 
+642,11/8/2017,Aldi,Onions,Fruit and veg,Kilogram,1, 0.55 
+643,11/8/2017,Aldi,Teabags,Groceries,Box of 80,1, 1.09 
+644,11/8/2017,Aldi,Coffee beans,Groceries,Standard box,1, 2.11 
+645,11/8/2017,Aldi,Baked beans,Groceries,4 tin pack,1, 1.23 
+646,11/10/2017,Aldi,Gala apples,Fruit and veg,Kilogram,3, 0.71 
+647,11/10/2017,Aldi,Bramley apples,Fruit and veg,Kilogram,1, 0.90 
+648,11/10/2017,Aldi,Broccoli,Fruit and veg,Kilogram,1, 0.53 
+649,11/10/2017,Aldi,Carrots,Fruit and veg,Kilogram,2, 0.45 
+650,11/10/2017,Aldi,Chicken portions,Meat,Kilogram,1, 1.34 
+651,11/10/2017,Aldi,Activia yoghurts,Dairy,4 pack,1, 1.20 
+652,11/10/2017,Aldi,Special K red berries,Groceries,500gm box,1, 2.78 
+653,11/10/2017,Aldi,Beef mince,Meat,Kilogram,1, 4.04 
+654,11/10/2017,Aldi,Multigrain bread,Groceries,500 gm loaf,1, 0.88 
+655,11/10/2017,Aldi,White sliced bread,Groceries,500 gm loaf,1, 0.66 
+656,11/10/2017,Aldi,Potatoes,Fruit and veg,Kilogram,1, 0.62 
+657,11/10/2017,Aldi,Teabags,Groceries,Box of 80,2, 1.05 
+658,11/10/2017,Aldi,Coffee beans,Groceries,Standard box,1, 2.09 
+659,11/10/2017,Aldi,Vimto squash,Groceries,Standard bottle,1, 1.20 
+660,11/10/2017,Aldi,Tomato ketchup,Groceries,Standard bottle,3, 0.78 
+661,11/10/2017,Aldi,Eggs,Groceries,Box of 12 large,1, 1.61 
+662,11/17/2017,Sainsbury,Bananas,Fruit and veg,Kilogram,3, 0.74 
+663,11/17/2017,Sainsbury,Broccoli,Fruit and veg,Kilogram,1, 0.64 
+664,11/17/2017,Sainsbury,Carrots,Fruit and veg,Kilogram,1, 0.52 
+665,11/17/2017,Sainsbury,Chicken portions,Meat,Kilogram,1, 1.60 
+666,11/17/2017,Sainsbury,Semi-skimmed milk,Dairy,4 pint bottle,2, 1.24 
+667,11/17/2017,Sainsbury,Cheddar,Dairy,Kilogram,1, 2.26 
+668,11/17/2017,Sainsbury,Beef mince,Meat,Kilogram,1, 4.85 
+669,11/17/2017,Sainsbury,White sliced bread,Groceries,500 gm loaf,1, 0.77 
+670,11/17/2017,Sainsbury,Potatoes,Fruit and veg,Kilogram,1, 0.74 
+671,11/17/2017,Sainsbury,Butter,Dairy,250 gm pack,1, 1.49 
+672,11/17/2017,Sainsbury,Coffee beans,Groceries,Standard box,3, 2.43 
+673,11/17/2017,Sainsbury,Baked beans,Groceries,4 tin pack,1, 1.49 
+674,11/18/2017,Aldi,Gala apples,Fruit and veg,Kilogram,1, 0.72 
+675,11/18/2017,Aldi,Bananas,Fruit and veg,Kilogram,1, 0.64 
+676,11/18/2017,Aldi,Broccoli,Fruit and veg,Kilogram,1, 0.52 
+677,11/18/2017,Aldi,Semi-skimmed milk,Dairy,4 pint bottle,3, 1.06 
+678,11/18/2017,Aldi,Own brand yoghurts,Dairy,Each,1, 0.40 
+679,11/18/2017,Aldi,Cheddar,Dairy,Kilogram,3, 2.04 
+680,11/18/2017,Aldi,White sliced bread,Groceries,500 gm loaf,1, 0.68 
+681,11/18/2017,Aldi,Onions,Fruit and veg,Kilogram,2, 0.52 
+682,11/18/2017,Aldi,Teabags,Groceries,Box of 80,1, 1.06 
+683,11/18/2017,Aldi,Coffee beans,Groceries,Standard box,1, 2.09 
+684,11/18/2017,Aldi,Vimto squash,Groceries,Standard bottle,1, 1.19 
+685,11/18/2017,Aldi,Baked beans,Groceries,4 tin pack,1, 1.28 
+686,11/18/2017,Aldi,Eggs,Groceries,Box of 12 large,1, 1.58 
+687,11/18/2017,Aldi,Margarita pizzas,Groceries,"12"" diameter",1, 2.29 
+688,11/22/2017,Co-op,Bramley apples,Fruit and veg,Kilogram,1, 1.08 
+689,11/22/2017,Co-op,Bananas,Fruit and veg,Kilogram,1, 0.77 
+690,11/22/2017,Co-op,Chicken portions,Meat,Kilogram,3, 1.63 
+691,11/22/2017,Co-op,Semi-skimmed milk,Dairy,4 pint bottle,1, 1.32 
+692,11/22/2017,Co-op,Cheddar,Dairy,Kilogram,1, 2.42 
+693,11/22/2017,Co-op,Muesli,Groceries,Kilogram bag,1, 2.75 
+694,11/22/2017,Co-op,Beef mince,Meat,Kilogram,2, 4.95 
+695,11/22/2017,Co-op,Multigrain bread,Groceries,500 gm loaf,1, 1.05 
+696,11/22/2017,Co-op,Onions,Fruit and veg,Kilogram,1, 0.66 
+697,11/22/2017,Co-op,Teabags,Groceries,Box of 80,2, 1.34 
+698,11/22/2017,Co-op,Coffee beans,Groceries,Standard box,1, 2.59 
+699,11/22/2017,Co-op,Vimto squash,Groceries,Standard bottle,3, 1.43 
+700,11/22/2017,Co-op,Baked beans,Groceries,4 tin pack,1, 1.58 
+701,11/22/2017,Co-op,Margarita pizzas,Groceries,"12"" diameter",1, 2.80 
+702,11/29/2017,Tesco,Broccoli,Fruit and veg,Kilogram,1, 0.61 
+703,11/29/2017,Tesco,Activia yoghurts,Dairy,4 pack,3, 1.30 
+704,11/29/2017,Tesco,Own brand yoghurts,Dairy,Each,3, 0.45 
+705,11/29/2017,Tesco,Muesli,Groceries,Kilogram bag,1, 2.47 
+706,11/29/2017,Tesco,Beef mince,Meat,Kilogram,3, 4.63 
+707,11/29/2017,Tesco,Multigrain bread,Groceries,500 gm loaf,1, 0.96 
+708,11/29/2017,Tesco,Onions,Fruit and veg,Kilogram,3, 0.60 
+709,11/29/2017,Tesco,Butter,Dairy,250 gm pack,1, 1.38 
+710,11/29/2017,Tesco,Coffee beans,Groceries,Standard box,1, 2.32 
+711,11/29/2017,Tesco,Baked beans,Groceries,4 tin pack,2, 1.37 
+712,11/29/2017,Tesco,Eggs,Groceries,Box of 12 large,3, 1.76 
+713,11/29/2017,Tesco,Margarita pizzas,Groceries,"12"" diameter",1, 2.50 
+714,12/3/2017,Tesco,Bananas,Fruit and veg,Kilogram,1, 0.69 
+715,12/3/2017,Tesco,Carrots,Fruit and veg,Kilogram,1, 0.49 
+716,12/3/2017,Tesco,Chicken portions,Meat,Kilogram,1, 1.47 
+717,12/3/2017,Tesco,Semi-skimmed milk,Dairy,4 pint bottle,1, 1.22 
+718,12/3/2017,Tesco,Cheddar,Dairy,Kilogram,1, 2.17 
+719,12/3/2017,Tesco,Beef mince,Meat,Kilogram,3, 4.58 
+720,12/3/2017,Tesco,Multigrain bread,Groceries,500 gm loaf,1, 0.97 
+721,12/3/2017,Tesco,White sliced bread,Groceries,500 gm loaf,1, 0.75 
+722,12/3/2017,Tesco,Coffee beans,Groceries,Standard box,2, 2.30 
+723,12/3/2017,Tesco,Eggs,Groceries,Box of 12 large,3, 1.76 
+724,12/6/2017,Asda,Gala apples,Fruit and veg,Kilogram,1, 0.77 
+725,12/6/2017,Asda,Bananas,Fruit and veg,Kilogram,1, 0.65 
+726,12/6/2017,Asda,Chicken portions,Meat,Kilogram,3, 1.40 
+727,12/6/2017,Asda,Cheddar,Dairy,Kilogram,1, 2.15 
+728,12/6/2017,Asda,Muesli,Groceries,Kilogram bag,2, 2.42 
+729,12/6/2017,Asda,Special K red berries,Groceries,500gm box,2, 2.87 
+730,12/6/2017,Asda,White sliced bread,Groceries,500 gm loaf,2, 0.73 
+731,12/6/2017,Asda,Onions,Fruit and veg,Kilogram,3, 0.56 
+732,12/6/2017,Asda,Butter,Dairy,250 gm pack,1, 1.30 
+733,12/6/2017,Asda,Vimto squash,Groceries,Standard bottle,3, 1.23 
+734,12/6/2017,Asda,Baked beans,Groceries,4 tin pack,1, 1.37 
+735,12/6/2017,Asda,Tomato ketchup,Groceries,Standard bottle,1, 0.79 
+736,12/6/2017,Asda,Margarita pizzas,Groceries,"12"" diameter",1, 2.42 
+737,12/7/2017,Marks and Spencer,Bramley apples,Fruit and veg,Kilogram,1, 1.12 
+738,12/7/2017,Marks and Spencer,Bananas,Fruit and veg,Kilogram,1, 0.79 
+739,12/7/2017,Marks and Spencer,Broccoli,Fruit and veg,Kilogram,1, 0.67 
+740,12/7/2017,Marks and Spencer,Carrots,Fruit and veg,Kilogram,3, 0.58 
+741,12/7/2017,Marks and Spencer,White sliced bread,Groceries,500 gm loaf,2, 0.86 
+742,12/7/2017,Marks and Spencer,Potatoes,Fruit and veg,Kilogram,1, 0.80 
+743,12/7/2017,Marks and Spencer,Onions,Fruit and veg,Kilogram,3, 0.67 
+744,12/7/2017,Marks and Spencer,Butter,Dairy,250 gm pack,2, 1.59 
+745,12/7/2017,Marks and Spencer,Coffee beans,Groceries,Standard box,1, 2.66 
+746,12/7/2017,Marks and Spencer,Vimto squash,Groceries,Standard bottle,1, 1.52 
+747,12/7/2017,Marks and Spencer,Margarita pizzas,Groceries,"12"" diameter",1, 2.89 
+748,12/8/2017,Morrison,Bramley apples,Fruit and veg,Kilogram,1, 0.97 
+749,12/8/2017,Morrison,Carrots,Fruit and veg,Kilogram,1, 0.49 
+750,12/8/2017,Morrison,Semi-skimmed milk,Dairy,4 pint bottle,3, 1.17 
+751,12/8/2017,Morrison,Beef mince,Meat,Kilogram,1, 4.36 
+752,12/8/2017,Morrison,White sliced bread,Groceries,500 gm loaf,3, 0.74 
+753,12/8/2017,Morrison,Potatoes,Fruit and veg,Kilogram,1, 0.69 
+754,12/8/2017,Morrison,Onions,Fruit and veg,Kilogram,3, 0.58 
+755,12/8/2017,Morrison,Vimto squash,Groceries,Standard bottle,1, 1.28 
+756,12/13/2017,Aldi,Gala apples,Fruit and veg,Kilogram,1, 0.73 
+757,12/13/2017,Aldi,Carrots,Fruit and veg,Kilogram,3, 0.45 
+758,12/13/2017,Aldi,Chicken portions,Meat,Kilogram,1, 1.34 
+759,12/13/2017,Aldi,Semi-skimmed milk,Dairy,4 pint bottle,1, 1.06 
+760,12/13/2017,Aldi,Activia yoghurts,Dairy,4 pack,1, 1.18 
+761,12/13/2017,Aldi,Own brand yoghurts,Dairy,Each,1, 0.39 
+762,12/13/2017,Aldi,Cheddar,Dairy,Kilogram,3, 2.04 
+763,12/13/2017,Aldi,Muesli,Groceries,Kilogram bag,2, 2.19 
+764,12/13/2017,Aldi,Potatoes,Fruit and veg,Kilogram,3, 0.65 
+765,12/13/2017,Aldi,Onions,Fruit and veg,Kilogram,1, 0.55 
+766,12/13/2017,Aldi,Coffee beans,Groceries,Standard box,1, 2.13 
+767,12/13/2017,Aldi,Vimto squash,Groceries,Standard bottle,1, 1.20 
+768,12/13/2017,Aldi,Baked beans,Groceries,4 tin pack,1, 1.24 
+769,12/13/2017,Aldi,Eggs,Groceries,Box of 12 large,1, 1.60 
+770,12/13/2017,Aldi,Margarita pizzas,Groceries,"12"" diameter",1, 2.24 
+771,12/15/2017,Marks and Spencer,Bramley apples,Fruit and veg,Kilogram,1, 1.14 
+772,12/15/2017,Marks and Spencer,Bananas,Fruit and veg,Kilogram,1, 0.82 
+773,12/15/2017,Marks and Spencer,Cheddar,Dairy,Kilogram,1, 2.48 
+774,12/15/2017,Marks and Spencer,Muesli,Groceries,Kilogram bag,1, 2.82 
+775,12/15/2017,Marks and Spencer,Multigrain bread,Groceries,500 gm loaf,3, 1.07 
+776,12/15/2017,Marks and Spencer,White sliced bread,Groceries,500 gm loaf,1, 0.88 
+777,12/15/2017,Marks and Spencer,Potatoes,Fruit and veg,Kilogram,1, 0.79 
+778,12/15/2017,Marks and Spencer,Teabags,Groceries,Box of 80,1, 1.37 
+779,12/15/2017,Marks and Spencer,Coffee beans,Groceries,Standard box,1, 2.62 
+780,12/15/2017,Marks and Spencer,Vimto squash,Groceries,Standard bottle,1, 1.49 
+781,12/15/2017,Marks and Spencer,Baked beans,Groceries,4 tin pack,3, 1.60 
+782,12/15/2017,Marks and Spencer,Tomato ketchup,Groceries,Standard bottle,1, 0.98 
+783,12/15/2017,Marks and Spencer,Eggs,Groceries,Box of 12 large,1, 2.06 
+784,12/15/2017,Marks and Spencer,Margarita pizzas,Groceries,"12"" diameter",1, 2.92 
+785,12/19/2017,Morrison,Bramley apples,Fruit and veg,Kilogram,1, 0.98 
+786,12/19/2017,Morrison,Chicken portions,Meat,Kilogram,1, 1.48 
+787,12/19/2017,Morrison,Semi-skimmed milk,Dairy,4 pint bottle,1, 1.16 
+788,12/19/2017,Morrison,Activia yoghurts,Dairy,4 pack,1, 1.30 
+789,12/19/2017,Morrison,Own brand yoghurts,Dairy,Each,1, 0.44 
+790,12/19/2017,Morrison,Cheddar,Dairy,Kilogram,1, 2.17 
+791,12/19/2017,Morrison,Muesli,Groceries,Kilogram bag,1, 2.50 
+792,12/19/2017,Morrison,Special K red berries,Groceries,500gm box,1, 3.00 
+793,12/19/2017,Morrison,Potatoes,Fruit and veg,Kilogram,1, 0.67 
+794,12/19/2017,Morrison,Teabags,Groceries,Box of 80,2, 1.16 
+795,12/19/2017,Morrison,Baked beans,Groceries,4 tin pack,1, 1.41 
+796,12/19/2017,Morrison,Tomato ketchup,Groceries,Standard bottle,1, 0.82 
+797,12/19/2017,Morrison,Margarita pizzas,Groceries,"12"" diameter",1, 2.40 

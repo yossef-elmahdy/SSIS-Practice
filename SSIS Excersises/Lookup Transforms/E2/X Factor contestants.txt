@@ -1,0 +1,110 @@
+﻿Id,Name,Series,Category,Mentor,Finished
+17,Steve Brookstein,1,Over 25s,Simon Cowell,1
+105,Shayne Ward,2,16-24s,Louis Walsh,1
+65,Leona Lewis,3,16-24s,Simon Cowell,1
+55,Leon Jackson,4,Boys,Dannii Minogue,1
+20,Alexandra Burke,5,Girls,Cheryl Cole,1
+72,Joe McElderry,6,Boys,Cheryl Cole,1
+23,Matt Cardle,7,Boys,Dannii Minogue,1
+67,Little Mix (Rhythmix),8,Groups,Tulisa Contostavlos,1
+11,James Arthur,9,Boys,Nicole Scherzinger,1
+47,G4,1,Groups,Louis Walsh,2
+4,Andy Abraham,2,Over 25s,Sharon Osbourne,2
+87,Ray Quinn,3,16-24s,Simon Cowell,2
+89,Rhydian,4,Boys,Dannii Minogue,2
+56,JLS,5,Groups,Louis Walsh,2
+82,Olly Murs,6,Over 25s,Simon Cowell,2
+43,Rebecca Ferguson,7,Girls,Cheryl Cole,2
+26,Marcus Collins,8,Boys,Gary Barlow,2
+36,Jahméne Douglas,9,Boys,Nicole Scherzinger,2
+22,Tabby Callaghan,1,16-24s,Sharon Osbourne,3
+60,Journey South,2,Groups,Simon Cowell,3
+78,Ben Mills,3,Over 25s,Sharon Osbourne,3
+91,Same Difference,4,Groups,Simon Cowell,3
+86,Eoghan Quigg,5,Boys,Simon Cowell,3
+94,Stacey Solomon,6,Girls,Dannii Minogue,3
+84,One Direction,7,Groups,Simon Cowell,3
+66,Amelia Lily,8,Girls,Kelly Rowland,3
+76,Christopher Maloney,9,Over 28s,Gary Barlow,3
+92,Rowetta Satchell,1,Over 25s,Simon Cowell,4
+38,Brenda Edwards,2,Over 25s,Sharon Osbourne,4
+71,The MacDonald Brothers,3,Groups,Louis Walsh,4
+42,Niki Evans,4,Over 25s,Louis Walsh,4
+101,Diana Vickers,5,Girls,Cheryl Cole,4
+58,Danyl Johnson,6,Over 25s,Simon Cowell,4
+68,Cher Lloyd,7,Girls,Cheryl Cole,4
+12,Misha B,8,Girls,Kelly Rowland,4
+100,Union J,9,Groups,Louis Walsh,4
+28,Cassie Compton,1,16-24s,Sharon Osbourne,5
+93,Chico Slimani,2,Over 25s,Sharon Osbourne,5
+40,Eton Road,3,Groups,Louis Walsh,5
+52,Hope,4,Groups,Simon Cowell,5
+70,Ruth Lorenzo,5,Over 25s,Dannii Minogue,5
+30,Lloyd Daniels,6,Boys,Cheryl Cole,5
+21,Mary Byrne,7,Over 28s,Louis Walsh,5
+32,Janet Devlin,8,Girls,Kelly Rowland,5
+24,Rylan Clark,9,Boys,Nicole Scherzinger,5
+102,Voices with Soul,1,Groups,Louis Walsh,6
+29,The Conway Sisters,2,Groups,Simon Cowell,6
+8,Robert Allen,3,Over 25s,Sharon Osbourne,6
+98,Beverley Trotman,4,Over 25s,Louis Walsh,6
+54,Rachel Hylton,5,Over 25s,Dannii Minogue,6
+57,John & Edward,6,Groups,Louis Walsh,6
+103,Wagner,7,Over 28s,Louis Walsh,6
+27,Craig Colton,8,Boys,Gary Barlow,6
+51,Ella Henderson,9,Girls,Tulisa Contostavlos,6
+1,2 to Go,1,Groups,Louis Walsh,7
+35,Nicholas Dorsett,2,16-24s,Louis Walsh,7
+9,Nikitta Angus,3,16-24s,Simon Cowell,7
+15,Alisha Bennett,4,Girls,Sharon Osbourne,7
+41,Daniel Evans,5,Over 25s,Dannii Minogue,7
+10,Jamie Archer,6,Over 25s,Simon Cowell,7
+104,Katie Waissel,7,Girls,Cheryl Cole,7
+18,Kitty Brucknell,8,Over 25s,Louis Walsh,7
+33,District3,9,Groups,Louis Walsh,7
+62,Verity Keays,1,Over 25s,Simon Cowell,8
+63,Maria Lawson,2,Over 25s,Sharon Osbourne,8
+74,Ashley McKenzie,3,16-24s,Simon Cowell,8
+107,Andy Williams,4,Boys,Dannii Minogue,8
+106,Laura White,5,Girls,Cheryl Cole,8
+59,Lucie Jones,6,Girls,Dannii Minogue,8
+88,Paije Richardson,7,Boys,Dannii Minogue,8
+95,Kye Sones,9,Over 28s,Gary Barlow,8
+53,Roberta Howett,1,16-24s,Sharon Osbourne,9
+108,Chenai Zinyuku,2,16-24s,Louis Walsh,9
+73,Kerry McGregor,3,Over 25s,Sharon Osbourne,9
+45,Futureproof,4,Groups,Simon Cowell,9
+37,Austin Drage,5,Boys,Simon Cowell,9
+6,Rachel Adedeji,6,Girls,Dannii Minogue,9
+49,Aiden Grimshaw,7,Boys,Dannii Minogue,9
+90,Johnny Robinson,8,Over 25s,Louis Walsh,9
+75,Phillip Magee,2,16-24s,Louis Walsh,10
+80,Dionne Mitchell,3,Over 25s,Sharon Osbourne,10
+19,Scott Bruton,5,Boys,Simon Cowell,10
+79,Miss Frank,6,Groups,Louis Walsh,10
+25,Treyc Cohen,7,Girls,Cheryl Cole,10
+97,The Risk,8,Groups,Tulisa Contostavlos,10
+39,Jade Ellis,9,Girls,Tulisa Contostavlos,10
+3,4Tune,2,Groups,Simon Cowell,11
+2,4Sure,3,Groups,Louis Walsh,11
+31,Daniel DeBourg,4,Over 25s,Louis Walsh,11
+48,Girlband,5,Groups,Louis Walsh,11
+69,Rikki Loney,6,Boys,Cheryl Cole,11
+14,Belle Amie,7,Groups,Simon Cowell,11
+50,Sophie Habibis,8,Girls,Kelly Rowland,11
+81,MK1,9,Groups,Louis Walsh,11
+5,Addictiv Ladies,2,Groups,Simon Cowell,12
+99,The Unconventionals,3,Groups,Louis Walsh,12
+96,Kimberley Southwick,4,Girls,Sharon Osbourne,12
+13,Bad Lashes,5,Groups,Louis Walsh,12
+61,Kandy Rain,6,Groups,Louis Walsh,12
+7,John Adeleye,7,Over 28s,Louis Walsh,12
+16,Sami Brookes,8,Over 25s,Louis Walsh,12
+77,Melanie Masson,9,Over 28s,Gary Barlow,12
+34,Diva Fever,7,Groups,Simon Cowell,13
+83,Nu Vibe,8,Groups,Tulisa Contostavlos,13
+85,Carolynne Poole,9,Over 28s,Gary Barlow,13
+64,Storm Lee,7,Over 28s,Louis Walsh,14
+46,F.Y.D.,7,Groups,Simon Cowell,15
+109,Wally Owl,10,Birds,Wally Owl,15
+44,Nicolo Festa,7,Boys,Dannii Minogue,16
