@@ -1,6 +1,6 @@
 # SSIS Practice Exercises
-A repository for the practice exercises for Microsoft SQL Server Integration Service (SSIS for short, it is ETL tool) while digging deep on understanding and practicing the tool.
-You can find the exercise package [here](https://github.com/yossef-elmahdy/SSIS-Practice-/tree/main/WiseOwlExcersies) and the correponding files [here](https://github.com/yossef-elmahdy/SSIS-Practice-/tree/main/SSIS%20Excersises).
+A repository for the practice exercises of Microsoft SQL Server Integration Service (SSIS for short, it is ETL tool) while digging deep on understanding and practicing the tool.
+You can find the exercises packages [here](https://github.com/yossef-elmahdy/SSIS-Practice-/tree/main/WiseOwlExcersies) and the correponding files [here](https://github.com/yossef-elmahdy/SSIS-Practice-/tree/main/SSIS%20Excersises).
 
 ## Topics Covered (its synonym to track the folder and the package)
 1. Data Flow Tasks (DFT).
