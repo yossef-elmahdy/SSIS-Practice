@@ -1,0 +1,707 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="1/28/2023 2:57:21 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-E550ER8"
+  DTS:CreatorName="WW930\a895416"
+  DTS:DTSID="{44EC3140-1502-4759-B890-424665E2F674}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5035.3"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="01-DF-IfMusicBeTheFood"
+  DTS:PackageType="5"
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{206BFE13-D9AD-46DC-8DB1-35FBB5E9CECC}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{7064E035-976B-41D7-B87D-F52D269770EF}"
+      DTS:ObjectName="Excel Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\a895416\Downloads\SSIS Excersises\E3\Songs for foodies.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{ADB52C99-8A3E-432F-BB6B-4CD35DDA1A73}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\a895416\Downloads\SSIS Excersises\E3\Songs for foodies.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Position"
+              DTS:DTSID="{A1988192-6707-4697-A68C-31945C40CBB7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Artist"
+              DTS:DTSID="{696DFEEC-6E0D-4C13-94ED-5545B2E6F48D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Song"
+              DTS:DTSID="{50E0DE4B-0053-4110-A519-F8B536B0A3DA}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.test_db]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{04405A87-C331-4CB6-AEBA-0E8190137814}"
+      DTS:ObjectName="localhost.test_db">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=test_db;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{04405A87-C331-4CB6-AEBA-0E8190137814}localhost.test_db;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{98D63419-897C-4E48-8B7E-DD30DCC3A989}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="From FoodMusic CSV to FoodMusic SQL Server Table"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Data Conversion.Inputs[Data Conversion Input].Columns[Position]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Position"
+                      lineageId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Output].Columns[Position]" />
+                    <inputColumn
+                      refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Data Conversion.Inputs[Data Conversion Input].Columns[Artist]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Artist"
+                      lineageId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Output].Columns[Artist]" />
+                    <inputColumn
+                      refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Data Conversion.Inputs[Data Conversion Input].Columns[Song]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Song"
+                      lineageId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Output].Columns[Song]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Position]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Position]"
+                      name="Copy of Position"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Output].Columns[Position]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Artist]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Artist]"
+                      name="Copy of Artist"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Output].Columns[Artist]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Song]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Song]"
+                      name="Copy of Song"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Output].Columns[Song]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Output].Columns[Position]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Position]"
+                      length="50"
+                      lineageId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Output].Columns[Position]"
+                      name="Position"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Output].Columns[Artist]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Artist]"
+                      length="50"
+                      lineageId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Output].Columns[Artist]"
+                      name="Artist"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Output].Columns[Song]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Song]"
+                      length="50"
+                      lineageId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Output].Columns[Song]"
+                      name="Song"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Position]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Position" />
+                    <externalMetadataColumn
+                      refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Artist]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Artist" />
+                    <externalMetadataColumn
+                      refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Song]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Song" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[FoodMusic]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.test_db]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.test_db]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Position]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Position"
+                      externalMetadataColumnId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Position]"
+                      lineageId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Position]" />
+                    <inputColumn
+                      refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Artist]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Artist"
+                      externalMetadataColumnId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Artist]"
+                      lineageId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Artist]" />
+                    <inputColumn
+                      refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Song]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Song"
+                      externalMetadataColumnId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SongTitle]"
+                      lineageId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Song]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Position]"
+                      dataType="i4"
+                      name="Position" />
+                    <externalMetadataColumn
+                      refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Artist]"
+                      dataType="wstr"
+                      length="255"
+                      name="Artist" />
+                    <externalMetadataColumn
+                      refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SongTitle]"
+                      dataType="wstr"
+                      length="255"
+                      name="SongTitle" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table.Paths[Data Conversion Output]"
+              endId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\From FoodMusic CSV to FoodMusic SQL Server Table.Paths[Flat File Source Output]"
+              endId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Data Conversion.Inputs[Data Conversion Input]"
+              name="Flat File Source Output"
+              startId="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Truncate FoodMusic Table"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{AD65D096-8C9A-46F6-9BD8-58771FEE2D60}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncate FoodMusic Table"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{04405A87-C331-4CB6-AEBA-0E8190137814}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE FoodMusic; " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{A727E140-6416-4865-A559-9054A1900B22}"
+      DTS:From="Package\Truncate FoodMusic Table"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\From FoodMusic CSV to FoodMusic SQL Server Table" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="331.2,41.6"
+          Id="Package\From FoodMusic CSV to FoodMusic SQL Server Table"
+          TopLeft="337.499981559814,183.733332055675" />
+        <NodeLayout
+          Size="201.6,41.6"
+          Id="Package\Truncate FoodMusic Table"
+          TopLeft="380.833312525518,67.599999529918" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="481.633312525518,109.199999529918">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="21.4666690342954,74.5333325257567"
+              Start="0,0"
+              End="21.4666690342954,67.0333325257567">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.2666662628783" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.2666662628783"
+                    Point2="0,37.2666662628783"
+                    Point3="4,37.2666662628783" />
+                  <mssgle:LineSegment
+                    End="17.4666690342954,37.2666662628783" />
+                  <mssgle:CubicBezierSegment
+                    Point1="17.4666690342954,37.2666662628783"
+                    Point2="21.4666690342954,37.2666662628783"
+                    Point3="21.4666690342954,41.2666662628783" />
+                  <mssgle:LineSegment
+                    End="21.4666690342954,67.0333325257567" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\From FoodMusic CSV to FoodMusic SQL Server Table">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Flat File Source"
+          TopLeft="383.333312388925,82.3333327607976" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\From FoodMusic CSV to FoodMusic SQL Server Table\OLE DB Destination"
+          TopLeft="372.499979647498,279.933331386712" />
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\From FoodMusic CSV to FoodMusic SQL Server Table\Data Conversion"
+          TopLeft="379.166645949914,175.066665449275" />
+        <EdgeLayout
+          Id="Package\From FoodMusic CSV to FoodMusic SQL Server Table.Paths[Flat File Source Output]"
+          TopLeft="458.049979169419,123.933332760798">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,51.1333326884773"
+              Start="0,0"
+              End="0,43.6333326884773">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.6333326884773" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\From FoodMusic CSV to FoodMusic SQL Server Table.Paths[Data Conversion Output]"
+          TopLeft="457.633312798706,216.666665449275">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,63.266665937437"
+              Start="0,0"
+              End="0,55.766665937437">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55.766665937437" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\From FoodMusic CSV to FoodMusic SQL Server Table\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

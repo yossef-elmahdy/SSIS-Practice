@@ -1,0 +1,1231 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="1/28/2023 4:19:04 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-E550ER8"
+  DTS:CreatorName="WW930\a895416"
+  DTS:DTSID="{93FAB564-EEDA-4D44-8531-D05FA3D33A74}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5035.3"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="03-DCT-RevisitingYouth"
+  DTS:PackageType="5"
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{954A9846-6956-46A5-8EAE-1918B6CB5C90}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{DDF4B93F-BE20-471A-B6EF-36253CEFCAAD}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\a895416\Downloads\SSIS Excersises\Data Conversion Tranforms\E2\TV programs.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TV program"
+              DTS:DTSID="{B32F1DBB-74A9-4FC9-8138-4E1BAAB99032}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Wise Owl rating"
+              DTS:DTSID="{DFDEB4EB-5C59-4847-BE78-F8599EBBC667}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{2DBEE72C-5A72-4A3F-9AA4-AF4434B4138B}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\a895416\Downloads\SSIS Excersises\Data Conversion Tranforms\E2\TV programs2.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Program"
+              DTS:DTSID="{E125F77A-E3E1-4AA3-9D49-027D3A409493}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Rating"
+              DTS:DTSID="{7B298D47-591E-46E1-9106-EE18A7914FF8}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.test_db]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{865725A1-9639-41AF-A94F-BB2556196431}"
+      DTS:ObjectName="localhost.test_db">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=test_db;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{865725A1-9639-41AF-A94F-BB2556196431}localhost.test_db;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Conerting data types and insert into tvPrograms table"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{E2E204B7-B62E-4E06-BD83-B6B7CF021224}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Conerting data types and insert into tvPrograms table"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion.Inputs[Data Conversion Input].Columns[TV program]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="TV program"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\TV Programs.Outputs[Flat File Source Output].Columns[TV program]" />
+                    <inputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion.Inputs[Data Conversion Input].Columns[Wise Owl rating]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Wise Owl rating"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\TV Programs.Outputs[Flat File Source Output].Columns[Wise Owl rating]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Conerting data types and insert into tvPrograms table\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of TV program]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of TV program]"
+                      name="Copy of TV program"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Conerting data types and insert into tvPrograms table\TV Programs.Outputs[Flat File Source Output].Columns[TV program]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Wise Owl rating]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Wise Owl rating]"
+                      name="Copy of Wise Owl rating"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Conerting data types and insert into tvPrograms table\TV Programs.Outputs[Flat File Source Output].Columns[Wise Owl rating]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Conerting data types and insert into tvPrograms table\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 1"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 1.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 1.Inputs[Data Conversion Input].Columns[Program]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Program"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\TV Programs 2.Outputs[Flat File Source Output].Columns[Program]" />
+                    <inputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 1.Inputs[Data Conversion Input].Columns[Rating]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Rating"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\TV Programs 2.Outputs[Flat File Source Output].Columns[Rating]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 1.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 1.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Program]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Program]"
+                      name="Copy of Program"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Conerting data types and insert into tvPrograms table\TV Programs 2.Outputs[Flat File Source Output].Columns[Program]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Rating]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Rating]"
+                      name="Copy of Rating"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Conerting data types and insert into tvPrograms table\TV Programs 2.Outputs[Flat File Source Output].Columns[Rating]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 1.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 1.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 2"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion 2"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 2.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 2.Inputs[Data Conversion Input].Columns[Program]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Program"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\Union All.Outputs[Union All Output 1].Columns[Program]" />
+                    <inputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 2.Inputs[Data Conversion Input].Columns[Rating]"
+                      cachedDataType="i1"
+                      cachedName="Rating"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\Union All.Outputs[Union All Output 1].Columns[Rating]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 2.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 2.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 2.Outputs[Data Conversion Output].Columns[Copy of Program]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 2.Outputs[Data Conversion Output].Columns[Copy of Program]"
+                      name="Copy of Program"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Conerting data types and insert into tvPrograms table\Union All.Outputs[Union All Output 1].Columns[Program]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 2.Outputs[Data Conversion Output].Columns[Copy of Rating]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 2.Outputs[Data Conversion Output].Columns[Copy of Rating]"
+                      name="Copy of Rating"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Conerting data types and insert into tvPrograms table\Union All.Outputs[Union All Output 1].Columns[Rating]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 2.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 2.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 2.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 2.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 2.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 2.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Conerting data types and insert into tvPrograms table\TV Programs"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="TV Programs"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Conerting data types and insert into tvPrograms table\TV Programs.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Conerting data types and insert into tvPrograms table\TV Programs.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\TV Programs.Outputs[Flat File Source Output].Columns[TV program]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Conerting data types and insert into tvPrograms table\TV Programs.Outputs[Flat File Source Output].ExternalColumns[TV program]"
+                      length="50"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\TV Programs.Outputs[Flat File Source Output].Columns[TV program]"
+                      name="TV program"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\TV Programs.Outputs[Flat File Source Output].Columns[Wise Owl rating]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Conerting data types and insert into tvPrograms table\TV Programs.Outputs[Flat File Source Output].ExternalColumns[Wise Owl rating]"
+                      length="50"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\TV Programs.Outputs[Flat File Source Output].Columns[Wise Owl rating]"
+                      name="Wise Owl rating"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\TV Programs.Outputs[Flat File Source Output].ExternalColumns[TV program]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TV program" />
+                    <externalMetadataColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\TV Programs.Outputs[Flat File Source Output].ExternalColumns[Wise Owl rating]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Wise Owl rating" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Conerting data types and insert into tvPrograms table\TV Programs.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\TV Programs.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\TV Programs.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\TV Programs.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\TV Programs.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\TV Programs.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\TV Programs.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Conerting data types and insert into tvPrograms table\TV Programs 2"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="TV Programs 2"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Conerting data types and insert into tvPrograms table\TV Programs 2.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Conerting data types and insert into tvPrograms table\TV Programs 2.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\TV Programs 2.Outputs[Flat File Source Output].Columns[Program]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Conerting data types and insert into tvPrograms table\TV Programs 2.Outputs[Flat File Source Output].ExternalColumns[Program]"
+                      length="50"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\TV Programs 2.Outputs[Flat File Source Output].Columns[Program]"
+                      name="Program"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\TV Programs 2.Outputs[Flat File Source Output].Columns[Rating]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Conerting data types and insert into tvPrograms table\TV Programs 2.Outputs[Flat File Source Output].ExternalColumns[Rating]"
+                      length="50"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\TV Programs 2.Outputs[Flat File Source Output].Columns[Rating]"
+                      name="Rating"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\TV Programs 2.Outputs[Flat File Source Output].ExternalColumns[Program]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Program" />
+                    <externalMetadataColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\TV Programs 2.Outputs[Flat File Source Output].ExternalColumns[Rating]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Rating" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Conerting data types and insert into tvPrograms table\TV Programs 2.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\TV Programs 2.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\TV Programs 2.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\TV Programs 2.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\TV Programs 2.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\TV Programs 2.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\TV Programs 2.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Conerting data types and insert into tvPrograms table\TV Programs SQL Server Table"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="TV Programs SQL Server Table"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[TvPrograms]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Conerting data types and insert into tvPrograms table\TV Programs SQL Server Table.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.test_db]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.test_db]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Conerting data types and insert into tvPrograms table\TV Programs SQL Server Table.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\TV Programs SQL Server Table.Inputs[OLE DB Destination Input].Columns[Rating]"
+                      cachedDataType="i1"
+                      cachedName="Rating"
+                      externalMetadataColumnId="Package\Conerting data types and insert into tvPrograms table\TV Programs SQL Server Table.Inputs[OLE DB Destination Input].ExternalColumns[OwlRating]"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\Union All.Outputs[Union All Output 1].Columns[Rating]" />
+                    <inputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\TV Programs SQL Server Table.Inputs[OLE DB Destination Input].Columns[Copy of Program]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Copy of Program"
+                      externalMetadataColumnId="Package\Conerting data types and insert into tvPrograms table\TV Programs SQL Server Table.Inputs[OLE DB Destination Input].ExternalColumns[ProgramName]"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 2.Outputs[Data Conversion Output].Columns[Copy of Program]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\TV Programs SQL Server Table.Inputs[OLE DB Destination Input].ExternalColumns[ProgramId]"
+                      dataType="i4"
+                      name="ProgramId" />
+                    <externalMetadataColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\TV Programs SQL Server Table.Inputs[OLE DB Destination Input].ExternalColumns[ProgramName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="ProgramName" />
+                    <externalMetadataColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\TV Programs SQL Server Table.Inputs[OLE DB Destination Input].ExternalColumns[OwlRating]"
+                      dataType="ui1"
+                      name="OwlRating" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Conerting data types and insert into tvPrograms table\TV Programs SQL Server Table.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Conerting data types and insert into tvPrograms table\TV Programs SQL Server Table.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\TV Programs SQL Server Table.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\TV Programs SQL Server Table.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\TV Programs SQL Server Table.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\TV Programs SQL Server Table.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Conerting data types and insert into tvPrograms table\Union All"
+              componentClassID="Microsoft.UnionAll"
+              contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
+              name="Union All"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\Conerting data types and insert into tvPrograms table\Union All.Inputs[Union All Input 2]"
+                  hasSideEffects="true"
+                  name="Union All Input 2">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\Union All.Inputs[Union All Input 2].Columns[Copy of Program]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Copy of Program"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Program]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Conerting data types and insert into tvPrograms table\Union All.Outputs[Union All Output 1].Columns[Program]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\Union All.Inputs[Union All Input 2].Columns[Copy of Rating]"
+                      cachedDataType="i1"
+                      cachedName="Copy of Rating"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Rating]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Conerting data types and insert into tvPrograms table\Union All.Outputs[Union All Output 1].Columns[Rating]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Conerting data types and insert into tvPrograms table\Union All.Inputs[Union All Input 3]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Union All Input 3">
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Conerting data types and insert into tvPrograms table\Union All.Inputs[Union All Input 1]"
+                  name="Union All Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\Union All.Inputs[Union All Input 1].Columns[Copy of TV program]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Copy of TV program"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of TV program]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Conerting data types and insert into tvPrograms table\Union All.Outputs[Union All Output 1].Columns[Program]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\Union All.Inputs[Union All Input 1].Columns[Copy of Wise Owl rating]"
+                      cachedDataType="i1"
+                      cachedName="Copy of Wise Owl rating"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Wise Owl rating]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Conerting data types and insert into tvPrograms table\Union All.Outputs[Union All Output 1].Columns[Rating]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Conerting data types and insert into tvPrograms table\Union All.Outputs[Union All Output 1]"
+                  name="Union All Output 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\Union All.Outputs[Union All Output 1].Columns[Program]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\Union All.Outputs[Union All Output 1].Columns[Program]"
+                      name="Program" />
+                    <outputColumn
+                      refId="Package\Conerting data types and insert into tvPrograms table\Union All.Outputs[Union All Output 1].Columns[Rating]"
+                      dataType="i1"
+                      lineageId="Package\Conerting data types and insert into tvPrograms table\Union All.Outputs[Union All Output 1].Columns[Rating]"
+                      name="Rating" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Conerting data types and insert into tvPrograms table.Paths[Data Conversion Output]"
+              endId="Package\Conerting data types and insert into tvPrograms table\Union All.Inputs[Union All Input 2]"
+              name="Data Conversion Output"
+              startId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 1.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Conerting data types and insert into tvPrograms table.Paths[Data Conversion Output1]"
+              endId="Package\Conerting data types and insert into tvPrograms table\Union All.Inputs[Union All Input 1]"
+              name="Data Conversion Output"
+              startId="Package\Conerting data types and insert into tvPrograms table\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Conerting data types and insert into tvPrograms table.Paths[Data Conversion Output2]"
+              endId="Package\Conerting data types and insert into tvPrograms table\TV Programs SQL Server Table.Inputs[OLE DB Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 2.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Conerting data types and insert into tvPrograms table.Paths[Flat File Source Output]"
+              endId="Package\Conerting data types and insert into tvPrograms table\Data Conversion.Inputs[Data Conversion Input]"
+              name="Flat File Source Output"
+              startId="Package\Conerting data types and insert into tvPrograms table\TV Programs.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Conerting data types and insert into tvPrograms table.Paths[Flat File Source Output1]"
+              endId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 1.Inputs[Data Conversion Input]"
+              name="Flat File Source Output"
+              startId="Package\Conerting data types and insert into tvPrograms table\TV Programs 2.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Conerting data types and insert into tvPrograms table.Paths[Union All Output 1]"
+              endId="Package\Conerting data types and insert into tvPrograms table\Data Conversion 2.Inputs[Data Conversion Input]"
+              name="Union All Output 1"
+              startId="Package\Conerting data types and insert into tvPrograms table\Union All.Outputs[Union All Output 1]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Truncate table tv-programs"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{94BFD1B8-3C31-4033-9634-3E0AA055FA34}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncate table tv-programs"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{865725A1-9639-41AF-A94F-BB2556196431}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE TvPrograms; " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{F1638714-5934-49AD-953B-B10928FA25E2}"
+      DTS:From="Package\Truncate table tv-programs"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Conerting data types and insert into tvPrograms table" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="323.2,41.6"
+          Id="Package\Conerting data types and insert into tvPrograms table"
+          TopLeft="289.166650867297,279.066664726072" />
+        <NodeLayout
+          Size="203.2,41.6"
+          Id="Package\Truncate table tv-programs"
+          TopLeft="343.333314574428,130.866665756636" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="447.849982720862,172.466665756636">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,106.599998969435"
+              Start="0,0"
+              End="0,99.0999989694353">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,99.0999989694353" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Conerting data types and insert into tvPrograms table">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="164,41.6"
+          Id="Package\Conerting data types and insert into tvPrograms table\Data Conversion 1"
+          TopLeft="473.333307471542,138.666665702396" />
+        <NodeLayout
+          Size="120,41.6"
+          Id="Package\Conerting data types and insert into tvPrograms table\Union All"
+          TopLeft="389.166645403538,244.399998300473" />
+        <NodeLayout
+          Size="164,41.6"
+          Id="Package\Conerting data types and insert into tvPrograms table\Data Conversion 2"
+          TopLeft="368.333313208488,313.733331513272" />
+        <NodeLayout
+          Size="148,41.6"
+          Id="Package\Conerting data types and insert into tvPrograms table\TV Programs 2"
+          TopLeft="487.499973364176,58.9333329235182" />
+        <NodeLayout
+          Size="139.2,41.6"
+          Id="Package\Conerting data types and insert into tvPrograms table\TV Programs"
+          TopLeft="247.499986477197,59.7999995841583" />
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\Conerting data types and insert into tvPrograms table\Data Conversion"
+          TopLeft="241.666653462583,133.466665738556" />
+        <NodeLayout
+          Size="225.6,41.6"
+          Id="Package\Conerting data types and insert into tvPrograms table\TV Programs SQL Server Table"
+          TopLeft="334.166648408606,398.666663894389" />
+        <EdgeLayout
+          Id="Package\Conerting data types and insert into tvPrograms table.Paths[Flat File Source Output]"
+          TopLeft="318.38331996989,101.399999584158">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,32.0666661543978"
+              Start="0,0"
+              End="0,24.5666661543978">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.5666661543978" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Conerting data types and insert into tvPrograms table.Paths[Data Conversion Output2]"
+          TopLeft="448.649980808547,355.333331513272">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43.3333323811167"
+              Start="0,0"
+              End="0,35.8333323811167">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.8333323811167" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Conerting data types and insert into tvPrograms table.Paths[Data Conversion Output1]"
+          TopLeft="319.666653462583,175.066665738556">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="110.833325274288,69.3333325619169"
+              Start="0,0"
+              End="110.833325274288,61.8333325619169">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.0526311221876" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,37.0526311221876"
+                    Point2="0,41.0526311221876"
+                    Point3="4,41.0526311221876" />
+                  <mssgle:LineSegment
+                    End="106.833325274288,41.0526311221876" />
+                  <mssgle:CubicBezierSegment
+                    Point1="106.833325274288,41.0526311221876"
+                    Point2="110.833325274288,41.0526311221876"
+                    Point3="110.833325274288,45.0526311221876" />
+                  <mssgle:LineSegment
+                    End="110.833325274288,61.8333325619169" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Conerting data types and insert into tvPrograms table.Paths[Data Conversion Output]"
+          TopLeft="555.333307471542,180.266665702396">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-87.4999954013365,64.1333325980769"
+              Start="0,0"
+              End="-87.4999954013365,56.6333325980769">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.9736837751771" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.9736837751771"
+                    Point2="0,37.9736837751771"
+                    Point3="-4,37.9736837751771" />
+                  <mssgle:LineSegment
+                    End="-83.4999954013365,37.9736837751771" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-83.4999954013365,37.9736837751771"
+                    Point2="-87.4999954013365,37.9736837751771"
+                    Point3="-87.4999954013365,41.9736837751771" />
+                  <mssgle:LineSegment
+                    End="-87.4999954013365,56.6333325980769" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Conerting data types and insert into tvPrograms table.Paths[Union All Output 1]"
+          TopLeft="449.749979306013,285.999998300473">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,27.7333332127994"
+              Start="0,0"
+              End="0,20.2333332127994">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.2333332127994" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Conerting data types and insert into tvPrograms table.Paths[Flat File Source Output1]"
+          TopLeft="558.416640417859,100.533332923518">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,38.1333327788778"
+              Start="0,0"
+              End="0,30.6333327788778">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.6333327788778" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Conerting data types and insert into tvPrograms table\TV Programs SQL Server Table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

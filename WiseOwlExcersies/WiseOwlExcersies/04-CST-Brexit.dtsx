@@ -1,0 +1,1270 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/3/2023 4:51:06 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-E550ER8"
+  DTS:CreatorName="WW930\a895416"
+  DTS:DTSID="{C32146C4-6F30-4F6C-82A9-6B70DB325958}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5035.3"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="4-CST-Brexit"
+  DTS:PackageType="5"
+  DTS:VersionBuild="24"
+  DTS:VersionGUID="{C9D353DC-F8AB-47E9-A742-153E4A5B686C}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Brexit Voting figures]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{7EFE2ECB-7934-4A2F-96BD-B831DE30F9E2}"
+      DTS:ObjectName="Brexit Voting figures">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\a895416\Downloads\SSIS Excersises\Conditional Split Tranforms\E4\Voting figures.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Region"
+              DTS:DTSID="{961358AF-5FB8-439F-B9FE-2A6FB026248B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Area"
+              DTS:DTSID="{E0CC8D2F-36CA-446B-ABAD-1AFA23D64B0E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Electorate"
+              DTS:DTSID="{FF63BDBB-6D8E-40E2-A2A6-0EA9258F7CCB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ValidVotes"
+              DTS:DTSID="{B61D7331-9C53-4D56-8506-6BC2D7A8A089}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Remain"
+              DTS:DTSID="{ED248AE7-B6B1-4FA5-8F6C-3C264DF26488}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Leave"
+              DTS:DTSID="{7A0C8919-9FF8-4B63-8B41-DF3078B7D77B}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{A1998D6F-989D-45EB-9084-D99F7F7C8F95}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\a895416\Downloads\SSIS Excersises\Conditional Split Tranforms\E4\Brexit Voting.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Region"
+              DTS:DTSID="{2D4B24FA-8436-4881-A6CB-23A59B232A26}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Area"
+              DTS:DTSID="{F3750328-34A7-42A4-90BD-4856990FCA96}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Remain"
+              DTS:DTSID="{ECA8AFCE-DBFF-4D5B-A035-DA4454CC501D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Leave"
+              DTS:DTSID="{5BBD4C44-3C9C-406E-B267-243B6DF6FC7C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="6"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Status"
+              DTS:DTSID="{6A8A1C03-840B-4BA0-81BB-ADE6BAE1277F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Absolute Difference"
+              DTS:DTSID="{4AC7FEAE-574A-4366-86C1-100DD2B1D2AC}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Sort Voting's difference and insert into Brexit Voting file"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{BF811EEA-CF83-498F-BEE0-947E32E66D84}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Sort Voting's difference and insert into Brexit Voting file"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Brexit Voting Figures File"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Brexit Voting figures]"
+                  connectionManagerRefId="Package.ConnectionManagers[Brexit Voting figures]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].Columns[Region]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].ExternalColumns[Region]"
+                      length="50"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].Columns[Region]"
+                      name="Region"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].Columns[Area]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].ExternalColumns[Area]"
+                      length="50"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].Columns[Area]"
+                      name="Area"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].Columns[Electorate]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].ExternalColumns[Electorate]"
+                      length="50"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].Columns[Electorate]"
+                      name="Electorate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].Columns[ValidVotes]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].ExternalColumns[ValidVotes]"
+                      length="50"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].Columns[ValidVotes]"
+                      name="ValidVotes"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].Columns[Remain]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].ExternalColumns[Remain]"
+                      length="50"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].Columns[Remain]"
+                      name="Remain"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].Columns[Leave]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].ExternalColumns[Leave]"
+                      length="50"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].Columns[Leave]"
+                      name="Leave"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].ExternalColumns[Region]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Region" />
+                    <externalMetadataColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].ExternalColumns[Area]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Area" />
+                    <externalMetadataColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].ExternalColumns[Electorate]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Electorate" />
+                    <externalMetadataColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].ExternalColumns[ValidVotes]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="ValidVotes" />
+                    <externalMetadataColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].ExternalColumns[Remain]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Remain" />
+                    <externalMetadataColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].ExternalColumns[Leave]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Leave" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting File"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Brexit Voting File"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting File.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting File.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting File.Inputs[Flat File Destination Input].Columns[Status]"
+                      cachedDataType="wstr"
+                      cachedLength="6"
+                      cachedName="Status"
+                      externalMetadataColumnId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting File.Inputs[Flat File Destination Input].ExternalColumns[Status]"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Outputs[Sort Output].Columns[Status]" />
+                    <inputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting File.Inputs[Flat File Destination Input].Columns[Absolute Difference]"
+                      cachedDataType="i8"
+                      cachedName="Absolute Difference"
+                      cachedSortKeyPosition="-1"
+                      externalMetadataColumnId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting File.Inputs[Flat File Destination Input].ExternalColumns[Absolute Difference]"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Outputs[Sort Output].Columns[Absolute Difference]" />
+                    <inputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting File.Inputs[Flat File Destination Input].Columns[Copy of Region]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Region"
+                      externalMetadataColumnId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting File.Inputs[Flat File Destination Input].ExternalColumns[Region]"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Region]" />
+                    <inputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting File.Inputs[Flat File Destination Input].Columns[Copy of Area]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Area"
+                      externalMetadataColumnId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting File.Inputs[Flat File Destination Input].ExternalColumns[Area]"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Area]" />
+                    <inputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting File.Inputs[Flat File Destination Input].Columns[New_R]"
+                      cachedDataType="i8"
+                      cachedName="New_R"
+                      externalMetadataColumnId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting File.Inputs[Flat File Destination Input].ExternalColumns[Remain]"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Outputs[Sort Output].Columns[New_R]" />
+                    <inputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting File.Inputs[Flat File Destination Input].Columns[New_L]"
+                      cachedDataType="i8"
+                      cachedName="New_L"
+                      externalMetadataColumnId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting File.Inputs[Flat File Destination Input].ExternalColumns[Leave]"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Outputs[Sort Output].Columns[New_L]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting File.Inputs[Flat File Destination Input].ExternalColumns[Region]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Region" />
+                    <externalMetadataColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting File.Inputs[Flat File Destination Input].ExternalColumns[Area]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Area" />
+                    <externalMetadataColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting File.Inputs[Flat File Destination Input].ExternalColumns[Status]"
+                      dataType="wstr"
+                      length="6"
+                      name="Status" />
+                    <externalMetadataColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting File.Inputs[Flat File Destination Input].ExternalColumns[Absolute Difference]"
+                      dataType="i8"
+                      name="Absolute Difference" />
+                    <externalMetadataColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting File.Inputs[Flat File Destination Input].ExternalColumns[Remain]"
+                      dataType="i8"
+                      name="Remain" />
+                    <externalMetadataColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting File.Inputs[Flat File Destination Input].ExternalColumns[Leave]"
+                      dataType="i8"
+                      name="Leave" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Sort Voting's difference and insert into Brexit Voting file\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Sort Voting's difference and insert into Brexit Voting file\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Data Conversion.Inputs[Data Conversion Input].Columns[Region]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Region"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Outputs[Sort Output].Columns[Region]" />
+                    <inputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Data Conversion.Inputs[Data Conversion Input].Columns[Area]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Area"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Outputs[Sort Output].Columns[Area]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Sort Voting's difference and insert into Brexit Voting file\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Sort Voting's difference and insert into Brexit Voting file\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Region]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Region]"
+                      name="Copy of Region"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Outputs[Sort Output].Columns[Region]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Area]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Area]"
+                      name="Copy of Area"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Outputs[Sort Output].Columns[Area]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Sort Voting's difference and insert into Brexit Voting file\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Sort Voting's difference and insert into Brexit Voting file\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort by Absolute difference"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Inputs[Sort Input].Columns[Region]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Region"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].Columns[Region]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Inputs[Sort Input].Columns[Area]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Area"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].Columns[Area]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Inputs[Sort Input].Columns[New_R]"
+                      cachedDataType="i8"
+                      cachedName="New_R"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Outputs[Derived Column Output].Columns[New_R]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Inputs[Sort Input].Columns[New_L]"
+                      cachedDataType="i8"
+                      cachedName="New_L"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Outputs[Derived Column Output].Columns[New_L]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Inputs[Sort Input].Columns[Status]"
+                      cachedDataType="wstr"
+                      cachedLength="6"
+                      cachedName="Status"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Status &amp; Abs Diff.Outputs[Derived Column Output].Columns[Status]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Inputs[Sort Input].Columns[Absolute Difference]"
+                      cachedDataType="i8"
+                      cachedName="Absolute Difference"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Status &amp; Abs Diff.Outputs[Derived Column Output].Columns[Absolute Difference]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">-1</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Outputs[Sort Output].Columns[Region]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Outputs[Sort Output].Columns[Region]"
+                      name="Region">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].Columns[Region]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Outputs[Sort Output].Columns[Area]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Outputs[Sort Output].Columns[Area]"
+                      name="Area">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].Columns[Area]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Outputs[Sort Output].Columns[New_R]"
+                      dataType="i8"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Outputs[Sort Output].Columns[New_R]"
+                      name="New_R">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Outputs[Derived Column Output].Columns[New_R]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Outputs[Sort Output].Columns[New_L]"
+                      dataType="i8"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Outputs[Sort Output].Columns[New_L]"
+                      name="New_L">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Outputs[Derived Column Output].Columns[New_L]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Outputs[Sort Output].Columns[Status]"
+                      dataType="wstr"
+                      length="6"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Outputs[Sort Output].Columns[Status]"
+                      name="Status">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Sort Voting's difference and insert into Brexit Voting file\Status &amp; Abs Diff.Outputs[Derived Column Output].Columns[Status]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Outputs[Sort Output].Columns[Absolute Difference]"
+                      dataType="i8"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Outputs[Sort Output].Columns[Absolute Difference]"
+                      name="Absolute Difference"
+                      sortKeyPosition="-1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Sort Voting's difference and insert into Brexit Voting file\Status &amp; Abs Diff.Outputs[Derived Column Output].Columns[Absolute Difference]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Sort Voting's difference and insert into Brexit Voting file\Status &amp; Abs Diff"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Status &amp; Abs Diff"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Sort Voting's difference and insert into Brexit Voting file\Status &amp; Abs Diff.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Status &amp; Abs Diff.Inputs[Derived Column Input].Columns[New_R]"
+                      cachedDataType="i8"
+                      cachedName="New_R"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Outputs[Derived Column Output].Columns[New_R]" />
+                    <inputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Status &amp; Abs Diff.Inputs[Derived Column Input].Columns[New_L]"
+                      cachedDataType="i8"
+                      cachedName="New_L"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Outputs[Derived Column Output].Columns[New_L]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Sort Voting's difference and insert into Brexit Voting file\Status &amp; Abs Diff.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Sort Voting's difference and insert into Brexit Voting file\Status &amp; Abs Diff.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Status &amp; Abs Diff.Outputs[Derived Column Output].Columns[Status]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="6"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Status &amp; Abs Diff.Outputs[Derived Column Output].Columns[Status]"
+                      name="Status"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Outputs[Derived Column Output].Columns[New_R]} &gt; #{Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Outputs[Derived Column Output].Columns[New_L]} ? "Remain" : "Leave"</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">New_R &gt; New_L ? "Remain" : "Leave"</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Status &amp; Abs Diff.Outputs[Derived Column Output].Columns[Absolute Difference]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Status &amp; Abs Diff.Outputs[Derived Column Output].Columns[Absolute Difference]"
+                      name="Absolute Difference"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[ABS](#{Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Outputs[Derived Column Output].Columns[New_R]} - #{Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Outputs[Derived Column Output].Columns[New_L]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">ABS(New_R - New_L)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Sort Voting's difference and insert into Brexit Voting file\Status &amp; Abs Diff.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Sort Voting's difference and insert into Brexit Voting file\Status &amp; Abs Diff.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Status &amp; Abs Diff.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Status &amp; Abs Diff.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Status &amp; Abs Diff.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Status &amp; Abs Diff.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Type Casting"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Inputs[Derived Column Input].Columns[Remain]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Remain"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].Columns[Remain]" />
+                    <inputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Inputs[Derived Column Input].Columns[Leave]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Leave"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].Columns[Leave]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Outputs[Derived Column Output].Columns[New_R]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Outputs[Derived Column Output].Columns[New_R]"
+                      name="New_R"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_I8)[REPLACE](#{Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].Columns[Remain]},",","")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I8)REPLACE(Remain,",","")</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Outputs[Derived Column Output].Columns[New_L]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Outputs[Derived Column Output].Columns[New_L]"
+                      name="New_L"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_I8)[REPLACE](#{Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output].Columns[Leave]},",","")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I8)REPLACE(Leave,",","")</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Sort Voting's difference and insert into Brexit Voting file.Paths[Data Conversion Output]"
+              endId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting File.Inputs[Flat File Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\Sort Voting's difference and insert into Brexit Voting file\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Sort Voting's difference and insert into Brexit Voting file.Paths[Derived Column Output]"
+              endId="Package\Sort Voting's difference and insert into Brexit Voting file\Status &amp; Abs Diff.Inputs[Derived Column Input]"
+              name="Derived Column Output"
+              startId="Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Sort Voting's difference and insert into Brexit Voting file.Paths[Derived Column Output1]"
+              endId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Inputs[Sort Input]"
+              name="Derived Column Output"
+              startId="Package\Sort Voting's difference and insert into Brexit Voting file\Status &amp; Abs Diff.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Sort Voting's difference and insert into Brexit Voting file.Paths[Flat File Source Output]"
+              endId="Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting.Inputs[Derived Column Input]"
+              name="Flat File Source Output"
+              startId="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Sort Voting's difference and insert into Brexit Voting file.Paths[Sort Output]"
+              endId="Package\Sort Voting's difference and insert into Brexit Voting file\Data Conversion.Inputs[Data Conversion Input]"
+              name="Sort Output"
+              startId="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference.Outputs[Sort Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="331.2,41.6"
+          Id="Package\Sort Voting's difference and insert into Brexit Voting file"
+          TopLeft="314.99998278916,172.466665467354" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Sort Voting's difference and insert into Brexit Voting file">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="156.8,41.6"
+          Id="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting File"
+          TopLeft="389.166645403539,565.933329397904" />
+        <NodeLayout
+          Size="203.2,41.6"
+          Id="Package\Sort Voting's difference and insert into Brexit Voting file\Sort by Absolute difference"
+          TopLeft="361.666646906072,365.733330790069" />
+        <NodeLayout
+          Size="140,41.6"
+          Id="Package\Sort Voting's difference and insert into Brexit Voting file\Type Casting"
+          TopLeft="391.666645266944,162.933332200315" />
+        <NodeLayout
+          Size="194.4,41.6"
+          Id="Package\Sort Voting's difference and insert into Brexit Voting file\Brexit Voting Figures File"
+          TopLeft="358.333313754864,62.3999995660782" />
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\Sort Voting's difference and insert into Brexit Voting file\Data Conversion"
+          TopLeft="389.166645403539,452.399996854067" />
+        <NodeLayout
+          Size="156.8,41.6"
+          Id="Package\Sort Voting's difference and insert into Brexit Voting file\Status &amp; Abs Diff"
+          TopLeft="388.333312115737,264.333331495192" />
+        <EdgeLayout
+          Id="Package\Sort Voting's difference and insert into Brexit Voting file.Paths[Sort Output]"
+          TopLeft="465.216646154805,407.333330790069">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45.0666660639979"
+              Start="0,0"
+              End="0,37.5666660639979">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.5666660639979" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sort Voting's difference and insert into Brexit Voting file.Paths[Flat File Source Output]"
+          TopLeft="458.599979510904,103.999999566078">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,58.9333326342368"
+              Start="0,0"
+              End="0,51.4333326342368">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.4333326342368" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sort Voting's difference and insert into Brexit Voting file.Paths[Derived Column Output1]"
+          TopLeft="464.999979510905,305.933331495192">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.799999294877"
+              Start="0,0"
+              End="0,52.299999294877">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.299999294877" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sort Voting's difference and insert into Brexit Voting file.Paths[Derived Column Output]"
+          TopLeft="464.19997869134,204.533332200315">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.799999294877"
+              Start="0,0"
+              End="0,52.299999294877">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.299999294877" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sort Voting's difference and insert into Brexit Voting file.Paths[Data Conversion Output]"
+          TopLeft="467.366645403539,493.999996854067">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,71.9333325438366"
+              Start="0,0"
+              End="0,64.4333325438366">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,64.4333325438366" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-8,24.2166662719183,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

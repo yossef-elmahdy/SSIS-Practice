@@ -1,0 +1,2335 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="1/28/2023 8:06:07 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-E550ER8"
+  DTS:CreatorName="WW930\a895416"
+  DTS:DTSID="{797233CD-F869-4998-92A6-47F1774E4487}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5035.3"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="04-CST-WeirdStats"
+  DTS:PackageType="5"
+  DTS:VersionBuild="30"
+  DTS:VersionGUID="{411D9BFC-70A7-4AFE-878F-41F7EFC09D1C}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{94943307-EC50-4BF9-9B9C-99A05D4E26F1}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\a895416\Downloads\SSIS Excersises\Conditional Split Tranforms\E2\Shopping history.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Id"
+              DTS:DTSID="{70A8AD33-ED2A-465B-B455-59B57A69CA6D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ShopDate"
+              DTS:DTSID="{61CA5669-A5A8-4DF7-94F5-75FCC4CE565E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Store"
+              DTS:DTSID="{EEAD5EC9-0CEA-4D9E-9D66-FC548E0B7F48}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Item"
+              DTS:DTSID="{A655EC73-F999-4D10-85AE-18AC859387CE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Shelf"
+              DTS:DTSID="{C8CC0C6B-8B69-4D4F-98EB-4FCE6CF632D7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Unit"
+              DTS:DTSID="{D97EB244-53AC-467B-AAD2-60C2DC35E81A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Quantity"
+              DTS:DTSID="{B6C54B32-984E-46D0-8CB7-4AF4A20A3BEC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" Price "
+              DTS:DTSID="{D04A293D-5825-43A3-8B16-ED8D978BC582}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.test_db]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{2ECC5EDF-6F21-49D2-9FBF-F3CC8DE712AA}"
+      DTS:ObjectName="localhost.test_db">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=test_db;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{2ECC5EDF-6F21-49D2-9FBF-F3CC8DE712AA}localhost.test_db;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Get stats and inert into WeirdStats Table"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{F5C36172-20EF-43B3-AFC8-7631B6ABAE12}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Get stats and inert into WeirdStats Table"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Get stats and inert into WeirdStats Table\Cast amount column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Cast amount column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Get stats and inert into WeirdStats Table\Cast amount column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Cast amount column.Inputs[Derived Column Input].Columns[ Price ]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName=" Price "
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].Columns[ Price ]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Get stats and inert into WeirdStats Table\Cast amount column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Get stats and inert into WeirdStats Table\Cast amount column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Cast amount column.Outputs[Derived Column Output].Columns[Amount]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Cast amount column.Outputs[Derived Column Output].Columns[Amount]"
+                      name="Amount"
+                      scale="2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_DECIMAL,2)#{Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].Columns[ Price ]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_DECIMAL,2)[ Price ]</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Get stats and inert into WeirdStats Table\Cast amount column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Get stats and inert into WeirdStats Table\Cast amount column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Cast amount column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Cast amount column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Cast amount column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Cast amount column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Get stats and inert into WeirdStats Table\Conditional Split"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Conditional Split"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Get stats and inert into WeirdStats Table\Conditional Split.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Conditional Split.Inputs[Conditional Split Input].Columns[Store]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Store"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Store]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Get stats and inert into WeirdStats Table\Conditional Split.Outputs[Posh Shops]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Posh Shops"
+                  synchronousInputId="Package\Get stats and inert into WeirdStats Table\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Store]} == "Marks and Spencer" || #{Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Store]} == "Waitrose"</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">Store == "Marks and Spencer" || Store == "Waitrose"</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Get stats and inert into WeirdStats Table\Conditional Split.Outputs[Cheap Shops]"
+                  description="Output 2 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Cheap Shops"
+                  synchronousInputId="Package\Get stats and inert into WeirdStats Table\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Store]} == "Aldi"</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">Store == "Aldi"</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">1</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Get stats and inert into WeirdStats Table\Conditional Split.Outputs[Otherwise]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Otherwise"
+                  synchronousInputId="Package\Get stats and inert into WeirdStats Table\Conditional Split.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Get stats and inert into WeirdStats Table\Conditional Split.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\Get stats and inert into WeirdStats Table\Conditional Split.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Get stats and inert into WeirdStats Table\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Get stats and inert into WeirdStats Table\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Data Conversion.Inputs[Data Conversion Input].Columns[Store]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Store"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Store]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Get stats and inert into WeirdStats Table\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Get stats and inert into WeirdStats Table\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Store]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Store]"
+                      name="Copy of Store"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Store]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Get stats and inert into WeirdStats Table\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Get stats and inert into WeirdStats Table\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics"
+              componentClassID="Microsoft.Aggregate"
+              contactInfo="Aggregate;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;3"
+              description="Aggregates data with functions such as Average, Sum, Count, Max, and Min. For example, group data to compute the sum of sales per product or the average visits per day."
+              name="Get all possible statistics"
+              version="3">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
+                  name="KeyScale"
+                  typeConverter="KeyScaleType">0</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
+                  name="Keys" />
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the approximate number of distinct values in a column that the aggregation counts distinctly. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no CountDistinctScale value is used."
+                  name="CountDistinctScale"
+                  typeConverter="KeyScaleType">0</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the exact number of distinct values in a column that the aggregation counts distinctly. If a CountDistinctScale value is specified, the value in CountDistinctKeys takes precedence."
+                  name="CountDistinctKeys" />
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage by which memory can be extended during the aggregation. Valid values are between 1 and 100."
+                  name="AutoExtendFactor">25</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Inputs[Aggregate Input 1]"
+                  name="Aggregate Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Inputs[Aggregate Input 1].Columns[Store]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Store"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].Columns[Store]" />
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Inputs[Aggregate Input 1].Columns[Amount]"
+                      cachedDataType="decimal"
+                      cachedName="Amount"
+                      cachedScale="2"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Cast amount column.Outputs[Derived Column Output].Columns[Amount]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1]"
+                  name="Aggregate Output 1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
+                      name="KeyScale"
+                      typeConverter="KeyScaleType">0</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
+                      name="Keys" />
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Store]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Store]"
+                      name="Store">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].Columns[Store]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Min Amount]"
+                      dataType="decimal"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Min Amount]"
+                      name="Min Amount"
+                      scale="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Get stats and inert into WeirdStats Table\Cast amount column.Outputs[Derived Column Output].Columns[Amount]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">6</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Max Amount]"
+                      dataType="decimal"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Max Amount]"
+                      name="Max Amount"
+                      scale="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Get stats and inert into WeirdStats Table\Cast amount column.Outputs[Derived Column Output].Columns[Amount]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">7</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Avg Amount]"
+                      dataType="decimal"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Avg Amount]"
+                      name="Avg Amount"
+                      scale="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Get stats and inert into WeirdStats Table\Cast amount column.Outputs[Derived Column Output].Columns[Amount]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">5</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Sum Amount]"
+                      dataType="decimal"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Sum Amount]"
+                      name="Sum Amount"
+                      scale="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Get stats and inert into WeirdStats Table\Cast amount column.Outputs[Derived Column Output].Columns[Amount]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">4</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Count Amount]"
+                      dataType="ui8"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Count Amount]"
+                      name="Count Amount">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Get stats and inert into WeirdStats Table\Cast amount column.Outputs[Derived Column Output].Columns[Amount]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Get stats and inert into WeirdStats Table\Get Average Purchase"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Get Average Purchase"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Get stats and inert into WeirdStats Table\Get Average Purchase.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Get Average Purchase.Inputs[Derived Column Input].Columns[Avg Amount]"
+                      cachedDataType="decimal"
+                      cachedName="Avg Amount"
+                      cachedScale="2"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Avg Amount]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Get stats and inert into WeirdStats Table\Get Average Purchase.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Get stats and inert into WeirdStats Table\Get Average Purchase.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Get Average Purchase.Outputs[Derived Column Output].Columns[StatisticAmount]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get Average Purchase.Outputs[Derived Column Output].Columns[StatisticAmount]"
+                      name="StatisticAmount"
+                      scale="2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Avg Amount]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">[Avg Amount]</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Get Average Purchase.Outputs[Derived Column Output].Columns[StatisticName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="10"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get Average Purchase.Outputs[Derived Column Output].Columns[StatisticName]"
+                      name="StatisticName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">"Avg Amount"</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">"Avg Amount"</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Get stats and inert into WeirdStats Table\Get Average Purchase.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Get stats and inert into WeirdStats Table\Get Average Purchase.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Get Average Purchase.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get Average Purchase.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Get Average Purchase.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get Average Purchase.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Get stats and inert into WeirdStats Table\Get Max Puchase"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Get Max Puchase"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Get stats and inert into WeirdStats Table\Get Max Puchase.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Get Max Puchase.Inputs[Derived Column Input].Columns[Max Amount]"
+                      cachedDataType="decimal"
+                      cachedName="Max Amount"
+                      cachedScale="2"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Max Amount]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Get stats and inert into WeirdStats Table\Get Max Puchase.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Get stats and inert into WeirdStats Table\Get Max Puchase.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Get Max Puchase.Outputs[Derived Column Output].Columns[StatisticAmount]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get Max Puchase.Outputs[Derived Column Output].Columns[StatisticAmount]"
+                      name="StatisticAmount"
+                      scale="2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Max Amount]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">[Max Amount]</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Get Max Puchase.Outputs[Derived Column Output].Columns[StatisticName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="10"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get Max Puchase.Outputs[Derived Column Output].Columns[StatisticName]"
+                      name="StatisticName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">"Max Amount"</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">"Max Amount"</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Get stats and inert into WeirdStats Table\Get Max Puchase.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Get stats and inert into WeirdStats Table\Get Max Puchase.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Get Max Puchase.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get Max Puchase.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Get Max Puchase.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get Max Puchase.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Get stats and inert into WeirdStats Table\Get Min Purchase"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Get Min Purchase"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Get stats and inert into WeirdStats Table\Get Min Purchase.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Get Min Purchase.Inputs[Derived Column Input].Columns[Min Amount]"
+                      cachedDataType="decimal"
+                      cachedName="Min Amount"
+                      cachedScale="2"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Min Amount]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Get stats and inert into WeirdStats Table\Get Min Purchase.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Get stats and inert into WeirdStats Table\Get Min Purchase.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Get Min Purchase.Outputs[Derived Column Output].Columns[StatisticAmount]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get Min Purchase.Outputs[Derived Column Output].Columns[StatisticAmount]"
+                      name="StatisticAmount"
+                      scale="2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Min Amount]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">[Min Amount]</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Get Min Purchase.Outputs[Derived Column Output].Columns[StatisticName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="10"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get Min Purchase.Outputs[Derived Column Output].Columns[StatisticName]"
+                      name="StatisticName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">"Min Amount"</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">"Min Amount"</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Get stats and inert into WeirdStats Table\Get Min Purchase.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Get stats and inert into WeirdStats Table\Get Min Purchase.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Get Min Purchase.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get Min Purchase.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Get Min Purchase.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get Min Purchase.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Shopping History TXT"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].Columns[Id]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].ExternalColumns[Id]"
+                      length="50"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].Columns[Id]"
+                      name="Id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].Columns[ShopDate]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].ExternalColumns[ShopDate]"
+                      length="50"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].Columns[ShopDate]"
+                      name="ShopDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].Columns[Store]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].ExternalColumns[Store]"
+                      length="50"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].Columns[Store]"
+                      name="Store"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].Columns[Item]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].ExternalColumns[Item]"
+                      length="50"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].Columns[Item]"
+                      name="Item"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].Columns[Shelf]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].ExternalColumns[Shelf]"
+                      length="50"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].Columns[Shelf]"
+                      name="Shelf"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].Columns[Unit]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].ExternalColumns[Unit]"
+                      length="50"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].Columns[Unit]"
+                      name="Unit"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].Columns[Quantity]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].ExternalColumns[Quantity]"
+                      length="50"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].Columns[Quantity]"
+                      name="Quantity"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].Columns[ Price ]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].ExternalColumns[ Price ]"
+                      length="50"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].Columns[ Price ]"
+                      name=" Price "
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].ExternalColumns[Id]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Id" />
+                    <externalMetadataColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].ExternalColumns[ShopDate]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="ShopDate" />
+                    <externalMetadataColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].ExternalColumns[Store]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Store" />
+                    <externalMetadataColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].ExternalColumns[Item]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Item" />
+                    <externalMetadataColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].ExternalColumns[Shelf]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Shelf" />
+                    <externalMetadataColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].ExternalColumns[Unit]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Unit" />
+                    <externalMetadataColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].ExternalColumns[Quantity]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Quantity" />
+                    <externalMetadataColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output].ExternalColumns[ Price ]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name=" Price " />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Get stats and inert into WeirdStats Table\Union All"
+              componentClassID="Microsoft.UnionAll"
+              contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
+              name="Union All"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 1]"
+                  name="Union All Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 1].Columns[Store]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Store"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Store]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Store]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 1].Columns[Min Amount]"
+                      cachedDataType="decimal"
+                      cachedName="Min Amount"
+                      cachedScale="2"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Min Amount]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Min Amount]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 1].Columns[Max Amount]"
+                      cachedDataType="decimal"
+                      cachedName="Max Amount"
+                      cachedScale="2"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Max Amount]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Max Amount]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 1].Columns[Avg Amount]"
+                      cachedDataType="decimal"
+                      cachedName="Avg Amount"
+                      cachedScale="2"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Avg Amount]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Avg Amount]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 1].Columns[Sum Amount]"
+                      cachedDataType="decimal"
+                      cachedName="Sum Amount"
+                      cachedScale="2"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Sum Amount]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Sum Amount]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 1].Columns[Count Amount]"
+                      cachedDataType="ui8"
+                      cachedName="Count Amount"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Count Amount]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Count Amount]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 1].Columns[StatisticAmount]"
+                      cachedDataType="decimal"
+                      cachedName="StatisticAmount"
+                      cachedScale="2"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get Max Puchase.Outputs[Derived Column Output].Columns[StatisticAmount]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[StatisticAmount]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 1].Columns[StatisticName]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="StatisticName"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get Max Puchase.Outputs[Derived Column Output].Columns[StatisticName]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[StatisticName]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 2]"
+                  hasSideEffects="true"
+                  name="Union All Input 2">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 2].Columns[Store]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Store"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Store]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Store]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 2].Columns[Min Amount]"
+                      cachedDataType="decimal"
+                      cachedName="Min Amount"
+                      cachedScale="2"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Min Amount]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Min Amount]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 2].Columns[Max Amount]"
+                      cachedDataType="decimal"
+                      cachedName="Max Amount"
+                      cachedScale="2"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Max Amount]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Max Amount]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 2].Columns[Avg Amount]"
+                      cachedDataType="decimal"
+                      cachedName="Avg Amount"
+                      cachedScale="2"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Avg Amount]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Avg Amount]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 2].Columns[Sum Amount]"
+                      cachedDataType="decimal"
+                      cachedName="Sum Amount"
+                      cachedScale="2"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Sum Amount]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Sum Amount]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 2].Columns[Count Amount]"
+                      cachedDataType="ui8"
+                      cachedName="Count Amount"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Count Amount]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Count Amount]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 2].Columns[StatisticAmount]"
+                      cachedDataType="decimal"
+                      cachedName="StatisticAmount"
+                      cachedScale="2"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get Min Purchase.Outputs[Derived Column Output].Columns[StatisticAmount]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[StatisticAmount]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 2].Columns[StatisticName]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="StatisticName"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get Min Purchase.Outputs[Derived Column Output].Columns[StatisticName]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[StatisticName]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 3]"
+                  hasSideEffects="true"
+                  name="Union All Input 3">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 3].Columns[Store]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Store"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Store]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Store]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 3].Columns[Min Amount]"
+                      cachedDataType="decimal"
+                      cachedName="Min Amount"
+                      cachedScale="2"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Min Amount]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Min Amount]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 3].Columns[Max Amount]"
+                      cachedDataType="decimal"
+                      cachedName="Max Amount"
+                      cachedScale="2"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Max Amount]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Max Amount]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 3].Columns[Avg Amount]"
+                      cachedDataType="decimal"
+                      cachedName="Avg Amount"
+                      cachedScale="2"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Avg Amount]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Avg Amount]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 3].Columns[Sum Amount]"
+                      cachedDataType="decimal"
+                      cachedName="Sum Amount"
+                      cachedScale="2"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Sum Amount]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Sum Amount]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 3].Columns[Count Amount]"
+                      cachedDataType="ui8"
+                      cachedName="Count Amount"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1].Columns[Count Amount]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Count Amount]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 3].Columns[StatisticAmount]"
+                      cachedDataType="decimal"
+                      cachedName="StatisticAmount"
+                      cachedScale="2"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get Average Purchase.Outputs[Derived Column Output].Columns[StatisticAmount]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[StatisticAmount]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 3].Columns[StatisticName]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="StatisticName"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Get Average Purchase.Outputs[Derived Column Output].Columns[StatisticName]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[StatisticName]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 4]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Union All Input 4">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1]"
+                  name="Union All Output 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Store]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Store]"
+                      name="Store" />
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Min Amount]"
+                      dataType="decimal"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Min Amount]"
+                      name="Min Amount"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Max Amount]"
+                      dataType="decimal"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Max Amount]"
+                      name="Max Amount"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Avg Amount]"
+                      dataType="decimal"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Avg Amount]"
+                      name="Avg Amount"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Sum Amount]"
+                      dataType="decimal"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Sum Amount]"
+                      name="Sum Amount"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Count Amount]"
+                      dataType="ui8"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Count Amount]"
+                      name="Count Amount" />
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[StatisticAmount]"
+                      dataType="decimal"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[StatisticAmount]"
+                      name="StatisticAmount"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[StatisticName]"
+                      dataType="wstr"
+                      length="10"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[StatisticName]"
+                      name="StatisticName" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Get stats and inert into WeirdStats Table\WeirdStats Table"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="WeirdStats Table"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[WeirdStats]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Get stats and inert into WeirdStats Table\WeirdStats Table.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.test_db]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.test_db]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Get stats and inert into WeirdStats Table\WeirdStats Table.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\WeirdStats Table.Inputs[OLE DB Destination Input].Columns[Count Amount]"
+                      cachedDataType="ui8"
+                      cachedName="Count Amount"
+                      externalMetadataColumnId="Package\Get stats and inert into WeirdStats Table\WeirdStats Table.Inputs[OLE DB Destination Input].ExternalColumns[NumberPurchases]"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[Count Amount]" />
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\WeirdStats Table.Inputs[OLE DB Destination Input].Columns[StatisticAmount]"
+                      cachedDataType="decimal"
+                      cachedName="StatisticAmount"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Get stats and inert into WeirdStats Table\WeirdStats Table.Inputs[OLE DB Destination Input].ExternalColumns[Amount]"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[StatisticAmount]" />
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\WeirdStats Table.Inputs[OLE DB Destination Input].Columns[Copy of Store]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Store"
+                      externalMetadataColumnId="Package\Get stats and inert into WeirdStats Table\WeirdStats Table.Inputs[OLE DB Destination Input].ExternalColumns[StoreName]"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Store]" />
+                    <inputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\WeirdStats Table.Inputs[OLE DB Destination Input].Columns[StatisticName]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="StatisticName"
+                      externalMetadataColumnId="Package\Get stats and inert into WeirdStats Table\WeirdStats Table.Inputs[OLE DB Destination Input].ExternalColumns[Statistic]"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1].Columns[StatisticName]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\WeirdStats Table.Inputs[OLE DB Destination Input].ExternalColumns[StoreName]"
+                      dataType="wstr"
+                      length="255"
+                      name="StoreName" />
+                    <externalMetadataColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\WeirdStats Table.Inputs[OLE DB Destination Input].ExternalColumns[Statistic]"
+                      dataType="wstr"
+                      length="10"
+                      name="Statistic" />
+                    <externalMetadataColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\WeirdStats Table.Inputs[OLE DB Destination Input].ExternalColumns[NumberPurchases]"
+                      dataType="i4"
+                      name="NumberPurchases" />
+                    <externalMetadataColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\WeirdStats Table.Inputs[OLE DB Destination Input].ExternalColumns[Amount]"
+                      dataType="numeric"
+                      name="Amount"
+                      precision="12"
+                      scale="2" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Get stats and inert into WeirdStats Table\WeirdStats Table.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Get stats and inert into WeirdStats Table\WeirdStats Table.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\WeirdStats Table.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\WeirdStats Table.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Get stats and inert into WeirdStats Table\WeirdStats Table.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Get stats and inert into WeirdStats Table\WeirdStats Table.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Get stats and inert into WeirdStats Table.Paths[Aggregate Output 1]"
+              endId="Package\Get stats and inert into WeirdStats Table\Conditional Split.Inputs[Conditional Split Input]"
+              name="Aggregate Output 1"
+              startId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Outputs[Aggregate Output 1]" />
+            <path
+              refId="Package\Get stats and inert into WeirdStats Table.Paths[Cheap Shops]"
+              endId="Package\Get stats and inert into WeirdStats Table\Get Min Purchase.Inputs[Derived Column Input]"
+              name="Cheap Shops"
+              startId="Package\Get stats and inert into WeirdStats Table\Conditional Split.Outputs[Cheap Shops]" />
+            <path
+              refId="Package\Get stats and inert into WeirdStats Table.Paths[Data Conversion Output]"
+              endId="Package\Get stats and inert into WeirdStats Table\WeirdStats Table.Inputs[OLE DB Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\Get stats and inert into WeirdStats Table\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Get stats and inert into WeirdStats Table.Paths[Derived Column Output]"
+              endId="Package\Get stats and inert into WeirdStats Table\Get all possible statistics.Inputs[Aggregate Input 1]"
+              name="Derived Column Output"
+              startId="Package\Get stats and inert into WeirdStats Table\Cast amount column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Get stats and inert into WeirdStats Table.Paths[Derived Column Output1]"
+              endId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 1]"
+              name="Derived Column Output"
+              startId="Package\Get stats and inert into WeirdStats Table\Get Max Puchase.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Get stats and inert into WeirdStats Table.Paths[Derived Column Output2]"
+              endId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 2]"
+              name="Derived Column Output"
+              startId="Package\Get stats and inert into WeirdStats Table\Get Min Purchase.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Get stats and inert into WeirdStats Table.Paths[Derived Column Output3]"
+              endId="Package\Get stats and inert into WeirdStats Table\Union All.Inputs[Union All Input 3]"
+              name="Derived Column Output"
+              startId="Package\Get stats and inert into WeirdStats Table\Get Average Purchase.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Get stats and inert into WeirdStats Table.Paths[Flat File Source Output]"
+              endId="Package\Get stats and inert into WeirdStats Table\Cast amount column.Inputs[Derived Column Input]"
+              name="Flat File Source Output"
+              startId="Package\Get stats and inert into WeirdStats Table\Shopping History TXT.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Get stats and inert into WeirdStats Table.Paths[Otherwise]"
+              endId="Package\Get stats and inert into WeirdStats Table\Get Average Purchase.Inputs[Derived Column Input]"
+              name="Otherwise"
+              startId="Package\Get stats and inert into WeirdStats Table\Conditional Split.Outputs[Otherwise]" />
+            <path
+              refId="Package\Get stats and inert into WeirdStats Table.Paths[Posh Shops]"
+              endId="Package\Get stats and inert into WeirdStats Table\Get Max Puchase.Inputs[Derived Column Input]"
+              name="Posh Shops"
+              startId="Package\Get stats and inert into WeirdStats Table\Conditional Split.Outputs[Posh Shops]" />
+            <path
+              refId="Package\Get stats and inert into WeirdStats Table.Paths[Union All Output 1]"
+              endId="Package\Get stats and inert into WeirdStats Table\Data Conversion.Inputs[Data Conversion Input]"
+              name="Union All Output 1"
+              startId="Package\Get stats and inert into WeirdStats Table\Union All.Outputs[Union All Output 1]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Truncate table WeirdStats"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{9923EE0F-E346-4B8E-B417-DD0EA07A74BB}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncate table WeirdStats"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{2ECC5EDF-6F21-49D2-9FBF-F3CC8DE712AA}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE [WeirdStats];" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{FEF6A0DF-2D9C-4716-B7F7-5DE45D01DB80}"
+      DTS:From="Package\Truncate table WeirdStats"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Get stats and inert into WeirdStats Table" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="264.8,41.6"
+          Id="Package\Get stats and inert into WeirdStats Table"
+          TopLeft="351.666647452449,233.133331712153" />
+        <NodeLayout
+          Size="198.4,41.6"
+          Id="Package\Truncate table WeirdStats"
+          TopLeft="382.499979101122,107.466665919357" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="482.883313276785,149.066665919357">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,84.0666657927961"
+              Start="0,0"
+              End="0,76.5666657927961">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,76.5666657927961" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Get stats and inert into WeirdStats Table">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="183.2,41.6"
+          Id="Package\Get stats and inert into WeirdStats Table\Get Average Purchase"
+          TopLeft="689.166629012262,417.333331187831" />
+        <NodeLayout
+          Size="160.8,41.6"
+          Id="Package\Get stats and inert into WeirdStats Table\Get Max Puchase"
+          TopLeft="174.999990438422,416.466663948629" />
+        <NodeLayout
+          Size="153.6,41.6"
+          Id="Package\Get stats and inert into WeirdStats Table\Conditional Split"
+          TopLeft="424.999976779025,328.466664382551" />
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\Get stats and inert into WeirdStats Table\Data Conversion"
+          TopLeft="426.666643354629,599.399996582866" />
+        <NodeLayout
+          Size="161.6,41.6"
+          Id="Package\Get stats and inert into WeirdStats Table\Get Min Purchase"
+          TopLeft="426.666643354629,417.799997739991" />
+        <NodeLayout
+          Size="120,41.6"
+          Id="Package\Get stats and inert into WeirdStats Table\Union All"
+          TopLeft="442.499975822867,510.333330663509" />
+        <NodeLayout
+          Size="192,41.6"
+          Id="Package\Get stats and inert into WeirdStats Table\Get all possible statistics"
+          TopLeft="405.833311159579,246.133331621753" />
+        <NodeLayout
+          Size="180,41.6"
+          Id="Package\Get stats and inert into WeirdStats Table\Shopping History TXT"
+          TopLeft="415.833310613203,64.999999547998" />
+        <NodeLayout
+          Size="173.6,41.6"
+          Id="Package\Get stats and inert into WeirdStats Table\Cast amount column"
+          TopLeft="414.999977325401,162.933332200315" />
+        <NodeLayout
+          Size="158.4,41.6"
+          Id="Package\Get stats and inert into WeirdStats Table\WeirdStats Table"
+          TopLeft="423.333310203421,697.19999526302" />
+        <EdgeLayout
+          Id="Package\Get stats and inert into WeirdStats Table.Paths[Flat File Source Output]"
+          TopLeft="503.816643969302,106.599999547998">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,56.333332652317"
+              Start="0,0"
+              End="0,48.833332652317">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.833332652317" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Get stats and inert into WeirdStats Table.Paths[Derived Column Output3]"
+          TopLeft="780.766629012262,458.933331187831">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-250.266653189395,51.3999994756778"
+              Start="0,0"
+              End="-250.266653189395,43.8999994756778">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.5217387884855" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29.5217387884855"
+                    Point2="0,33.5217387884855"
+                    Point3="-4,33.5217387884855" />
+                  <mssgle:LineSegment
+                    End="-246.266653189395,33.5217387884855" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-246.266653189395,33.5217387884855"
+                    Point2="-250.266653189395,33.5217387884855"
+                    Point3="-250.266653189395,37.5217387884855" />
+                  <mssgle:LineSegment
+                    End="-250.266653189395,43.8999994756778" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Get stats and inert into WeirdStats Table.Paths[Derived Column Output2]"
+          TopLeft="504.983309588748,459.399997739991">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50.9333329235182"
+              Start="0,0"
+              End="0,43.4333329235182">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.4333329235182" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Get stats and inert into WeirdStats Table.Paths[Derived Column Output1]"
+          TopLeft="255.399990438422,458.066663948629">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="219.099985384445,52.26666671488"
+              Start="0,0"
+              End="219.099985384445,44.76666671488">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.0869565531826" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.0869565531826"
+                    Point2="0,34.0869565531826"
+                    Point3="4,34.0869565531826" />
+                  <mssgle:LineSegment
+                    End="215.099985384445,34.0869565531826" />
+                  <mssgle:CubicBezierSegment
+                    Point1="215.099985384445,34.0869565531826"
+                    Point2="219.099985384445,34.0869565531826"
+                    Point3="219.099985384445,38.0869565531826" />
+                  <mssgle:LineSegment
+                    End="219.099985384445,44.76666671488" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Get stats and inert into WeirdStats Table.Paths[Derived Column Output]"
+          TopLeft="501.81664424249,204.533332200315">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41.599999421438"
+              Start="0,0"
+              End="0,34.099999421438">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.099999421438" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Get stats and inert into WeirdStats Table.Paths[Data Conversion Output]"
+          TopLeft="503.599976779025,640.999996582866">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,56.199998680154"
+              Start="0,0"
+              End="0,48.699998680154">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.699998680154" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Get stats and inert into WeirdStats Table.Paths[Cheap Shops]"
+          TopLeft="504.633310066827,370.066664382551">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,47.7333333574396"
+              Start="0,0"
+              End="0,40.2333333574396">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.2333333574396" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-29.41009765625,14.3119791787198,58.8201953125,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Get stats and inert into WeirdStats Table.Paths[Aggregate Output 1]"
+          TopLeft="501.816643969302,287.733331621753">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40.733332760798"
+              Start="0,0"
+              End="0,33.233332760798">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.233332760798" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Get stats and inert into WeirdStats Table.Paths[Union All Output 1]"
+          TopLeft="503.583309588748,551.933330663509">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,47.466665919357"
+              Start="0,0"
+              End="0,39.966665919357">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.966665919357" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Get stats and inert into WeirdStats Table.Paths[Posh Shops]"
+          TopLeft="465.399976779025,370.066664382551">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-209.999986340603,46.3999995660778"
+              Start="0,0"
+              End="-209.999986340603,38.8999995660778">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.9945390995695" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.9945390995695"
+                    Point2="0,15.9945390995695"
+                    Point3="-4,15.9945390995695" />
+                  <mssgle:LineSegment
+                    End="-205.999986340603,15.9945390995695" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-205.999986340603,15.9945390995695"
+                    Point2="-209.999986340603,15.9945390995695"
+                    Point3="-209.999986340603,19.9945390995695" />
+                  <mssgle:LineSegment
+                    End="-209.999986340603,38.8999995660778" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-130.877571295301,20.9945390995695,51.75515625,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Get stats and inert into WeirdStats Table.Paths[Otherwise]"
+          TopLeft="538.199976779025,370.066664382551">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="242.566652233237,47.26666680528"
+              Start="0,0"
+              End="242.566652233237,39.76666680528">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.2932878748576" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.2932878748576"
+                    Point2="0,16.2932878748576"
+                    Point3="4,16.2932878748576" />
+                  <mssgle:LineSegment
+                    End="238.566652233237,16.2932878748576" />
+                  <mssgle:CubicBezierSegment
+                    Point1="238.566652233237,16.2932878748576"
+                    Point2="242.566652233237,16.2932878748576"
+                    Point3="242.566652233237,20.2932878748576" />
+                  <mssgle:LineSegment
+                    End="242.566652233237,39.76666680528" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="98.4294589291185,21.2932878748576,45.707734375,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Get stats and inert into WeirdStats Table\WeirdStats Table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

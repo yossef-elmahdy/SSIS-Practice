@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "WiseOwlExcersies", "WiseOwlExcersies\WiseOwlExcersies.dtproj", "{3E4EC104-A7BD-4445-A9D0-AA7A925C36F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E4EC104-A7BD-4445-A9D0-AA7A925C36F5}.Development|Default.ActiveCfg = Development
+		{3E4EC104-A7BD-4445-A9D0-AA7A925C36F5}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51A050C6-7B8F-4A87-B747-76488DA007E5}
+	EndGlobalSection
+EndGlobal

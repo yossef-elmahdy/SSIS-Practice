@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="localhost.test_db"
+  DTS:DTSID="{51C53DD4-1FCA-49D6-89D5-E858F5E811CC}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=localhost;Initial Catalog=test_db;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-WiseOwlExcersies-{51C53DD4-1FCA-49D6-89D5-E858F5E811CC}localhost.test_db;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -1,0 +1,2042 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/4/2023 11:38:25 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-E550ER8"
+  DTS:CreatorName="WW930\a895416"
+  DTS:DTSID="{F87D474B-FE33-4295-A1C9-ABC017FA23AB}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5035.3"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{427B6189-4065-49B8-B488-03403749309E}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Cache Connection Manager]"
+      DTS:CreationName="CACHE"
+      DTS:DTSID="{523CDC85-0E96-4C89-895F-B87C54C6D87C}"
+      DTS:ObjectName="Cache Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager>
+          <DTS:CacheColumns>
+            <DTS:CacheColumn
+              DTS:DataType="130"
+              DTS:Length="50"
+              DTS:ObjectName="CentreId"
+              DTS:DTSID="{2676EB28-D935-4EDE-AB3C-7B2098D31B8E}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="130"
+              DTS:Length="50"
+              DTS:ObjectName="CentreName"
+              DTS:DTSID="{EFA3BF43-772E-4ADD-BBDA-3D7C56A0B783}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="130"
+              DTS:Length="50"
+              DTS:ObjectName="PostCode"
+              DTS:DTSID="{E81C4FD4-D0C3-49A4-9D9D-2324D7CDE485}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="130"
+              DTS:Length="50"
+              DTS:ObjectName="SquareMetres"
+              DTS:DTSID="{F2928BDD-BDF2-4009-8BF4-650AE199CFBF}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="130"
+              DTS:Length="50"
+              DTS:ObjectName="NumberUnits"
+              DTS:DTSID="{0EA14C74-B8D9-4457-905C-EE98FB7BBC1C}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="130"
+              DTS:Length="255"
+              DTS:IndexPosition="1"
+              DTS:ObjectName="Details"
+              DTS:DTSID="{99732537-A7F6-4878-AC6C-3EB5193C8F62}"
+              DTS:CreationName="" />
+          </DTS:CacheColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Cache Connection Manager 1]"
+      DTS:CreationName="CACHE"
+      DTS:DTSID="{6A0FFF5F-C5AF-45E3-AC6C-4747ABA73A94}"
+      DTS:ObjectName="Cache Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager>
+          <DTS:CacheColumns>
+            <DTS:CacheColumn
+              DTS:DataType="129"
+              DTS:Length="50"
+              DTS:CodePage="1252"
+              DTS:ObjectName="CentreId"
+              DTS:DTSID="{8ED2263E-0FB2-4427-8871-40D668622AB1}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="129"
+              DTS:Length="50"
+              DTS:CodePage="1252"
+              DTS:ObjectName="CentreName"
+              DTS:DTSID="{96B4F101-30A7-48FB-B40F-5A2182ED50B3}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="129"
+              DTS:Length="50"
+              DTS:CodePage="1252"
+              DTS:ObjectName="PostCode"
+              DTS:DTSID="{B83B76DA-C722-4197-B263-850DEC06D459}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="129"
+              DTS:Length="50"
+              DTS:CodePage="1252"
+              DTS:ObjectName="SquareMetres"
+              DTS:DTSID="{1A656307-7D4D-4782-B2A2-18F65EA89038}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="129"
+              DTS:Length="50"
+              DTS:CodePage="1252"
+              DTS:ObjectName="NumberUnits"
+              DTS:DTSID="{054ACAF5-A074-453E-B435-4822FF52E571}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="130"
+              DTS:Length="50"
+              DTS:IndexPosition="1"
+              DTS:ObjectName="Details"
+              DTS:DTSID="{C9C6D558-647C-485A-8877-177F51FD8A49}"
+              DTS:CreationName="" />
+          </DTS:CacheColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Cache Connection Manager 2]"
+      DTS:CreationName="CACHE"
+      DTS:DTSID="{0079D0D6-B269-41BF-8B6F-65030448CD0B}"
+      DTS:ObjectName="Cache Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager>
+          <DTS:CacheColumns>
+            <DTS:CacheColumn
+              DTS:DataType="129"
+              DTS:Length="50"
+              DTS:CodePage="65001"
+              DTS:ObjectName="CentreId"
+              DTS:DTSID="{C98086AC-BC8C-41AF-AB25-C81DE6D48B79}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="129"
+              DTS:Length="50"
+              DTS:CodePage="65001"
+              DTS:ObjectName="CentreName"
+              DTS:DTSID="{4ADF0A8D-E1EF-4AFE-9F6C-2B883FE3D480}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="129"
+              DTS:Length="50"
+              DTS:CodePage="65001"
+              DTS:ObjectName="PostCode"
+              DTS:DTSID="{63370073-49BD-4B01-A46A-8C875C9A5D48}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="129"
+              DTS:Length="50"
+              DTS:CodePage="65001"
+              DTS:ObjectName="SquareMetres"
+              DTS:DTSID="{D8B5BF5C-7207-4847-BACA-31DA04270C22}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="129"
+              DTS:Length="50"
+              DTS:CodePage="65001"
+              DTS:ObjectName="NumberUnits"
+              DTS:DTSID="{24802697-2E03-441A-9CCF-9C90290162DF}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="129"
+              DTS:Length="500"
+              DTS:CodePage="65001"
+              DTS:IndexPosition="1"
+              DTS:ObjectName="Details"
+              DTS:DTSID="{C74D9A67-4240-4551-84B6-12AE81FBFD4F}"
+              DTS:CreationName="" />
+          </DTS:CacheColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{3A0E46DC-515C-4AA6-81AF-DDA6A5379E69}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\a895416\Downloads\SSIS Excersises\Lookup Transforms\E3\original list.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CentreId"
+              DTS:DTSID="{1280E46D-D1BF-4F6B-90DA-C9703F989D10}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CentreName"
+              DTS:DTSID="{2354EE11-E875-43D7-95E0-5F7B67DE4521}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PostCode"
+              DTS:DTSID="{3C9418C0-6F17-4E5E-A508-E9BF1974A9EA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SquareMetres"
+              DTS:DTSID="{95876A91-FDB3-4DF0-B3AB-B1DE1A8826FB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NumberUnits"
+              DTS:DTSID="{82562581-D3CA-4D89-B4D0-AE4EFE52D5FA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Details"
+              DTS:DTSID="{492F4E02-A364-4A3F-8AA9-575CC63DA33E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{5F998373-D346-40B6-9A35-8A8EBF2E2B6A}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\a895416\Downloads\SSIS Excersises\Lookup Transforms\E3\revisted list.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CentreId"
+              DTS:DTSID="{6BD6CD7C-447F-4F34-BEF9-1AA65BEDDD57}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CentreName"
+              DTS:DTSID="{4C5B1600-395F-4687-8FE4-A549BD128A60}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PostCode"
+              DTS:DTSID="{FF542F7B-FB79-41C8-BE8B-82B99AA58AD9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SquareMetres"
+              DTS:DTSID="{4143B6DB-AE82-4B71-A130-CA1BEB057007}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NumberUnits"
+              DTS:DTSID="{C583F5BB-81B3-4BD9-AB9B-D85CC33A0C89}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Details"
+              DTS:DTSID="{25BFD7B1-BAF0-4E0C-8B13-960937C15011}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{09A3ABD0-40C2-4AD6-AA68-F32966F37A7E}"
+      DTS:ObjectName="Flat File Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\a895416\Downloads\SSIS Excersises\Lookup Transforms\E3\original list.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CentreId"
+              DTS:DTSID="{6741F8DA-15B5-402F-AC27-E7B0E83CE9DA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CentreName"
+              DTS:DTSID="{DE3F3D6C-297D-42DB-8FE4-F4C2ADB86396}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PostCode"
+              DTS:DTSID="{FB93B307-8627-43DA-88C3-F1BE347F2646}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SquareMetres"
+              DTS:DTSID="{D7861444-9961-43A6-A807-41A5D50BFB79}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NumberUnits"
+              DTS:DTSID="{570625D3-6EE8-4E37-97AF-9B62B34A3368}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Details"
+              DTS:DTSID="{88867D87-7660-4164-948D-8BFFB4B27393}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Load Into Cache"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{F4616BFC-6178-4E3C-8BE2-A9E2D3A959FB}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load Into Cache"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load Into Cache\Cache Transform"
+              componentClassID="Microsoft.Cache"
+              contactInfo="Cache Transform;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Writes data to a cache (a .caw file) with the Cache Connection Manager. Reuse the cache between multiple Lookup transforms to reduce database load. Share the cache to reduce memory usage. Note: cache data is stored in clear text and not recommended for sensitive data."
+              name="Cache Transform"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load Into Cache\Cache Transform.Connections[CacheConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Cache Connection Manager 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[Cache Connection Manager 2]"
+                  description="The connection used to access the cache."
+                  name="CacheConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load Into Cache\Cache Transform.Inputs[Cache Input]"
+                  hasSideEffects="true"
+                  name="Cache Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load Into Cache\Cache Transform.Inputs[Cache Input].Columns[PostCode]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PostCode"
+                      lineageId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].Columns[PostCode]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">PostCode</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Into Cache\Cache Transform.Inputs[Cache Input].Columns[SquareMetres]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="SquareMetres"
+                      lineageId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].Columns[SquareMetres]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">SquareMetres</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Into Cache\Cache Transform.Inputs[Cache Input].Columns[NumberUnits]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="NumberUnits"
+                      lineageId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].Columns[NumberUnits]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">NumberUnits</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Into Cache\Cache Transform.Inputs[Cache Input].Columns[CentreId]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CentreId"
+                      lineageId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].Columns[CentreId]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">CentreId</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Into Cache\Cache Transform.Inputs[Cache Input].Columns[CentreName]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CentreName"
+                      lineageId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].Columns[CentreName]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">CentreName</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Into Cache\Cache Transform.Inputs[Cache Input].Columns[Details]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="500"
+                      cachedName="Details"
+                      lineageId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].Columns[Details]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">Details</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load Into Cache\Cache Transform.Outputs[Cache Output]"
+                  name="Cache Output"
+                  synchronousInputId="Package\Load Into Cache\Cache Transform.Inputs[Cache Input]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load Into Cache\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load Into Cache\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].Columns[CentreId]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CentreId]"
+                      length="50"
+                      lineageId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].Columns[CentreId]"
+                      name="CentreId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].Columns[CentreName]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CentreName]"
+                      length="50"
+                      lineageId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].Columns[CentreName]"
+                      name="CentreName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].Columns[PostCode]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PostCode]"
+                      length="50"
+                      lineageId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].Columns[PostCode]"
+                      name="PostCode"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].Columns[SquareMetres]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SquareMetres]"
+                      length="50"
+                      lineageId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].Columns[SquareMetres]"
+                      name="SquareMetres"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].Columns[NumberUnits]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NumberUnits]"
+                      length="50"
+                      lineageId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].Columns[NumberUnits]"
+                      name="NumberUnits"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].Columns[Details]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Details]"
+                      length="500"
+                      lineageId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].Columns[Details]"
+                      name="Details"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CentreId]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="CentreId" />
+                    <externalMetadataColumn
+                      refId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CentreName]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="CentreName" />
+                    <externalMetadataColumn
+                      refId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PostCode]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="PostCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SquareMetres]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="SquareMetres" />
+                    <externalMetadataColumn
+                      refId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NumberUnits]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="NumberUnits" />
+                    <externalMetadataColumn
+                      refId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Details]"
+                      codePage="65001"
+                      dataType="str"
+                      length="500"
+                      name="Details" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load Into Cache\Union All"
+              componentClassID="Microsoft.UnionAll"
+              contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
+              name="Union All"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\Load Into Cache\Union All.Inputs[Union All Input 1]"
+                  name="Union All Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load Into Cache\Union All.Inputs[Union All Input 1].Columns[Flat File Source Error Output Column]"
+                      cachedCodepage="65001"
+                      cachedDataType="text"
+                      cachedName="Flat File Source Error Output Column"
+                      lineageId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Load Into Cache\Union All.Outputs[Union All Output 1].Columns[Flat File Source Error Output Column]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Into Cache\Union All.Inputs[Union All Input 1].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      lineageId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Load Into Cache\Union All.Outputs[Union All Output 1].Columns[ErrorCode]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Into Cache\Union All.Inputs[Union All Input 1].Columns[ErrorColumn]"
+                      cachedDataType="i4"
+                      cachedName="ErrorColumn"
+                      lineageId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Load Into Cache\Union All.Outputs[Union All Output 1].Columns[ErrorColumn]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Load Into Cache\Union All.Inputs[Union All Input 2]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Union All Input 2">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load Into Cache\Union All.Outputs[Union All Output 1]"
+                  name="Union All Output 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Into Cache\Union All.Outputs[Union All Output 1].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Load Into Cache\Union All.Outputs[Union All Output 1].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Load Into Cache\Union All.Outputs[Union All Output 1].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load Into Cache\Union All.Outputs[Union All Output 1].Columns[ErrorCode]"
+                      name="ErrorCode" />
+                    <outputColumn
+                      refId="Package\Load Into Cache\Union All.Outputs[Union All Output 1].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load Into Cache\Union All.Outputs[Union All Output 1].Columns[ErrorColumn]"
+                      name="ErrorColumn" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load Into Cache.Paths[Flat File Source Error Output]"
+              endId="Package\Load Into Cache\Union All.Inputs[Union All Input 1]"
+              name="Flat File Source Error Output"
+              startId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Error Output]" />
+            <path
+              refId="Package\Load Into Cache.Paths[Flat File Source Output]"
+              endId="Package\Load Into Cache\Cache Transform.Inputs[Cache Input]"
+              name="Flat File Source Output"
+              startId="Package\Load Into Cache\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Lookup revisted to the cache"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{3DFC2936-7400-4E7F-A8A6-732809EDE7DE}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Lookup revisted to the cache"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Lookup revisted to the cache\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Lookup revisted to the cache\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[CentreId]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CentreId]"
+                      length="50"
+                      lineageId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[CentreId]"
+                      name="CentreId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[CentreName]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CentreName]"
+                      length="50"
+                      lineageId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[CentreName]"
+                      name="CentreName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[PostCode]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PostCode]"
+                      length="50"
+                      lineageId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[PostCode]"
+                      name="PostCode"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[SquareMetres]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SquareMetres]"
+                      length="50"
+                      lineageId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[SquareMetres]"
+                      name="SquareMetres"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[NumberUnits]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NumberUnits]"
+                      length="50"
+                      lineageId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[NumberUnits]"
+                      name="NumberUnits"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[Details]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Details]"
+                      length="500"
+                      lineageId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[Details]"
+                      name="Details"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CentreId]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="CentreId" />
+                    <externalMetadataColumn
+                      refId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CentreName]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="CentreName" />
+                    <externalMetadataColumn
+                      refId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PostCode]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="PostCode" />
+                    <externalMetadataColumn
+                      refId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SquareMetres]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="SquareMetres" />
+                    <externalMetadataColumn
+                      refId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NumberUnits]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="NumberUnits" />
+                    <externalMetadataColumn
+                      refId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Details]"
+                      codePage="65001"
+                      dataType="str"
+                      length="500"
+                      name="Details" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Lookup revisted to the cache\Lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from () [refTable]
+where [refTable].[Details] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="CentreId" dataType="DT_STR" length="50" precision="0" scale="0" codePage="65001"/&gt;&lt;referenceColumn name="CentreName" dataType="DT_STR" length="50" precision="0" scale="0" codePage="65001"/&gt;&lt;referenceColumn name="PostCode" dataType="DT_STR" length="50" precision="0" scale="0" codePage="65001"/&gt;&lt;referenceColumn name="SquareMetres" dataType="DT_STR" length="50" precision="0" scale="0" codePage="65001"/&gt;&lt;referenceColumn name="NumberUnits" dataType="DT_STR" length="50" precision="0" scale="0" codePage="65001"/&gt;&lt;referenceColumn name="Details" dataType="DT_STR" length="500" precision="0" scale="0" codePage="65001"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[Details]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Lookup revisted to the cache\Lookup.Connections[CacheConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Cache Connection Manager 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[Cache Connection Manager 2]"
+                  description="Connection manager used to access lookup data."
+                  name="CacheConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Lookup revisted to the cache\Lookup.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Lookup revisted to the cache\Lookup.Inputs[Lookup Input].Columns[Details]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="500"
+                      cachedName="Details"
+                      lineageId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[Details]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Details</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Lookup revisted to the cache\Lookup.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Lookup revisted to the cache\Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Lookup revisted to the cache\Lookup.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Lookup revisted to the cache\Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Lookup revisted to the cache\Lookup.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Lookup revisted to the cache\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Lookup revisted to the cache\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Lookup revisted to the cache\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Lookup revisted to the cache\Union All"
+              componentClassID="Microsoft.UnionAll"
+              contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
+              name="Union All"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\Lookup revisted to the cache\Union All.Inputs[Union All Input 1]"
+                  name="Union All Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Lookup revisted to the cache\Union All.Inputs[Union All Input 1].Columns[CentreId]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CentreId"
+                      lineageId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[CentreId]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Lookup revisted to the cache\Union All.Outputs[Union All Output 1].Columns[CentreId]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Lookup revisted to the cache\Union All.Inputs[Union All Input 1].Columns[CentreName]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CentreName"
+                      lineageId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[CentreName]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Lookup revisted to the cache\Union All.Outputs[Union All Output 1].Columns[CentreName]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Lookup revisted to the cache\Union All.Inputs[Union All Input 1].Columns[PostCode]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PostCode"
+                      lineageId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[PostCode]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Lookup revisted to the cache\Union All.Outputs[Union All Output 1].Columns[PostCode]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Lookup revisted to the cache\Union All.Inputs[Union All Input 1].Columns[SquareMetres]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="SquareMetres"
+                      lineageId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[SquareMetres]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Lookup revisted to the cache\Union All.Outputs[Union All Output 1].Columns[SquareMetres]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Lookup revisted to the cache\Union All.Inputs[Union All Input 1].Columns[NumberUnits]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="NumberUnits"
+                      lineageId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[NumberUnits]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Lookup revisted to the cache\Union All.Outputs[Union All Output 1].Columns[NumberUnits]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Lookup revisted to the cache\Union All.Inputs[Union All Input 1].Columns[Details]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="500"
+                      cachedName="Details"
+                      lineageId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[Details]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Lookup revisted to the cache\Union All.Outputs[Union All Output 1].Columns[Details]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Lookup revisted to the cache\Union All.Inputs[Union All Input 2]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Union All Input 2">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Lookup revisted to the cache\Union All.Outputs[Union All Output 1]"
+                  name="Union All Output 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Union All.Outputs[Union All Output 1].Columns[CentreId]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Lookup revisted to the cache\Union All.Outputs[Union All Output 1].Columns[CentreId]"
+                      name="CentreId" />
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Union All.Outputs[Union All Output 1].Columns[CentreName]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Lookup revisted to the cache\Union All.Outputs[Union All Output 1].Columns[CentreName]"
+                      name="CentreName" />
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Union All.Outputs[Union All Output 1].Columns[PostCode]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Lookup revisted to the cache\Union All.Outputs[Union All Output 1].Columns[PostCode]"
+                      name="PostCode" />
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Union All.Outputs[Union All Output 1].Columns[SquareMetres]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Lookup revisted to the cache\Union All.Outputs[Union All Output 1].Columns[SquareMetres]"
+                      name="SquareMetres" />
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Union All.Outputs[Union All Output 1].Columns[NumberUnits]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Lookup revisted to the cache\Union All.Outputs[Union All Output 1].Columns[NumberUnits]"
+                      name="NumberUnits" />
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Union All.Outputs[Union All Output 1].Columns[Details]"
+                      codePage="65001"
+                      dataType="str"
+                      length="500"
+                      lineageId="Package\Lookup revisted to the cache\Union All.Outputs[Union All Output 1].Columns[Details]"
+                      name="Details" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Lookup revisted to the cache\Union All 1"
+              componentClassID="Microsoft.UnionAll"
+              contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
+              name="Union All 1"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\Lookup revisted to the cache\Union All 1.Inputs[Union All Input 1]"
+                  name="Union All Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Lookup revisted to the cache\Union All 1.Inputs[Union All Input 1].Columns[CentreId]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CentreId"
+                      lineageId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[CentreId]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Lookup revisted to the cache\Union All 1.Outputs[Union All Output 1].Columns[CentreId]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Lookup revisted to the cache\Union All 1.Inputs[Union All Input 1].Columns[CentreName]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CentreName"
+                      lineageId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[CentreName]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Lookup revisted to the cache\Union All 1.Outputs[Union All Output 1].Columns[CentreName]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Lookup revisted to the cache\Union All 1.Inputs[Union All Input 1].Columns[PostCode]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PostCode"
+                      lineageId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[PostCode]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Lookup revisted to the cache\Union All 1.Outputs[Union All Output 1].Columns[PostCode]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Lookup revisted to the cache\Union All 1.Inputs[Union All Input 1].Columns[SquareMetres]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="SquareMetres"
+                      lineageId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[SquareMetres]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Lookup revisted to the cache\Union All 1.Outputs[Union All Output 1].Columns[SquareMetres]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Lookup revisted to the cache\Union All 1.Inputs[Union All Input 1].Columns[NumberUnits]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="NumberUnits"
+                      lineageId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[NumberUnits]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Lookup revisted to the cache\Union All 1.Outputs[Union All Output 1].Columns[NumberUnits]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Lookup revisted to the cache\Union All 1.Inputs[Union All Input 1].Columns[Details]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="500"
+                      cachedName="Details"
+                      lineageId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output].Columns[Details]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Lookup revisted to the cache\Union All 1.Outputs[Union All Output 1].Columns[Details]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Lookup revisted to the cache\Union All 1.Inputs[Union All Input 2]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Union All Input 2">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Lookup revisted to the cache\Union All 1.Outputs[Union All Output 1]"
+                  name="Union All Output 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Union All 1.Outputs[Union All Output 1].Columns[CentreId]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Lookup revisted to the cache\Union All 1.Outputs[Union All Output 1].Columns[CentreId]"
+                      name="CentreId" />
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Union All 1.Outputs[Union All Output 1].Columns[CentreName]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Lookup revisted to the cache\Union All 1.Outputs[Union All Output 1].Columns[CentreName]"
+                      name="CentreName" />
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Union All 1.Outputs[Union All Output 1].Columns[PostCode]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Lookup revisted to the cache\Union All 1.Outputs[Union All Output 1].Columns[PostCode]"
+                      name="PostCode" />
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Union All 1.Outputs[Union All Output 1].Columns[SquareMetres]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Lookup revisted to the cache\Union All 1.Outputs[Union All Output 1].Columns[SquareMetres]"
+                      name="SquareMetres" />
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Union All 1.Outputs[Union All Output 1].Columns[NumberUnits]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Lookup revisted to the cache\Union All 1.Outputs[Union All Output 1].Columns[NumberUnits]"
+                      name="NumberUnits" />
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Union All 1.Outputs[Union All Output 1].Columns[Details]"
+                      codePage="65001"
+                      dataType="str"
+                      length="500"
+                      lineageId="Package\Lookup revisted to the cache\Union All 1.Outputs[Union All Output 1].Columns[Details]"
+                      name="Details" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Lookup revisted to the cache\Union All 2"
+              componentClassID="Microsoft.UnionAll"
+              contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
+              name="Union All 2"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\Lookup revisted to the cache\Union All 2.Inputs[Union All Input 1]"
+                  name="Union All Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Lookup revisted to the cache\Union All 2.Inputs[Union All Input 1].Columns[Flat File Source Error Output Column]"
+                      cachedCodepage="65001"
+                      cachedDataType="text"
+                      cachedName="Flat File Source Error Output Column"
+                      lineageId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Lookup revisted to the cache\Union All 2.Outputs[Union All Output 1].Columns[Flat File Source Error Output Column]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Lookup revisted to the cache\Union All 2.Inputs[Union All Input 1].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      lineageId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Lookup revisted to the cache\Union All 2.Outputs[Union All Output 1].Columns[ErrorCode]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Lookup revisted to the cache\Union All 2.Inputs[Union All Input 1].Columns[ErrorColumn]"
+                      cachedDataType="i4"
+                      cachedName="ErrorColumn"
+                      lineageId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Lookup revisted to the cache\Union All 2.Outputs[Union All Output 1].Columns[ErrorColumn]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Lookup revisted to the cache\Union All 2.Inputs[Union All Input 2]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Union All Input 2">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Lookup revisted to the cache\Union All 2.Outputs[Union All Output 1]"
+                  name="Union All Output 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Union All 2.Outputs[Union All Output 1].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Lookup revisted to the cache\Union All 2.Outputs[Union All Output 1].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Union All 2.Outputs[Union All Output 1].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Lookup revisted to the cache\Union All 2.Outputs[Union All Output 1].Columns[ErrorCode]"
+                      name="ErrorCode" />
+                    <outputColumn
+                      refId="Package\Lookup revisted to the cache\Union All 2.Outputs[Union All Output 1].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Lookup revisted to the cache\Union All 2.Outputs[Union All Output 1].Columns[ErrorColumn]"
+                      name="ErrorColumn" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Lookup revisted to the cache.Paths[Flat File Source Error Output]"
+              endId="Package\Lookup revisted to the cache\Union All 2.Inputs[Union All Input 1]"
+              name="Flat File Source Error Output"
+              startId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Error Output]" />
+            <path
+              refId="Package\Lookup revisted to the cache.Paths[Flat File Source Output]"
+              endId="Package\Lookup revisted to the cache\Lookup.Inputs[Lookup Input]"
+              name="Flat File Source Output"
+              startId="Package\Lookup revisted to the cache\Flat File Source.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Lookup revisted to the cache.Paths[Lookup Match Output]"
+              endId="Package\Lookup revisted to the cache\Union All.Inputs[Union All Input 1]"
+              name="Lookup Match Output"
+              startId="Package\Lookup revisted to the cache\Lookup.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Lookup revisted to the cache.Paths[Lookup No Match Output]"
+              endId="Package\Lookup revisted to the cache\Union All 1.Inputs[Union All Input 1]"
+              name="Lookup No Match Output"
+              startId="Package\Lookup revisted to the cache\Lookup.Outputs[Lookup No Match Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{4EDB6707-D6D0-4D7F-8D87-476DAE7ACC94}"
+      DTS:From="Package\Load Into Cache"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Lookup revisted to the cache" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="154.4,41.6"
+          Id="Package\Load Into Cache"
+          TopLeft="374.166646223102,114.399999204477" />
+        <NodeLayout
+          Size="211.2,41.6"
+          Id="Package\Lookup revisted to the cache"
+          TopLeft="373.3333129353,248.733331603673" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="451.366646223102,155.999999204477">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="27.5666667121981,92.7333323991961"
+              Start="0,0"
+              End="27.5666667121981,85.2333323991961">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.366666199598" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,42.366666199598"
+                    Point2="0,46.366666199598"
+                    Point3="4,46.366666199598" />
+                  <mssgle:LineSegment
+                    End="23.5666667121981,46.366666199598" />
+                  <mssgle:CubicBezierSegment
+                    Point1="23.5666667121981,46.366666199598"
+                    Point2="27.5666667121981,46.366666199598"
+                    Point3="27.5666667121981,50.366666199598" />
+                  <mssgle:LineSegment
+                    End="27.5666667121981,85.2333323991961" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Load Into Cache">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\Load Into Cache\Flat File Source"
+          TopLeft="457.499975003303,60.6666662447983" />
+        <NodeLayout
+          Size="120,41.6"
+          Id="Package\Load Into Cache\Union All"
+          TopLeft="194.99998934567,84.0666660820776" />
+        <EdgeLayout
+          Id="Package\Load Into Cache.Paths[Flat File Source Error Output]"
+          TopLeft="457.499975003303,81.4666662447982">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-142.499985657633,23.3999998372793"
+              Start="0,0"
+              End="-134.999985657633,23.3999998372793">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-67.2499928288165,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-67.2499928288165,0"
+                    Point2="-71.2499928288165,0"
+                    Point3="-71.2499928288165,4" />
+                  <mssgle:LineSegment
+                    End="-71.2499928288165,19.3999998372793" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-71.2499928288165,19.3999998372793"
+                    Point2="-71.2499928288165,23.3999998372793"
+                    Point3="-75.2499928288165,23.3999998372793" />
+                  <mssgle:LineSegment
+                    End="-134.999985657633,23.3999998372793" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-143.745031891317,-22,144.990078125,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="158.4,41.6"
+          Id="Package\Load Into Cache\Cache Transform"
+          TopLeft="469.999974320333,176.799998770555" />
+        <EdgeLayout
+          Id="Package\Load Into Cache.Paths[Flat File Source Output]"
+          TopLeft="533.099975003303,102.266666244798">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="16.0999993170301,74.5333325257566"
+              Start="0,0"
+              End="16.0999993170301,67.0333325257566">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.2666662628783" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.2666662628783"
+                    Point2="0,37.2666662628783"
+                    Point3="4,37.2666662628783" />
+                  <mssgle:LineSegment
+                    End="12.0999993170301,37.2666662628783" />
+                  <mssgle:CubicBezierSegment
+                    Point1="12.0999993170301,37.2666662628783"
+                    Point2="16.0999993170301,37.2666662628783"
+                    Point3="16.0999993170301,41.2666662628783" />
+                  <mssgle:LineSegment
+                    End="16.0999993170301,67.0333325257566" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Lookup revisted to the cache">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\Lookup revisted to the cache\Flat File Source"
+          TopLeft="518.999992266297,73.9999988973141" />
+        <NodeLayout
+          Size="112.8,41.6"
+          Id="Package\Lookup revisted to the cache\Lookup"
+          TopLeft="542.999991908669,198.999997034669" />
+        <EdgeLayout
+          Id="Package\Lookup revisted to the cache.Paths[Flat File Source Output]"
+          TopLeft="596.999992087483,115.599998897314">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,83.3999981373548"
+              Start="0,0"
+              End="0,75.8999981373548">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,75.8999981373548" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="128.8,41.6"
+          Id="Package\Lookup revisted to the cache\Union All 2"
+          TopLeft="309.99999538064,93.9999985992908" />
+        <EdgeLayout
+          Id="Package\Lookup revisted to the cache.Paths[Flat File Source Error Output]"
+          TopLeft="518.999992266297,94.7999988973141">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-80.1999968856573,19.9999997019768"
+              Start="0,0"
+              End="-72.6999968856573,19.9999997019768">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-36.0999984428286,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-36.0999984428286,0"
+                    Point2="-40.0999984428286,0"
+                    Point3="-40.0999984428286,4" />
+                  <mssgle:LineSegment
+                    End="-40.0999984428286,15.9999997019768" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-40.0999984428286,15.9999997019768"
+                    Point2="-40.0999984428286,19.9999997019768"
+                    Point3="-44.0999984428286,19.9999997019768" />
+                  <mssgle:LineSegment
+                    End="-72.6999968856573,19.9999997019768" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-103.726385161579,-17.609375,127.2527734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="120,41.6"
+          Id="Package\Lookup revisted to the cache\Union All"
+          TopLeft="374.999994412064,292.99999563396" />
+        <NodeLayout
+          Size="128.8,41.6"
+          Id="Package\Lookup revisted to the cache\Union All 1"
+          TopLeft="673.999989956618,276.999995872378" />
+        <EdgeLayout
+          Id="Package\Lookup revisted to the cache.Paths[Lookup Match Output]"
+          TopLeft="599.399991908669,240.599997034669">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-164.399997496605,52.399998599291"
+              Start="0,0"
+              End="-164.399997496605,44.899998599291">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.1999992996455" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.1999992996455"
+                    Point2="0,26.1999992996455"
+                    Point3="-4,26.1999992996455" />
+                  <mssgle:LineSegment
+                    End="-160.399997496605,26.1999992996455" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-160.399997496605,26.1999992996455"
+                    Point2="-164.399997496605,26.1999992996455"
+                    Point3="-164.399997496605,30.1999992996455" />
+                  <mssgle:LineSegment
+                    End="-164.399997496605,44.899998599291" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-130.391385467052,31.1999992996455,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Lookup revisted to the cache.Paths[Lookup No Match Output]"
+          TopLeft="616.866658575336,240.599997034669">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="121.533331381281,36.3999988377095"
+              Start="0,0"
+              End="121.533331381281,28.8999988377095">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.8654540707849" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.8654540707849"
+                    Point2="0,14.8654540707849"
+                    Point3="4,14.8654540707849" />
+                  <mssgle:LineSegment
+                    End="117.533331381281,14.8654540707849" />
+                  <mssgle:CubicBezierSegment
+                    Point1="117.533331381281,14.8654540707849"
+                    Point2="121.533331381281,14.8654540707849"
+                    Point3="121.533331381281,18.8654540707849" />
+                  <mssgle:LineSegment
+                    End="121.533331381281,28.8999988377095" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="4.96027897189071,19.8654540707849,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Lookup revisted to the cache\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
